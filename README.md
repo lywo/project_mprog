@@ -1,4 +1,4 @@
-# project mprog : save the date!
+# project mprog : save the night!
 Het maken van mijn eigen app. Onderdeel van het afsluitende vak Programmeerproject van de minor programmeren.
  
 Lydia Wolfs
