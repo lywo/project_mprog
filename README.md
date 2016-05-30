@@ -5,20 +5,23 @@ Lydia Wolfs
 
 Student nummer: 10338217
 
-
-
 - *Welk probleem wordt opgelost voor de gebruiker?* 
  Als de gebruiker een hele slechte date heeft geeft deze app de oplossing in meerdere richtingen: 2 opties om de date nog de goede kant op te sturen via suggesties en 2 om de app zo snel mogelijk af te breken. 
 
 
 - *Welke features zijn beschikbaar om het probleem op te lossen?*
-Het implementeren van een fake call. Het laten sturen van een sms. Het ophalen van lokaal news voor een interessant gespreksonderwerp. Een voorstel voor een interessante eerste date vraag om je date een beetje los te krijgen. 
+Het implementeren van een fake call. Het laten sturen van een ready to go emergency sms naar vantevoren gekozen nummer uit je telefoonboek. Hierdoor hoef je niet ongemakkelijk nog een sms te typen en een contactpersoon te kiezen. Het ophalen van lokaal news voor een interessant gespreksonderwerp. Een voorstel voor een interessante eerste date vraag om je date een beetje los te krijgen. 
 
 
 
 - *Een schets van een overzicht van hoe de app eruit gaat zien. Het basic design en alle schermen.*
+![](https://github.com/lywo/project_mprog/blob/master/doc/IMG_3180.JPG?raw=true)
 
+![](https://github.com/lywo/project_mprog/blob/master/doc/IMG_3181.JPG?raw=true)
 
+![](https://github.com/lywo/project_mprog/blob/master/doc/IMG_3182.JPG?raw=true)
+
+![](https://github.com/lywo/project_mprog/blob/master/doc/IMG_3183.JPG?raw=true)
 
 
 - *Welke datasets en data sources zijn er nodig en hoe wordt de data aangepast naar een goed format voor de app?*  
