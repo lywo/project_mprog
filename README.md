@@ -15,13 +15,13 @@ Het implementeren van een fake call. Het laten sturen van een ready to go emerge
 
 
 - *Een schets van een overzicht van hoe de app eruit gaat zien. Het basic design en alle schermen.*
-![](https://github.com/lywo/project_mprog/blob/master/doc/IMG_3180.JPG?raw=true)
+![](./doc/IMG_3180.JPG)
 
-![](https://github.com/lywo/project_mprog/blob/master/doc/IMG_3181.JPG?raw=true)
+![](./doc/IMG_3181.JPG)
 
-![](https://github.com/lywo/project_mprog/blob/master/doc/IMG_3182.JPG?raw=true)
+![](./doc/IMG_3182.JPG)
 
-![](https://github.com/lywo/project_mprog/blob/master/doc/IMG_3183.JPG?raw=true)
+![](./doc/IMG_3183.JPG)
 
 
 - *Welke datasets en data sources zijn er nodig en hoe wordt de data aangepast naar een goed format voor de app?*  
