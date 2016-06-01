@@ -27,4 +27,6 @@
 - verder lezen over design
 - Checken of telefoon op stil staat, dan geen geluid maar vibraten. 
 - Update database: 2 tabellen, 1 van 101 rijen met de questions id, string en boolean. En een tweede tabel met de settings. Boolean wordt gebruikt voor opslaan van favourites. 
-- v
+- Design nu in android style geschetst. Duidelijk voorbeeld. 
+- denk aan audio! beter focussen op alleen ringtone, misschien ophalen uit de telefoon zelf. Importeren en toestaan in manifest!
+- denk aan internet toegang in manifest. 
