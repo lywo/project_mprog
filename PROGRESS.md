@@ -22,3 +22,9 @@
 - Opslaan in database is makkelijkste met allemaal columns.
 - gebruik van integers bij een object van question, zodat je gewoon een array kan exporteren met alleen integers om de ListView van favourites te vullen. 
 - Alle objects en activities en classes weergegeven in UML. 
+
+### Day 3
+- verder lezen over design
+- Checken of telefoon op stil staat, dan geen geluid maar vibraten. 
+- Update database: 2 tabellen, 1 van 101 rijen met de questions id, string en boolean. En een tweede tabel met de settings. Boolean wordt gebruikt voor opslaan van favourites. 
+- v

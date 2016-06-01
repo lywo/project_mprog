@@ -16,18 +16,20 @@ Gebruik functies/intents voor ophalen contacten. Wacht op resultaat en roep func
 ## Overzicht Structuur
 
 #### Objects
-![](https://www.lucidchart.com/publicSegments/view/446a4f91-a6c2-4a45-9961-a1828136a253/image.png)
+![](https://www.lucidchart.com/publicSegments/view/b98ca287-1489-4449-8e58-c3ad600b69d9/image.png)
 
 
 #### Activities & Views
-![](https://www.lucidchart.com/publicSegments/view/74e4dc91-4762-448b-be27-a7cd3f897dd2/image.png)
-**ADD GO OUT FOR CONTACTS**
+![](https://www.lucidchart.com/publicSegments/view/2a811053-9345-4b78-aa9d-d0fb5b5b6b82/image.png)
 
 ## Detail Sketches
 to do
 
 ## Database format 
-to do tabel maken met columns 
+Ik ga een database gebruiken met 2 tabellen erin. De Questions Table heeft 101 rijen om allen questions op te slaan met een id, een string en een boolean. De boolean wordt gebruikt om aan te geven of het een favourite is of niet. De Settings table wordt gebruikt om alle instellingen op te slaan. 
+Links op de afbeelding staat de indeling van de Questions table weergegeven en rechts de indeling van de Settings table. 
+
+![](https://www.lucidchart.com/publicSegments/view/5293631a-51f8-44a6-a94f-a5cf2665959f/image.png)
 
 
 
