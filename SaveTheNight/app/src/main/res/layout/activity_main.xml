@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="com.example.lydia.savethenight.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoIV"
+        android:src="@drawable/brokenheart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:id="@+id/questionIV"
+        android:src="@mipmap/questionIcon"
+        android:onClick="questionClicked"
+        android:layout_alignBottom="@+id/newsIV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smsIV"
+        android:src="@mipmap/smsIcon"
+        android:onClick="smsClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+        android:id="@+id/phoneIV"
+        android:src="@mipmap/phoneIcon"
+        android:onClick="phoneClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newsIV"
+        android:src="@mipmap/newspaper2"
+        android:onClick="newsClicked"
+        android:layout_above="@+id/smsIV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_settings_black_24dp"
+        android:onClick="settingsClicked"
+        android:id="@+id/settingsIV"
+        android:layout_below="@+id/logoIV"
+        android:layout_alignRight="@+id/logoIV"
+        android:layout_alignEnd="@+id/logoIV" />
+
+</RelativeLayout>
