@@ -35,3 +35,4 @@
 - begonnen met het maken van een prototype. Alle activiteiten en alle schermen. 
 - geen gebruik maken van ImageButtons, maar ImageViews met een onClick functie in de activiteit. Op deze manier blijven de plaatjes makkelijker bewerkbaar.'
 - gekozen voor een zwart incoming call scherm want het makkelijkste na te maken. On click functie in activity voor het middelste telefoon icoontje. De rest opgevuld met textViews en Imageviews. Nog toe te voegen geluid. 
+- Nog linken en voorbeeld runnen! Picturen aangepast en git opgeschoond. 

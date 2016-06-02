@@ -30,10 +30,12 @@ Nog logo ontwerpen en mooie images zoeken voor de image buttons.
 
 #### Settings Screen
 Gaat nog veranderen als het duidelijk is hoe ik ga zoeken naar contacten, ga ik naar de app toe of laad ik alle contacten en kan ik dan daar doorheen scrollen of zoeken met een toetsenbord? 
+
 ![](/doc/Settings-resize.png)
 
 #### News Screen
 Inhoud is een lijst met News (object) items die bestaan uit een titel, link en beschrijving.
+
 ![](/doc/news-resize.png)
 
 #### Fake Call Screen
@@ -43,6 +45,7 @@ Voorbeeld is van een uitgaand gesprek, maar dit wordt een inkomend gesprek. Onge
  
 #### Questions Screen
 Met de button huidig gedisplayde vraag opslaan in de favorieten lijst onderaan het scherm. 
+
 ![](/doc/questions-resize.png)
  
 
