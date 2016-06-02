@@ -38,6 +38,8 @@ Inhoud is een lijst met News (object) items die bestaan uit een titel, link en b
 
 #### Fake Call Screen
 Voorbeeld is van een uitgaand gesprek, maar dit wordt een inkomend gesprek. Ongeveer het zelfde, alleen is het telefoon icoontje in het midden grijs en wordt die groen/rood voor links/rechts opnemen/ophangen.
+
+![](/doc/fake-call-resize.png)
  
 #### Questions Screen
 Met de button huidig gedisplayde vraag opslaan in de favorieten lijst onderaan het scherm. 

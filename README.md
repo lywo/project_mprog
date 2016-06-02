@@ -19,35 +19,37 @@ Een voorstel voor een interessante eerste date vraag om je date een beetje los t
 
 ## Design
 Nep incoming call scherm
+
 ![](./doc/fake-call-resize.png)
 
 Nieuws scherm
+
 ![](./doc/news-resize.png)
 
 Questions scherm
+
 ![](./doc/questions-resize.png)
 
 Main scherm
+
 ![](./doc/screen-1-resize.png)
 
 Settings scherm
+
 ![](./doc/settings-resize.png)
 
 
 - *Welke datasets en data sources zijn er nodig en hoe wordt de data aangepast naar een goed format voor de app?*  
-Dataset met news, een dataset met date vragen, een dataset met telefoonnummers die je binnenhaalt vanaf je eigen telefoon. Online opgeslagen text voor je emergency sms in SQLite database. 
+Dataset met news, een dataset met date vragen, een dataset met telefoonnummers die je binnenhaalt vanaf je eigen telefoon. In een SQLiteDatabase worden 2 tabellen gemaakt met alle info. 
 
 
 
-- *Welke losse onderdelen van de applicatie kunnen worden onderscheiden en hoe moeten deze samenwerken?* Begin scherm waarin keuze wordt gemaakt tussen instellingen of de hulp opties. Tweede scherm met of instellingen (die weer moeten worden gelinked aan de hulp opties) of de 4 hulp opties (icons). De 4 hulp opties hebben ook ieder een eigen scherm. Alleen de emergency sms moet weer terug komen bij de 4 hulp opties. Terug gaan is altijd mogelijk via back button. Bij het afsluiten van de app komt de gebruiker weer bij het begin scherm. 
+- *Welke losse onderdelen van de applicatie kunnen worden onderscheiden en hoe moeten deze samenwerken?* Begin scherm waarin keuze wordt gemaakt tussen  de hulp opties (icons). 3 van de 4 hulp opties hebben ook ieder een eigen scherm. Alleen de emergency sms moet  via de sms app weer terug komen bij de 4 hulp opties Scherm. Terug gaan is altijd mogelijk via back button. Bij het afsluiten van de app komt de gebruiker weer bij het begin scherm. Bij de instellingen misschien nog een uitstap naar de contacten app. 
 
 
 
 - *Welke externe onderdelen (API's) zijn nodig om de features mogelijk te maken?*
-**news API/google news** deze moet gebruiken maken van de locatie (via *GPS*) van de gebruiker om het recente nieuws op te halen. 
-**question API** mogelijk een API die vragen opzoekt voor het daten. Anders hard coden. 
-**gmail VOICE** mogelijkheid om via gmail account je eigen nummer te bellen voor de emergency call.
-
+**NOS nieuws RSS feed** Hiermee wordt het recente Nederlandse nieuws opgehaald. 
 
 
 - *Noem technische problemen of limitaties optreden tijdens het ontwerpen van de applicatie.Welke oplossingen zijn er om dit op te lossen.*
@@ -56,7 +58,7 @@ Als het niet lukt om een echte call uit te voeren via GMAIL VOICE kan er ook een
 Als het niet lukt om een echte sms te sturen, moet dit ook worden gefacked met behulp van een afbeelding en een geluidje. 
 
 
-- *Een review van vergelijkbare applicaties*
+##Een review van vergelijkbare applicaties##
 
 **fake a call free** "Fake an incoming call and get away from any situation!
 The original and still the best, and free!
@@ -72,7 +74,7 @@ Hierbij kan een timer worden gezet en een belletje worden nagemaakt met contacte
 
 
 
-- *minimum viable product (MVP)*
+##minimum viable product (MVP)##
 Een app vanuit een begin scherm 
 
 1) van een standaard locatie nieuws ophaalt 

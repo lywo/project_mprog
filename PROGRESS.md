@@ -30,3 +30,8 @@
 - Design nu in android style geschetst. Duidelijk voorbeeld. 
 - denk aan audio! beter focussen op alleen ringtone, misschien ophalen uit de telefoon zelf. Importeren en toestaan in manifest!
 - denk aan internet toegang in manifest. 
+
+### Day 4
+- begonnen met het maken van een prototype. Alle activiteiten en alle schermen. 
+- geen gebruik maken van ImageButtons, maar ImageViews met een onClick functie in de activiteit. Op deze manier blijven de plaatjes makkelijker bewerkbaar.'
+- gekozen voor een zwart incoming call scherm want het makkelijkste na te maken. On click functie in activity voor het middelste telefoon icoontje. De rest opgevuld met textViews en Imageviews. Nog toe te voegen geluid. 
