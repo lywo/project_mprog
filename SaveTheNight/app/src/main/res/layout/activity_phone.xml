@@ -37,7 +37,7 @@
     <ImageView
         android:layout_width="420dp"
         android:layout_height="200dp"
-        android:src="@mipmap/ringingTop"
+        android:src="@mipmap/ringingtop"
         android:id="@+id/topCallingIV"
         android:layout_below="@+id/adressTV"
         android:layout_alignLeft="@+id/adressTV"
@@ -49,6 +49,7 @@
         android:text="Tante Paulien"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:textColor="#ffffff"
         android:id="@+id/nameTV"/>
 
     <TextView
@@ -56,6 +57,7 @@
         android:layout_height="wrap_content"
         android:text="Kerkstraat 45\nEtten-Leur"
         android:id="@+id/adressTV"
+        android:textColor="#ffffff"
         android:layout_below="@+id/nameTV"
         android:layout_alignLeft="@+id/nameTV"
         android:layout_alignStart="@+id/nameTV"
