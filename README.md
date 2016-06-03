@@ -18,25 +18,30 @@ Een voorstel voor een interessante eerste date vraag om je date een beetje los t
 
 
 ## Design
+Main scherm
+
+![](./doc/screen-1-resize.png)
+
+
+Settings scherm
+
+![](./doc/settings-resize.png)
+
+
 Nep incoming call scherm
 
 ![](./doc/fake-call-resize.png)
+
 
 Nieuws scherm
 
 ![](./doc/news-resize.png)
 
+
 Questions scherm
 
 ![](./doc/questions-resize.png)
 
-Main scherm
-
-![](./doc/screen-1-resize.png)
-
-Settings scherm
-
-![](./doc/settings-resize.png)
 
 
 - *Welke datasets en data sources zijn er nodig en hoe wordt de data aangepast naar een goed format voor de app?*  
