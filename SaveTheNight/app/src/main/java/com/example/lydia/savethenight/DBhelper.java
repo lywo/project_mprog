@@ -29,11 +29,13 @@ public class DBhelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        // create Question table
         String CREATE_QUESTION_TABLE = "CREATE TABLE " + TABLE_NAME_QUESTION + "(" + COLUMN_ITEM_ID
                 + " INTEGER" + " , " + COLUMN_ITEM_QUESTION + " TEXT"+ " , " + COLUMN_ITEM_STATUS
                 + " INTEGER " + ")";
         db.execSQL(CREATE_QUESTION_TABLE);
 
+        // create Settings table
         String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_NAME_SETTINGS + "(" + COLUMN_ITEM_NAME
                 + " TEXT" + " , " + COLUMN_ITEM_NUMBER +  " TEXT" + " , " + COLUMN_ITEM_SMS
                 + " TEXT" + ")";
@@ -42,11 +44,13 @@ public class DBhelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        // create Question table
         String CREATE_QUESTION_TABLE = "CREATE TABLE " + TABLE_NAME_QUESTION + "(" + COLUMN_ITEM_ID
                 + " INTEGER" + " , " + COLUMN_ITEM_QUESTION + " TEXT"+ " , " + COLUMN_ITEM_STATUS
                 + " INTEGER " + ")";
         db.execSQL(CREATE_QUESTION_TABLE);
 
+        // create Settings table
         String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_NAME_SETTINGS + "(" + COLUMN_ITEM_NAME
                 + " TEXT" + " , " + COLUMN_ITEM_NUMBER +  " TEXT" + " , " + COLUMN_ITEM_SMS
                 + " TEXT" + ")";
