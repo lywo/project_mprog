@@ -26,7 +26,7 @@ public class newsFeedParser {
         }
     }
 
-    private List readItem(XmlPullParser parser) throws XmlPullParserException, IOException {
+    private static List readItem(XmlPullParser parser) throws XmlPullParserException, IOException {
         List currentNewsItems = new ArrayList();
 
         parser.require(XmlPullParser.START_TAG, ns, "");

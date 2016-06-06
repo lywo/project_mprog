@@ -44,37 +44,34 @@ public class newsAsyncTask extends AsyncTask<String, Integer, String> {
         super.onPostExecute(result);
         if (result.length() == 0) {
             Toast.makeText(context, "No news was found", Toast.LENGTH_SHORT).show();
-        }
-        else {
+        } else {
             if (result.startsWith("ERROR:")) {
                 Toast.makeText(context, result, Toast.LENGTH_LONG).show();
             } else {
                 // parse RSS feed
-                newsFeedParser.parse(result);
+                // for each <item>  get <title> <link> en <description>
+                //newsFeedParser.parse(result);
 
 
-                try {
-                    // for each <item>  get <title> <link> en <description>
-                    String title = null;
-                    String description = null;
-                    String linkString = null;
-                    URL link = new URL(linkString);
 
-                    //  adding values to dataset (title, link description)
-                    NewsItem newNewsItem = new NewsItem(title, link, description);
-                    currentNewsItems.add(newNewsItem);
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                }
+                String title = null;
+                String description = null;
+                String link = null;
+                // String link = new URL(linkString);
+
+                //  adding values to dataset (title, link description)
+                NewsItem newNewsItem = new NewsItem(title, link, description);
+                currentNewsItems.add(newNewsItem);
                 // update ArrayList
                 // call MainActivity to set data to ListView
                 this.activity.setData(currentNewsItems);
 
-                finally{
-                    if (stream != null) {
-                        stream.close();
-                    }
-                }
+//                finally{
+//                    if (stream != null) {
+//                        stream.close();
+//                    }
+//                }
             }
         }
+    }
 }
