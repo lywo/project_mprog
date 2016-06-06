@@ -18,9 +18,6 @@ public class HTTPRequestHelper {
         // declare return String result
         String result = "";
 
-        // get chosen city response
-        String chosenCity = values[0];
-
         // convert String to url
         URL url = null;
         try {

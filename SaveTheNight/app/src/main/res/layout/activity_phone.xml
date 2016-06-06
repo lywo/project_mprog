@@ -37,7 +37,7 @@
     <ImageView
         android:layout_width="420dp"
         android:layout_height="200dp"
-        android:src="@mipmap/ringingtop"
+        android:src="@mipmap/incomingcallytop"
         android:id="@+id/topCallingIV"
         android:layout_below="@+id/adressTV"
         android:layout_alignLeft="@+id/adressTV"

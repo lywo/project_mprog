@@ -45,27 +45,36 @@ public class newsAsyncTask extends AsyncTask<String, Integer, String> {
         if (result.length() == 0) {
             Toast.makeText(context, "No news was found", Toast.LENGTH_SHORT).show();
         }
-        else if (result.startsWith("ERROR:")) {
-                Toast.makeText(context, result, Toast.LENGTH_LONG).show();
-            }
         else {
-            // parse RSS feed
-            try {
-                // for each <item>  get <title> <link> en <description>
-                String title = null;
-                String description = null;
-                String linkString = null;
-                URL link = new URL(linkString);
+            if (result.startsWith("ERROR:")) {
+                Toast.makeText(context, result, Toast.LENGTH_LONG).show();
+            } else {
+                // parse RSS feed
+                newsFeedParser.parse(result);
 
-                //  adding values to dataset (title, link description)
-                NewsItem newNewsItem = new NewsItem(title, link, description);
-                currentNewsItems.add(newNewsItem);
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
+
+                try {
+                    // for each <item>  get <title> <link> en <description>
+                    String title = null;
+                    String description = null;
+                    String linkString = null;
+                    URL link = new URL(linkString);
+
+                    //  adding values to dataset (title, link description)
+                    NewsItem newNewsItem = new NewsItem(title, link, description);
+                    currentNewsItems.add(newNewsItem);
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                // update ArrayList
+                // call MainActivity to set data to ListView
+                this.activity.setData(currentNewsItems);
+
+                finally{
+                    if (stream != null) {
+                        stream.close();
+                    }
+                }
             }
-            // update ArrayList
-            // call MainActivity to set data to ListView
-            this.activity.setData(currentNewsItems);
         }
-    }
 }
