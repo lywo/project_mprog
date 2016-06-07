@@ -2,7 +2,6 @@ package com.example.lydia.savethenight;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.widget.ListView;
 
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -16,52 +15,41 @@ import java.util.List;
 /**
  * Created by Lydia on 6-6-2016.
  */
-public class downloadNewsAsyncTask extends AsyncTask<String, Void, String> {
+public class DownloadNewsAsyncTask extends AsyncTask<String, Void, String> {
     Context context;
     newsActivity activity;
     ArrayList<NewsItem> currentNewsItems = null;
 
     // constructor
-    public downloadNewsAsyncTask(newsActivity newsActivity){
+    public DownloadNewsAsyncTask(newsActivity newsActivity){
         this.activity = newsActivity;
         this.context = this.activity.getApplicationContext();
     }
 
-
     @Override
     protected String doInBackground(String... params) {
-        StringBuilder htmlString = new StringBuilder();
-         /*
-        De newsFeedParser returns a List (called "currentNewsItems") of NewsItem objects.
-        Each NewsItem object represents a single post in the XML feed.
-        This section processes the currentNewsItems list to combine each NewsItem with HTML markup.
-        Each NewsItem is displayed in the UI as a title, link and description in a ListView.
-        */
-        for (NewsItem newsItem : currentNewsItems) {
-            htmlString.append("<p><a href='");
-            htmlString.append(newsItem.link);
-            htmlString.append("'>" + newsItem.title + "</a></p>");
-            htmlString.append(newsItem.description);
+        try {
+            return loadXmlFromNetwork(params[0]);
+        } catch (IOException e) {
+            return "";
+        } catch (XmlPullParserException e) {
+            return "";
         }
-        return htmlString.toString();
     }
 
-    // @Override
+    @Override
     protected void onPostExecute(String result) {
-        loadXmlFromNetwork(result);
         this.activity.setData(currentNewsItems);
     }
 
-
-    private List<NewsItem> loadXmlFromNetwork(String newsURL) throws XmlPullParserException, IOException {
+    /*
+    load inputStream and fill currentNewsItems with NewsItem objects.
+     */
+    private String loadXmlFromNetwork(String newsURL) throws XmlPullParserException, IOException {
         InputStream inputStream = null;
 
         // Instantiate the parser
         newsFeedParser myXMLparser = new newsFeedParser();
-        List<NewsItem> currentNewsItems = null;
-        String title = null;
-        String url = null;
-        String description = null;
 
         try {
             inputStream = downloadUrl(newsURL);
@@ -72,23 +60,9 @@ public class downloadNewsAsyncTask extends AsyncTask<String, Void, String> {
                 inputStream.close();
             }
         }
-        return currentNewsItems;
+        String emptyReturn = "";
+        return emptyReturn;
     }
-
-        /*
-        De newsFeedParser returns a List (called "currentNewsItems") of NewsItem objects.
-        Each NewsItem object represents a single post in the XML feed.
-        This section processes the currentNewsItems list to combine each NewsItem with HTML markup.
-        Each NewsItem is displayed in the UI as a title, link and description in a ListView.
-        */
-//        for (NewsItem newsItem : currentNewsItems) {
-//            htmlString.append("<p><a href='");
-//            htmlString.append(newsItem.link);
-//            htmlString.append("'>" + newsItem.title + "</a></p>");
-//            htmlString.append(newsItem.description);
-//        }
-//        return htmlString.toString();
-//    }
 
     /*
     Sets up a connection and gets an input stream.

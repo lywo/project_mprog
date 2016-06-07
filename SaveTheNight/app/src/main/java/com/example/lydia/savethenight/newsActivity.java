@@ -6,7 +6,6 @@ import android.os.Bundle;
 import java.util.ArrayList;
 
 public class newsActivity extends AppCompatActivity {
-    ArrayList<NewsItem> currentNewsItems = new ArrayList<>();
     private static final String URL = "http://feeds.nos.nl/nosjournaal";
 
 
@@ -14,12 +13,12 @@ public class newsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
-        currentNewsItems = new downloadNewsAsyncTask(newsActivity.this).execute(URL);
+        DownloadNewsAsyncTask myAsyncTask = new DownloadNewsAsyncTask(this);
+        myAsyncTask.execute(URL);
     }
 
     protected void setData(ArrayList<NewsItem> currentNews){
-        currentNewsItems = currentNews;
-        NewsAdapter myAdapter  = new NewsAdapter(this, currentNewsItems);
+        NewsAdapter myAdapter  = new NewsAdapter(this, currentNews);
         myAdapter.notifyDataSetChanged();
     }
 }

@@ -13,22 +13,26 @@ import java.util.List;
  */
 public class newsFeedParser {
     private static final String ns = null;
+    private static final ArrayList <NewsItem> currentNewsItems = new ArrayList<>();
 
-    public static List parse(InputStream in) throws XmlPullParserException, IOException {
+    public static ArrayList<NewsItem> parse(InputStream in) throws XmlPullParserException, IOException {
         try {
             XmlPullParser parser = Xml.newPullParser();
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
             parser.setInput(in, null);
             parser.nextTag();
-            return readItem(parser);
+            readFeed(parser);
+            return currentNewsItems;
         } finally {
             in.close();
         }
     }
 
-    private static List readItem(XmlPullParser parser) throws XmlPullParserException, IOException {
-        List currentNewsItems = new ArrayList();
-
+    /*
+    Read the RSS feed and select all news items, put them in currentNewsItems.
+    Run readItem() to fill in title, description and link.
+     */
+    private static ArrayList<NewsItem> readFeed(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "");
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -37,7 +41,7 @@ public class newsFeedParser {
             String name = parser.getName();
             // Starts by looking for the entry tag
             if (name.equals("item")) {
-                currentNewsItems.add(readItem(parser));
+                currentNewsItems.add(NewsItem.readItem(parser));
             } else {
                 skip(parser);
             }
