@@ -41,4 +41,10 @@
 - asynctask file toegevoegd
 - httprequestmanager toegevoegd
 - objecten nieuws en vragen gemaakt
-- DB helper toegevoed, nog to do: implementatie en CRUD methods 
+- DB helper toegevoegd, nog to do: implementatie en CRUD methods 
+
+### Day 6
+- als  de fake call wordt geïnitialiseerd moet het screen niet gelocked worden tijdens de 30 sec wacht tijd. 
+- voor news feed gebruik maken van AynsTask, RSSfeedParser en functies in NewsItem Object. Koppeling moet nog beter! Nadenken over weergave in html string of ArrayList met Items, niet duidelijk nog. 
+- Row_layout file voor news Listview aangemaakt. MIsschien standaard ArrayAdapter gebruiken. 
+
