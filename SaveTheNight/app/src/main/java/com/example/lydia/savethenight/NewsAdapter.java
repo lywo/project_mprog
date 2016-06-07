@@ -5,6 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -23,7 +26,14 @@ public class NewsAdapter extends ArrayAdapter {
         view = inflater.inflate(R.layout.row_layout_news, parent, false);
 
         // get WeatherData and content strings
+        NewsItem currentNewsItem= (NewsItem) getItem(position);
+        TextView newsTitleTV = (TextView) view.findViewById(R.id.newsTitleTV);
+        TextView newsLinkTV = (TextView) view.findViewById(R.id.newsLinkTV);
+        TextView newsDescriptionTV = (TextView) view.findViewById(R.id.newsDescriptionTV);
 
+        newsTitleTV.setText(currentNewsItem.title);
+        newsLinkTV.setText(currentNewsItem.link);
+        newsDescriptionTV.setText(currentNewsItem.description);
 
         return view;
     }

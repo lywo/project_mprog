@@ -3,7 +3,7 @@ package com.example.lydia.savethenight;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class smsActivity extends AppCompatActivity {
+public class SmsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

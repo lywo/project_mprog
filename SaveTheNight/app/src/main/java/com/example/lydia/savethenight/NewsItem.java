@@ -4,7 +4,6 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
-import java.net.URL;
 
 /**
  * Created by Lydia on 3-6-2016.
@@ -65,12 +64,15 @@ public class NewsItem {
             String name = parser.getName();
             if (name.equals("title")) {
                 title = readTitle(parser);
-            } else if (name.equals("description")) {
+            }
+            else if (name.equals("description")) {
                 description = readDescription(parser);
-            } else if (name.equals("link")) {
+            }
+            else if (name.equals("link")) {
                 link = readLink(parser);
-            } else {
-                newsFeedParser.skip(parser);
+            }
+            else {
+                NewsFeedParser.skip(parser);
             }
         }
         return new NewsItem(title, description, link);
@@ -81,6 +83,7 @@ public class NewsItem {
         parser.require(XmlPullParser.START_TAG, ns, "title");
         String title = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "title");
+        parser.nextTag();
         return title;
     }
 
@@ -105,6 +108,7 @@ public class NewsItem {
         parser.require(XmlPullParser.START_TAG, ns, "description");
         String summary = readText(parser);
         parser.require(XmlPullParser.END_TAG, ns, "description");
+        // parser.nextTag();
         return summary;
     }
 

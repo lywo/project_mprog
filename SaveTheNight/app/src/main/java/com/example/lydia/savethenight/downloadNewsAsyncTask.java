@@ -10,7 +10,6 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Lydia on 6-6-2016.
@@ -49,7 +48,7 @@ public class DownloadNewsAsyncTask extends AsyncTask<String, Void, String> {
         InputStream inputStream = null;
 
         // Instantiate the parser
-        newsFeedParser myXMLparser = new newsFeedParser();
+        NewsFeedParser myXMLparser = new NewsFeedParser();
 
         try {
             inputStream = downloadUrl(newsURL);

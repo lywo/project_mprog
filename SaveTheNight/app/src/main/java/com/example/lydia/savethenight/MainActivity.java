@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void phoneClicked(View view){
-        Intent phoneIntent = new Intent(this, phoneActivity.class);
+        Intent phoneIntent = new Intent(this, PhoneActivity.class);
         startActivity(phoneIntent);
     }
 
@@ -28,17 +28,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void smsClicked(View view){
-        Intent smsIntent= new Intent(this, smsActivity.class);
+        Intent smsIntent= new Intent(this, SmsActivity.class);
         startActivity(smsIntent);
     }
 
     protected void questionClicked(View view){
-        Intent questionIntent = new Intent(this, questionActivity.class);
+        Intent questionIntent = new Intent(this, QuestionActivity.class);
         startActivity(questionIntent);
     }
 
     protected void settingsClicked(View view){
-        Intent settingsIntent = new Intent(this, settingsActivity.class);
+        Intent settingsIntent = new Intent(this, SettingsActivity.class);
         startActivity(settingsIntent);
     }
 

@@ -1,5 +1,6 @@
 package com.example.lydia.savethenight;
 
+import android.util.Log;
 import android.util.Xml;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -11,9 +12,9 @@ import java.util.List;
 /**
  * Created by Lydia on 6-6-2016.
  */
-public class newsFeedParser {
+public class NewsFeedParser {
     private static final String ns = null;
-    private static final ArrayList <NewsItem> currentNewsItems = new ArrayList<>();
+    private static ArrayList <NewsItem> currentNewsItems = new ArrayList<>();
 
     public static ArrayList<NewsItem> parse(InputStream in) throws XmlPullParserException, IOException {
         try {
@@ -21,10 +22,12 @@ public class newsFeedParser {
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
             parser.setInput(in, null);
             parser.nextTag();
+            parser.nextTag();
             readFeed(parser);
             return currentNewsItems;
-        } finally {
-            in.close();
+        } catch (Exception e){
+            Log.d(" ", e.getMessage());
+            return null;
         }
     }
 
@@ -33,7 +36,9 @@ public class newsFeedParser {
     Run readItem() to fill in title, description and link.
      */
     private static ArrayList<NewsItem> readFeed(XmlPullParser parser) throws XmlPullParserException, IOException {
-        parser.require(XmlPullParser.START_TAG, ns, "");
+        Log.d(" ", parser.getName());
+//        parser.require(XmlPullParser.START_TAG, ns, "rss");
+        parser.require(XmlPullParser.START_TAG, ns, "channel");
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
