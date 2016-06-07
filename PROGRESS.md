@@ -46,5 +46,9 @@
 ### Day 6
 - als  de fake call wordt geïnitialiseerd moet het screen niet gelocked worden tijdens de 30 sec wacht tijd. 
 - voor news feed gebruik maken van AynsTask, RSSfeedParser en functies in NewsItem Object. Koppeling moet nog beter! Nadenken over weergave in html string of ArrayList met Items, niet duidelijk nog. 
-- Row_layout file voor news Listview aangemaakt. MIsschien standaard ArrayAdapter gebruiken. 
+- Row_layout file voor news Listview aangemaakt. Misschien standaard ArrayAdapter gebruiken. 
 
+### Day 7
+- It's something... nog maar 1 title van newsItem. Bij het runnen wordt niet de volgende start tag bereikt. 
+- zorgen dat bij scherm draaien er geen request wordt gestuurd, of zet orientatie vast (sta geen landscape toe)
+- clear adapter bij het verlaten van de activity. (finish()?)
