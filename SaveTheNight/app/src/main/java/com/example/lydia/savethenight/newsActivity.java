@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class newsActivity extends AppCompatActivity {
     private static final String URL = "http://feeds.nos.nl/nosjournaal";
-    NewsAdapter myAdapter; //= new NewsAdapter();
+    NewsAdapter myAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +18,22 @@ public class newsActivity extends AppCompatActivity {
         myAsyncTask.execute(URL);
     }
 
+    /*
+    Set data from AsyncTask in ListView
+     */
     protected void setData(ArrayList<NewsItem> currentNews){
         ListView newsLV = (ListView) findViewById(R.id.newsLV);
         myAdapter  = new NewsAdapter(this, currentNews);
-        newsLV.setAdapter(myAdapter);
-        myAdapter.notifyDataSetChanged();
+        if (currentNews!=null) {
+            newsLV.setAdapter(myAdapter);
+            myAdapter.notifyDataSetChanged();
+        }
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        this.finish();
     }
 
     public void onResume()

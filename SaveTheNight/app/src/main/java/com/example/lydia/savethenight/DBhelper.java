@@ -58,6 +58,16 @@ public class DBhelper extends SQLiteOpenHelper {
     }
 
     // CRUD methods
+    public void saveContact(){
 
+    }
+
+    public void saveSMS(){
+
+    }
+
+    public void setBool(){
+
+    }
 
 }
