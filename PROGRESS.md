@@ -52,3 +52,11 @@
 - It's something... nog maar 1 title van newsItem. Bij het runnen wordt niet de volgende start tag bereikt. 
 - zorgen dat bij scherm draaien er geen request wordt gestuurd, of zet orientatie vast (sta geen landscape toe)
 - clear adapter bij het verlaten van de activity. (finish()?)
+
+### Day 8
+-nieuwe structuur voor de vragen: geen object maar meer queries naar de database.
+- adapter voor de questions favourites ListView gemaakt. 
+- invullen van de random vragen via de oncreate en setText op het TextView: TODO maak een onClick, onSwipe voor de random vragen. 
+- mogelijkheid voor sms misschien wel aanwezig: toevoegen aan manifest en dan nummer en text ingeven uit de database. TODO: eerst database helemaal werkend krijgen, denk aan de settings activity. 
+Misschien geen extra activiteit nodig voor  het verzenden. 
+- parsen werkt nog niet.
