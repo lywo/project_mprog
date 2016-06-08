@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <String-array name = "questions">
+    <string-array name = "questions">
         <item>What excites you about (insert city in which you live)?</item>
         <item>If today was the last day of your life, how would you spend it?</item>
         <item>What impact do you want to leave the world?</item>
@@ -24,28 +24,28 @@
         <item>What is your favourite ice cream flavour and why?</item>
         <item>Who was your first crush?</item>
         <item>What are your ideas about true love?</item>
-        <item>What's your favourite colour?</item>
+        <item>What is your favourite colour?</item>
         <item>Describe the most embarrassing moment in your life?</item>
-        <item>What's the habit you're proudest of breaking?</item>
+        <item>What is the habit you are proudest of breaking?</item>
         <item>What was your funniest moment in your life?</item>
         <item>If you ruled the world, what would your change?</item>
-        <item>Who's the person in your life that you admire most, and why?</item>
+        <item>Who is the person in your life that you admire most, and why?</item>
         <item>Do you like spontaneity or do you like routine?</item>
         <item>Tell me about your friends?</item>
-        <item>Is there anything you're really passionate about?</item>
+        <item>Is there anything you are really passionate about?</item>
         <item>Do you believe in love at first sight?</item>
         <item>Can you describe your dream house to me?</item>
         <item>Are there any causes you strongly believe in?</item>
         <item>3 physical features you get complimented on a lot?</item>
         <item>Can you describe your first kiss?</item>
         <item>Give the names of 3 things you dislike most and why?</item>
-        <item>What's the worst injury you've ever had?</item>
+        <item>What is the worst injury you have ever had?</item>
         <item>Do you have any pet names? If yes, how did you get them?</item>
         <item>Do you believe that the cup is half empty or half full?</item>
         <item>Do you remember who taught you to ride a bike?</item>
         <item>Can you describe the craziest thing you have ever done?</item>
         <item>Favourite film star?</item>
-        <item>How do you like to spend New Year's Eve?</item>
+        <item>How do you like to spend New Years Eve?</item>
         <item>Describe your relationship with your parents?</item>
         <item>Favourite day of the week?</item>
         <item>Do you have any bad habits?</item>
@@ -82,7 +82,7 @@
         <item>How do you vent your anger?</item>
         <item>How would you define art?</item>
         <item>What is your astrological sign?</item>
-        <item>What would be a question you'd be afraid to tell the truth on?</item>
+        <item>What would be a question you would be afraid to tell the truth on?</item>
         <item>In your opinion, what makes a great relationship?</item>
         <item>What is your ethnic background?</item>
         <item>Do you save money or spend it?</item>
@@ -102,5 +102,5 @@
         <item>How many kids would you like to have?</item>
         <item>What turns you off the most?</item>
         <item>Did you ever have a crush on a male teacher?</item>
-    </String-array>
+    </string-array>
 </resources>

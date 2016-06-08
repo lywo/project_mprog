@@ -1,8 +1,14 @@
 package com.example.lydia.savethenight;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.content.res.Resources;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Lydia on 3-6-2016.
@@ -12,49 +18,43 @@ public class DBhelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     private static final String TABLE_NAME_QUESTION = "questionData";
     private static final String TABLE_NAME_SETTINGS = "settingsData";
-    public static final String COLUMN_ITEM_ID = "id";
     public static final String COLUMN_ITEM_QUESTION = "question";
     public static final String COLUMN_ITEM_STATUS = "status";
     public static final String COLUMN_ITEM_NAME = "name";
     public static final String COLUMN_ITEM_NUMBER =  "number";
     public static final String COLUMN_ITEM_SMS = "sms";
-
+    public static final String CREATE_QUESTION_TABLE = "CREATE TABLE " + TABLE_NAME_QUESTION + "("
+            + "_id INTEGER PRIMARY KEY AUTOINCREMENT"
+            + " , " + COLUMN_ITEM_QUESTION + " TEXT"+ " , " + COLUMN_ITEM_STATUS
+            + " INTEGER " + ")";
+    public static final  String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_NAME_SETTINGS + "("
+            + COLUMN_ITEM_NAME + " TEXT" + " , " + COLUMN_ITEM_NUMBER +  " TEXT" + " , "
+            + COLUMN_ITEM_SMS + " TEXT" + ")";
+    public static String[] questions = null;
     private final Context context;
 
     // constructor
     public DBhelper(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
+        questions = context.getResources().getStringArray(R.array.questions);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        // create Question table
-        String CREATE_QUESTION_TABLE = "CREATE TABLE " + TABLE_NAME_QUESTION + "(" + COLUMN_ITEM_ID
-                + " INTEGER" + " , " + COLUMN_ITEM_QUESTION + " TEXT"+ " , " + COLUMN_ITEM_STATUS
-                + " INTEGER " + ")";
+        for (String question : questions) {
+            db.execSQL("INSERT INTO questionData (question, status) VALUES " + question + " , 0");
+        }
         db.execSQL(CREATE_QUESTION_TABLE);
-
-        // create Settings table
-        String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_NAME_SETTINGS + "(" + COLUMN_ITEM_NAME
-                + " TEXT" + " , " + COLUMN_ITEM_NUMBER +  " TEXT" + " , " + COLUMN_ITEM_SMS
-                + " TEXT" + ")";
         db.execSQL(CREATE_SETTINGS_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // create Question table
-        String CREATE_QUESTION_TABLE = "CREATE TABLE " + TABLE_NAME_QUESTION + "(" + COLUMN_ITEM_ID
-                + " INTEGER" + " , " + COLUMN_ITEM_QUESTION + " TEXT"+ " , " + COLUMN_ITEM_STATUS
-                + " INTEGER " + ")";
-        db.execSQL(CREATE_QUESTION_TABLE);
-
-        // create Settings table
-        String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_NAME_SETTINGS + "(" + COLUMN_ITEM_NAME
-                + " TEXT" + " , " + COLUMN_ITEM_NUMBER +  " TEXT" + " , " + COLUMN_ITEM_SMS
-                + " TEXT" + ")";
-        db.execSQL(CREATE_SETTINGS_TABLE);
+        // drop tables
+        db.execSQL("DROP TABLE IF EXISTS" + TABLE_NAME_QUESTION);
+        db.execSQL("DROP TABLE IF EXISTS" + TABLE_NAME_SETTINGS);
+        onCreate(db);
     }
 
     // CRUD methods
@@ -66,8 +66,52 @@ public class DBhelper extends SQLiteOpenHelper {
 
     }
 
-    public void setBool(){
-
+    public void setBoolTrue(String newFavouriteQuestion){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor  = db.rawQuery("UPDATE" + TABLE_NAME_QUESTION + " SET " + COLUMN_ITEM_STATUS
+                + " = 1 WHERE " + COLUMN_ITEM_QUESTION + " = " + newFavouriteQuestion, null);
     }
+
+    public ArrayList<String> getFavouriteQuestions(){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor  = db.rawQuery("SELECT" + COLUMN_ITEM_QUESTION + "FROM " + TABLE_NAME_QUESTION
+                + "WHERE " + COLUMN_ITEM_STATUS + " = 0", null);
+        ArrayList<String> result = null;
+        cursor.moveToFirst();
+        while(!cursor.isAfterLast()) {
+            String favouriteQuestion = cursor.getString(cursor.getColumnIndex("content"));
+            result.add(favouriteQuestion);
+            cursor.moveToNext();
+        }
+        cursor.close();
+        db.close();
+
+        return result;
+    }
+
+//    /*
+//    Method to get all hardcoded questions and extra information
+//    Filling the questions table
+//     */
+//    public void addQuestions(ArrayList<Question> questionObjects){
+//        ContentValues values = new ContentValues();
+//        // collect al the Questions
+//        for (int i = 0, n = questionObjects.size(); i < n ; i++){
+//            // get values
+//            Integer id = questionObjects.get(i).getId();
+//            String question = questionObjects.get(i).getQuestion();
+//            Boolean favouriteStatus = questionObjects.get(i).getFavouriteStatus();
+//
+//            // export values
+//            values.put(COLUMN_ITEM_ID, id);
+//            values.put(COLUMN_ITEM_QUESTION, question);
+//            values.put(COLUMN_ITEM_STATUS, favouriteStatus);
+//
+//            // fill database
+//            SQLiteDatabase db = this.getWritableDatabase();
+//            db.insert(TABLE_NAME_QUESTION, null, values);
+//            db.close();
+//        }
+//    }
 
 }

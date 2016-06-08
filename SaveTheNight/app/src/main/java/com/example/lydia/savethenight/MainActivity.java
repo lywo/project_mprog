@@ -10,8 +10,6 @@ import android.view.View;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<Question> questionObjects = new ArrayList<>();
-    Resources res = getResources();
     String[] questions;
 
     @Override
@@ -20,14 +18,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final DBhelper myDBhelper = new DBhelper(this);
 
-        // if empty, put questions in questionobjects
-        if(questions.length == 0){
-            questions = res.getStringArray(R.array.questions);
-            for (int i = 0, n = questions.length; i < n; i++){
-                Question newQuestion = new Question(questions[i], i + 1, false);
-                questionObjects.add(newQuestion);
-            }
-        }
+//        // if empty, put questions in questionobjects
+//        if(questions == null){
+//            Resources res =   getResources();
+//            questions = res.getStringArray(R.array.questions);
+//            for (int i = 0, n = questions.length; i < n; i++){
+//                Question newQuestion = new Question(questions[i], i + 1, false);
+//                questionObjects.add(newQuestion);
+//            }
+//            myDBhelper.addQuestions(questionObjects);
+//        }
     }
 
     protected void phoneClicked(View view){
@@ -52,7 +52,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void questionClicked(View view){
+
+        Bundle b=new Bundle();
+        b.putStringArray("questionsArray", questions);
         Intent questionIntent = new Intent(this, QuestionActivity.class);
+        questionIntent.putExtras(b);
         startActivity(questionIntent);
     }
 

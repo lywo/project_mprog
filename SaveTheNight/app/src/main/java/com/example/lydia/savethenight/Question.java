@@ -17,12 +17,12 @@ public class Question {
     }
 
     // methods
-    public String getQuestion(){return question;}
-    public void setQuestion(String question){this.question = question;}
-
-    public Integer getId(){return id;}
-    public void setId(Integer id){this.id = id;}
-
-    public Boolean getFavouriteStatus(){return favourite;}
-    public void setFavouriteStatus(Boolean favouriteStatus){this.favourite = favouriteStatus;}
+//    public String getQuestion(){return question;}
+//    public void setQuestion(String question){this.question = question;}
+//
+//    public Integer getId(){return id;}
+//    public void setId(Integer id){this.id = id;}
+//
+//    public Boolean getFavouriteStatus(){return favourite;}
+//    public void setFavouriteStatus(Boolean favouriteStatus){this.favourite = favouriteStatus;}
 }

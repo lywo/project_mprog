@@ -25,7 +25,7 @@ public class NewsAdapter extends ArrayAdapter {
         LayoutInflater inflater = LayoutInflater.from(getContext());
         view = inflater.inflate(R.layout.row_layout_news, parent, false);
 
-        // get WeatherData and content strings
+        // get newsData and content strings
         NewsItem currentNewsItem= (NewsItem) getItem(position);
         TextView newsTitleTV = (TextView) view.findViewById(R.id.newsTitleTV);
         TextView newsLinkTV = (TextView) view.findViewById(R.id.newsLinkTV);
