@@ -10,8 +10,12 @@ public class PhoneActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone);
+
+        // play ringtone
     }
 
-    protected void pickUpPhone(View view){}
+    protected void pickUpPhone(View view){
+        // stop playing ringtone
+    }
 
 }

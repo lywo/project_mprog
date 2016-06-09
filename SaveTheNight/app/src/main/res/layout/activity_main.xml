@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/smsIV"
         android:src="@mipmap/sendsms"
-        android:onClick="smsClicked"
+        android:onClick="SMSClicked"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
