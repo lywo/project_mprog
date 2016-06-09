@@ -60,3 +60,10 @@
 - mogelijkheid voor sms misschien wel aanwezig: toevoegen aan manifest en dan nummer en text ingeven uit de database. TODO: eerst database helemaal werkend krijgen, denk aan de settings activity. 
 Misschien geen extra activiteit nodig voor  het verzenden. 
 - parsen werkt nog niet.
+
+### Day 9
+- database voor questions is helemaal functioneel. 
+- TODO: meteen updaten als ListView wordt gevuld met favourite questions en het verwijderen van favourite questions uit de lijst moet mogelijk zijn. (misschien on long click, of on swipe (met een pop-up)
+- next button voor de volgende vraag. 
+- fake call wacht tijd geïmplementeerd. Ook wordt de screen niet meer gelocked (behalve voor force door een button)
+- bezig geweest met invoeren van contact gegevens en het opslaan van de sms. nog niet werkend. Wel zijn alle functies die nodig zijn nu in de database gestopt. Nog niet helemaal werkend. 
