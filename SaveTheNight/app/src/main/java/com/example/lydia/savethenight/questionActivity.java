@@ -18,6 +18,7 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
         TextView currentQuestion = (TextView) findViewById(R.id.questionTV);
+        myQuestionDBHelper = new DBhelper(this);
         String [] questions = getIntent().getStringArrayExtra("questionsArray");
         ArrayList<String> favouriteQuestions = myQuestionDBHelper.getFavouriteQuestions();
         myQuestionAdapter =  new QuestionAdapter(this, favouriteQuestions);

@@ -48,7 +48,7 @@ public class DownloadNewsAsyncTask extends AsyncTask<String, Void, String> {
         InputStream inputStream = null;
 
         // Instantiate the parser
-        NewsFeedParser myXMLparser = new NewsFeedParser();
+        FeedParser myXMLparser = new FeedParser();
 
         try {
             inputStream = downloadUrl(newsURL);

@@ -68,20 +68,22 @@ public class DBhelper extends SQLiteOpenHelper {
 
     public void setBoolTrue(String newFavouriteQuestion){
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor  = db.rawQuery("UPDATE" + TABLE_NAME_QUESTION + " SET " + COLUMN_ITEM_STATUS
-                + " = 1 WHERE " + COLUMN_ITEM_QUESTION + " = " + newFavouriteQuestion, null);
+        db.rawQuery("UPDATE" + TABLE_NAME_QUESTION + " SET " + COLUMN_ITEM_STATUS + " = 1 WHERE "
+                + COLUMN_ITEM_QUESTION + " = " + newFavouriteQuestion, null);
     }
 
     public ArrayList<String> getFavouriteQuestions(){
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor  = db.rawQuery("SELECT" + COLUMN_ITEM_QUESTION + "FROM " + TABLE_NAME_QUESTION
-                + "WHERE " + COLUMN_ITEM_STATUS + " = 0", null);
-        ArrayList<String> result = null;
-        cursor.moveToFirst();
-        while(!cursor.isAfterLast()) {
-            String favouriteQuestion = cursor.getString(cursor.getColumnIndex("content"));
-            result.add(favouriteQuestion);
-            cursor.moveToNext();
+        Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_QUESTION + " FROM " + TABLE_NAME_QUESTION
+                + " WHERE " + COLUMN_ITEM_STATUS + " = 0", null);
+        ArrayList<String> result = new ArrayList<>();
+        if (cursor != null) {
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast() == false) {
+                String favouriteQuestion = cursor.getString(cursor.getColumnIndex("content"));
+                result.add(favouriteQuestion);
+                cursor.moveToNext();
+            }
         }
         cursor.close();
         db.close();
