@@ -74,5 +74,11 @@ tools:context=".SettingsActivity">
     android:layout_alignEnd="@+id/linearLayout"
     android:onClick="addQuestion"/>
 
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:onClick="nextQuestion"/>
+
 
 </RelativeLayout>

@@ -6,30 +6,19 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    String[] questions;
+    ArrayList<String> questions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final DBhelper myDBhelper = new DBhelper(this);
-
-//        // if empty, put questions in questionobjects
-//        if(questions == null){
-//            Resources res =   getResources();
-//            questions = res.getStringArray(R.array.questions);
-//            for (int i = 0, n = questions.length; i < n; i++){
-//                Question newQuestion = new Question(questions[i], i + 1, false);
-//                questionObjects.add(newQuestion);
-//            }
-//            myDBhelper.addQuestions(questionObjects);
-//        }
     }
 
     protected void phoneClicked(View view){
@@ -55,17 +44,23 @@ public class MainActivity extends AppCompatActivity {
         startActivity(smsIntent);
 
         // get sms message and phonenumber from database
-        String smsMessage = "test";
-        String phoneNumber = "0638390344";
+        DBhelper settingsDBhelper = new DBhelper(this);
+        String smsMessage= settingsDBhelper.getSMS();
+        String phoneNumber = settingsDBhelper.getNumber();
 
+        // send sms
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage(phoneNumber, null, smsMessage, null, null);
     }
 
     protected void questionClicked(View view){
-
         Bundle b=new Bundle();
-        b.putStringArray("questionsArray", questions);
+        DBhelper questionHelper = new DBhelper(this);
+        Log.d("", "debug1");
+        questions = questionHelper.loadQuestions();
+        Log.d("",  "debug2");
+
+        b.putStringArrayList("questionsArrayList", questions);
         Intent questionIntent = new Intent(this, QuestionActivity.class);
         questionIntent.putExtras(b);
         startActivity(questionIntent);

@@ -20,13 +20,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose contact"
+        android:hint="Chosen contact"
         android:textSize="22sp"
         android:layout_below="@+id/titleTV"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="39dp"
         android:id="@+id/contactTV"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose contact"
+        android:id="@+id/goToContactsBT"
+        android:layout_below="@+id/contactTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="goToContacts"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,9 +43,10 @@
         android:id="@+id/smsTV"
         android:text="Type your sms"
         android:textSize="22sp"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/contactTV"
-        android:layout_alignEnd="@+id/contactTV" />
+        android:layout_below="@+id/goToContactsBT"
+        android:layout_alignRight="@+id/goToContactsBT"
+        android:layout_alignEnd="@+id/goToContactsBT"
+        android:layout_marginTop="72dp" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -6,6 +6,7 @@ import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,11 +43,14 @@ public class DBhelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        for (String question : questions) {
-            db.execSQL("INSERT INTO questionData (question, status) VALUES " + question + " , 0");
-        }
         db.execSQL(CREATE_QUESTION_TABLE);
         db.execSQL(CREATE_SETTINGS_TABLE);
+
+        for (String question : questions) {
+            db.execSQL("INSERT INTO questionData (question, status) VALUES ('" + question + "', 0)");
+        }
+
+        db.execSQL("INSERT INTO settingsData (name, number, sms) VALUES ('', '', '')");
     }
 
     @Override
@@ -58,29 +62,79 @@ public class DBhelper extends SQLiteOpenHelper {
     }
 
     // CRUD methods
-    public void saveContact(){
-
+    public void saveContact(String name, String phoneNumber){
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("UPDATE settingsData SET name = '" + name + "', number = '" + phoneNumber + "'");
     }
 
-    public void saveSMS(){
+    public String getName(){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_NAME + " FROM " + TABLE_NAME_SETTINGS, null);
+        String result=null;
+        if (cursor != null) {
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                result = cursor.getString(cursor.getColumnIndex("name"));
+                cursor.moveToNext();
+            }
+        }
+        cursor.close();
+        db.close();
+        return result;
+    }
 
+    public String getNumber(){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_NUMBER + " FROM " + TABLE_NAME_SETTINGS, null);
+        String result=null;
+        if (cursor != null) {
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                result = cursor.getString(cursor.getColumnIndex("number"));
+                cursor.moveToNext();
+            }
+        }
+        cursor.close();
+        db.close();
+        return result;
+    }
+
+    public void saveSMS(String smsText){
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("UPDATE settingsData SET sms = '" + smsText + "'");
+    }
+
+    public String getSMS(){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_SMS + " FROM " + TABLE_NAME_SETTINGS, null);
+        String result=null;
+        if (cursor != null) {
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                result = cursor.getString(cursor.getColumnIndex("sms"));
+                cursor.moveToNext();
+            }
+        }
+        cursor.close();
+        db.close();
+        return result;
     }
 
     public void setBoolTrue(String newFavouriteQuestion){
         SQLiteDatabase db = getReadableDatabase();
-        db.rawQuery("UPDATE" + TABLE_NAME_QUESTION + " SET " + COLUMN_ITEM_STATUS + " = 1 WHERE "
-                + COLUMN_ITEM_QUESTION + " = " + newFavouriteQuestion, null);
+        db.execSQL("UPDATE " + TABLE_NAME_QUESTION + " SET " + COLUMN_ITEM_STATUS + " = 1 WHERE "
+                + COLUMN_ITEM_QUESTION + " = '" + newFavouriteQuestion + "'");
     }
 
     public ArrayList<String> getFavouriteQuestions(){
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_QUESTION + " FROM " + TABLE_NAME_QUESTION
-                + " WHERE " + COLUMN_ITEM_STATUS + " = 0", null);
+                + " WHERE " + COLUMN_ITEM_STATUS + " = 1", null);
         ArrayList<String> result = new ArrayList<>();
         if (cursor != null) {
             cursor.moveToFirst();
-            while (!cursor.isAfterLast() == false) {
-                String favouriteQuestion = cursor.getString(cursor.getColumnIndex("content"));
+            while (!cursor.isAfterLast()) {
+                String favouriteQuestion = cursor.getString(cursor.getColumnIndex("question"));
                 result.add(favouriteQuestion);
                 cursor.moveToNext();
             }
@@ -91,29 +145,22 @@ public class DBhelper extends SQLiteOpenHelper {
         return result;
     }
 
-//    /*
-//    Method to get all hardcoded questions and extra information
-//    Filling the questions table
-//     */
-//    public void addQuestions(ArrayList<Question> questionObjects){
-//        ContentValues values = new ContentValues();
-//        // collect al the Questions
-//        for (int i = 0, n = questionObjects.size(); i < n ; i++){
-//            // get values
-//            Integer id = questionObjects.get(i).getId();
-//            String question = questionObjects.get(i).getQuestion();
-//            Boolean favouriteStatus = questionObjects.get(i).getFavouriteStatus();
-//
-//            // export values
-//            values.put(COLUMN_ITEM_ID, id);
-//            values.put(COLUMN_ITEM_QUESTION, question);
-//            values.put(COLUMN_ITEM_STATUS, favouriteStatus);
-//
-//            // fill database
-//            SQLiteDatabase db = this.getWritableDatabase();
-//            db.insert(TABLE_NAME_QUESTION, null, values);
-//            db.close();
-//        }
-//    }
+    ArrayList<String> loadQuestions (){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_QUESTION + " FROM " + TABLE_NAME_QUESTION, null);
+        ArrayList<String> result = new ArrayList<>();
+        if (cursor != null) {
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                String question = cursor.getString(cursor.getColumnIndex("question"));
+                result.add(question);
+                cursor.moveToNext();
+            }
+        }
+        assert cursor != null;
+        cursor.close();
+        db.close();
 
+        return result;
+    }
 }
