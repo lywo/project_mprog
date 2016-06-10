@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 public class SettingsActivity extends AppCompatActivity {
     DBhelper settingsHelper;
+    static final int PICK_CONTACT=1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class SettingsActivity extends AppCompatActivity {
         contactNameTV.setText("Saved contact = " + contactName);
     }
 
-    protected void goToContacts(){
+    protected void goToContacts(View view){
         Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
         startActivityForResult(intent, PICK_CONTACT);
     }
@@ -48,7 +49,7 @@ public class SettingsActivity extends AppCompatActivity {
             getContactInfo(intent);
             // Your class variables now have the data, so do something with it.
         }
-    }//onActivityResult
+    }
 
     protected void getContactInfo(Intent intent)
     {

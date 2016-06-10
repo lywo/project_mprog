@@ -45,8 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
         // get sms message and phonenumber from database
         DBhelper settingsDBhelper = new DBhelper(this);
-        String smsMessage= settingsDBhelper.getSMS();
-        String phoneNumber = settingsDBhelper.getNumber();
+//        String smsMessage= settingsDBhelper.getSMS();
+//        String phoneNumber = settingsDBhelper.getNumber();
+        String smsMessage = "...";
+        String phoneNumber = "0638390344";
 
         // send sms
         SmsManager smsManager = SmsManager.getDefault();
