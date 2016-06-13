@@ -1,6 +1,7 @@
 package com.example.lydia.savethenight;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -30,7 +31,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     protected void goToContacts(View view){
-        grantUriPermission();
+        //this.revokeUriPermission();
         Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
         startActivityForResult(intent, PICK_CONTACT);
     }
