@@ -15,10 +15,17 @@ Het laten sturen van een ready to go emergency sms naar vantevoren gekozen numme
 Het ophalen van lokaal news voor een interessant gespreksonderwerp. 
 Een voorstel voor een interessante eerste date vraag om je date een beetje los te krijgen. 
 
+Er wordt gebruik gemaakt van een dataset met news die live opgehaald wordt, een dataset met date vragen die is gehardcoded, een dataset met telefoonnummers die je binnenhaalt vanuit de cantactpersonen app van de telefoon. In een SQLiteDatabase worden 2 tabellen gemaakt met alle info: 1 voor de instellingen van sms (contacpersoon naam, nummer en sms tekst).
+
+Voor het ophalen van het nieuws wordt de **NOS nieuws RSS feed** gebruikt.
+
+
+Er is een start scherm waarin keuze wordt gemaakt tussen  de hulp opties (icons). 3 van de 4 hulp opties hebben ook ieder een eigen scherm. Alleen de emergency sms heeft geen eigen view. Terug gaan is altijd mogelijk via back button. Bij het afsluiten van de app komt de gebruiker weer bij het begin scherm. Bij de instellingen misschien nog een uitstap naar de contacten app. 
+
 
 
 ## Design
-Main scherm
+Start scherm
 
 ![](./doc/Screen-1-resize.png)
 
@@ -42,19 +49,6 @@ Questions scherm
 
 ![](./doc/questions-resize.png)
 
-
-
-- *Welke datasets en data sources zijn er nodig en hoe wordt de data aangepast naar een goed format voor de app?*  
-Dataset met news, een dataset met date vragen, een dataset met telefoonnummers die je binnenhaalt vanaf je eigen telefoon. In een SQLiteDatabase worden 2 tabellen gemaakt met alle info. 
-
-
-
-- *Welke losse onderdelen van de applicatie kunnen worden onderscheiden en hoe moeten deze samenwerken?* Begin scherm waarin keuze wordt gemaakt tussen  de hulp opties (icons). 3 van de 4 hulp opties hebben ook ieder een eigen scherm. Alleen de emergency sms moet  via de sms app weer terug komen bij de 4 hulp opties Scherm. Terug gaan is altijd mogelijk via back button. Bij het afsluiten van de app komt de gebruiker weer bij het begin scherm. Bij de instellingen misschien nog een uitstap naar de contacten app. 
-
-
-
-- *Welke externe onderdelen (API's) zijn nodig om de features mogelijk te maken?*
-**NOS nieuws RSS feed** Hiermee wordt het recente Nederlandse nieuws opgehaald. 
 
 
 - *Noem technische problemen of limitaties optreden tijdens het ontwerpen van de applicatie.Welke oplossingen zijn er om dit op te lossen.*
