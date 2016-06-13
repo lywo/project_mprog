@@ -4,8 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -25,9 +27,9 @@ public class QuestionActivity extends AppCompatActivity {
 
         // get favourite questions and fill ListView
         myQuestionDBHelper = new DBhelper(this);
-        ArrayList<String> favouriteQuestions = myQuestionDBHelper.getFavouriteQuestions();
+        final ArrayList<String> favouriteQuestions = myQuestionDBHelper.getFavouriteQuestions();
         myQuestionAdapter =  new QuestionAdapter(this, favouriteQuestions);
-        ListView favQuestionLV = (ListView) findViewById(R.id.favouriteQuestionsLV);
+        final ListView favQuestionLV = (ListView) findViewById(R.id.favouriteQuestionsLV);
         favQuestionLV.setAdapter(myQuestionAdapter);
 
         // get all questions and fill TextView
@@ -37,6 +39,23 @@ public class QuestionActivity extends AppCompatActivity {
         int randomNum=getRandomInt();
         String selectedQuestion = questions.get(randomNum).toString();
         currentQuestion.setText(selectedQuestion);
+
+        favQuestionLV.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                // Toast to let user know item was deleted
+                Toast.makeText(getApplicationContext(), "Item deleted", Toast.LENGTH_SHORT).show();
+                String oldQuestion = favQuestionLV.getItemAtPosition(position).toString();
+
+                // Delete old weather info
+                myQuestionDBHelper.setBoolFalse(oldQuestion);
+
+                // Update ListView
+                myQuestionAdapter.notifyDataSetChanged();
+                return true;
+            }
+        });
 
     }
 

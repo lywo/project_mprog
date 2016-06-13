@@ -46,7 +46,8 @@ tools:context=".SettingsActivity">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/questionTitleTV"
-            android:text="Your Favourite Questions: "
+            android:text="Your Favourite Questions "
+            android:textStyle="bold"
             android:layout_gravity="center"
             android:textSize="22sp"/>
 

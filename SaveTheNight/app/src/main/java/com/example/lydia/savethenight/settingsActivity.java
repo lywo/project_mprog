@@ -15,8 +15,12 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -38,7 +42,40 @@ public class SettingsActivity extends AppCompatActivity {
         settingsHelper = new DBhelper(this);
         TextView contactNameTV = (TextView) findViewById(R.id.contactTV);
         String contactName = settingsHelper.getName();
+        String savedSMS = settingsHelper.getSMS();
         contactNameTV.setText("Saved contact is " + contactName);
+        TextView savedSMSText = (TextView) findViewById(R.id.savedSMSTV);
+        if(savedSMS.length() != 0){
+            savedSMSText.setText("Your saved sms: " + savedSMS);
+        }
+
+        EditText textSMS = (EditText) findViewById(R.id.smsET);
+        final Button saveSMSBT = (Button) findViewById(R.id.saveSMSBT);
+        saveSMSBT.setEnabled(false);
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+        assert textSMS != null;
+        textSMS.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(s.toString().trim().length()==0){
+                    saveSMSBT.setEnabled(false);
+                } else {
+                    saveSMSBT.setEnabled(true);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
     }
 
     protected void goToContacts(View view){
@@ -92,6 +129,18 @@ public class SettingsActivity extends AppCompatActivity {
         String textSMS = smsET.getText().toString();
         settingsHelper = new DBhelper(this);
         settingsHelper.saveSMS(textSMS);
+        smsET.setText("");
+
+        // Show new sms in TextView
+        String savedSMS = settingsHelper.getSMS();
+        TextView savedSMSText = (TextView) findViewById(R.id.savedSMSTV);
+        if(savedSMS.length() != 0){
+            savedSMSText.setText("Your saved sms: " + savedSMS);
+        }
+
+        // hide keyboard when sms is saved
+        InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent)

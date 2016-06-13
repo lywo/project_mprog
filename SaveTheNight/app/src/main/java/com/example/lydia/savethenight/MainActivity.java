@@ -102,19 +102,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-//        if (savedInstanceState != null) {
-//            weather = (ArrayList<WeatherData>) savedInstanceState.getSerializable("d");
-//            WeatherAdapter adapter = new WeatherAdapter(this, weather);
-//            ListView listView = (ListView) findViewById(R.id.weatherDataLV);
-//            assert listView != null;
-//            listView.setAdapter(adapter);
-//            adapter.notifyDataSetChanged();
-//        }
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        //outState.putSerializable("d", weather);
     }
 }

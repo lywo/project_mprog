@@ -126,6 +126,12 @@ public class DBhelper extends SQLiteOpenHelper {
                 + COLUMN_ITEM_QUESTION + " = '" + newFavouriteQuestion + "'");
     }
 
+    public void setBoolFalse (String oldFavouriteQuestion){
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("UPDATE " + TABLE_NAME_QUESTION + " SET " + COLUMN_ITEM_STATUS + " = 0 WHERE "
+                + COLUMN_ITEM_QUESTION + " = '" + oldFavouriteQuestion + "'");
+    }
+
     public ArrayList<String> getFavouriteQuestions(){
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_QUESTION + " FROM " + TABLE_NAME_QUESTION
