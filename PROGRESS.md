@@ -67,3 +67,21 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 - next button voor de volgende vraag. 
 - fake call wacht tijd geïmplementeerd. Ook wordt de screen niet meer gelocked (behalve voor force door een button)
 - bezig geweest met invoeren van contact gegevens en het opslaan van de sms. nog niet werkend. Wel zijn alle functies die nodig zijn nu in de database gestopt. Nog niet helemaal werkend. 
+
+### Day 10 
+- presentation day
+- contact toegevoegd
+- mogelijk om naar contacten te gaan
+
+### Day 11
+- contacten worden uitgelezen
+- geselecteerd contact wordt correct opgeslagen in DB
+- permission check geïmplementeerd 
+- mogelijk om opnieuw een contact te selecteren te selecteren. 
+- sms activiteit verwijdert, vervangen door een Toast
+- bij fake call binnenhalen van ringtone
+- rekening houden met silent mode, vibrate mode of ringtone
+- TODO: on backbutton press, ook stoppen met de ringtone! 
+- button om sms op te slaan is enabled = false wanneer er niets is ingevuld.
+- TextView toegevoegd om opgeslagen sms weer te geven
+- hide keyboard als het sms is opgeslagen. 
