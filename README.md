@@ -20,12 +20,12 @@ Een voorstel voor een interessante eerste date vraag om je date een beetje los t
 ## Design
 Main scherm
 
-![](./doc/screen-1-resize.png)
+![](./doc/Screen-1-resize.png)
 
 
 Settings scherm
 
-![](./doc/settings-resize.png)
+![](./doc/Settings-resize.png)
 
 
 Nep incoming call scherm
@@ -88,4 +88,4 @@ Een app vanuit een begin scherm
 
 3) een standaard android incoming call screenshot displayed met bijpassen geluid.  
 
-4) een geluidje van een incoming sms afspeelt. 
+4) extern een sms versturen 
