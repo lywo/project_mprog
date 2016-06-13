@@ -6,38 +6,31 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
-
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:screenOrientation="portrait">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PhoneActivity" />
-        <activity android:name=".QuestionActivity" />
-        <activity android:name=".newsActivity" />
-        <activity android:name=".SmsActivity" />
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".PhoneActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".QuestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".newsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SettingsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
     </application>
-
-    <provider
-        android:name="android.support.v4.content.FileProvider"
-        android:authorities="com.android.provider.DataSharing"
-        android:exported="false"
-        android:grantUriPermissions="true">
-
-        <meta-data
-            android:name="android.support.FILE_PROVIDER_PATHS"
-            android:resource="@xml/paths"/>
-
-    </provider>
 
 </manifest>

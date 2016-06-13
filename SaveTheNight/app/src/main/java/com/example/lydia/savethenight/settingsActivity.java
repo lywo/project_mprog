@@ -1,24 +1,35 @@
 package com.example.lydia.savethenight;
 
+import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.provider.ContactsContract;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class SettingsActivity extends AppCompatActivity {
     DBhelper settingsHelper;
     static final int PICK_CONTACT=1;
+    final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +38,53 @@ public class SettingsActivity extends AppCompatActivity {
         settingsHelper = new DBhelper(this);
         TextView contactNameTV = (TextView) findViewById(R.id.contactTV);
         String contactName = settingsHelper.getName();
-        contactNameTV.setText("Saved contact = " + contactName);
+        contactNameTV.setText("Saved contact is " + contactName);
     }
 
     protected void goToContacts(View view){
-        //this.revokeUriPermission();
-        Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
-        startActivityForResult(intent, PICK_CONTACT);
+        // permission check
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) !=
+                PackageManager.PERMISSION_GRANTED){
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.READ_CONTACTS)) {
+                AlertDialog.Builder AlertContact  = new AlertDialog.Builder(this);
+                AlertContact.setMessage("Permission to read Contacts is required to send SMS");
+                AlertContact.setTitle("Save the night");
+                AlertContact.setPositiveButton("OK", null);
+                AlertContact.setCancelable(true);
+                AlertContact.create().show();
+                AlertContact.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+            } else {
+                // request permission
+                ActivityCompat.requestPermissions(this, new String[]{
+                        Manifest.permission.READ_CONTACTS},MY_PERMISSIONS_REQUEST_READ_CONTACTS);
+            }
+        }
+        else{
+            Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+            startActivityForResult(intent, PICK_CONTACT);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSIONS_REQUEST_READ_CONTACTS: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // Do the contacts-related task you need to do.
+                    Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+                    startActivityForResult(intent, PICK_CONTACT);
+
+                } else { // request array = 0 when request is denied
+                   // TODO Disable the functionality that depends on this permission.
+                }
+                return;
+            }
+        }
     }
 
     protected void saveSMS(View view){
@@ -45,11 +96,9 @@ public class SettingsActivity extends AppCompatActivity {
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent)
     {
-
         if (requestCode == PICK_CONTACT)
         {
             getContactInfo(intent);
-            // Your class variables now have the data, so do something with it.
         }
     }
 
@@ -81,6 +130,9 @@ public class SettingsActivity extends AppCompatActivity {
                 phones.close();
             }
         }
+
+        TextView contactNameTV = (TextView) findViewById(R.id.contactTV);
+        contactNameTV.setText("Saved contact is " + name);
         contactDBhelper.saveContact(name, phoneNumber);
         cursor.close();
     }
