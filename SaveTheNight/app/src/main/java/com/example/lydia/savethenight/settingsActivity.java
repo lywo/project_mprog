@@ -30,6 +30,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     protected void goToContacts(View view){
+        grantUriPermission();
         Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
         startActivityForResult(intent, PICK_CONTACT);
     }
