@@ -51,7 +51,7 @@ Questions scherm
 
 
 
-- *Noem technische problemen of limitaties optreden tijdens het ontwerpen van de applicatie.Welke oplossingen zijn er om dit op te lossen.*
+- *Technische problemen of limitaties optreden tijdens het ontwerpen van de applicatie.*
 Als het niet lukt om GPS te gebruiken of om lokaal nieuws op te halen, dit een standaard ingegeven locatie of standaard website front page zijn (via instellingen) en dan wordt altijd dezelfde (geupdate) query uitgevoerd. 
 Als het niet lukt om een echte call uit te voeren via GMAIL VOICE kan er ook een plaatje full screen worden weergegeven die lijkt op een incoming call screen en deze wordt vergezeld met een ringtone. Of eventueel een animatie, en geen stilstaande afbeelding. 
 Als het niet lukt om een echte sms te sturen, moet dit ook worden gefacked met behulp van een afbeelding en een geluidje. 
