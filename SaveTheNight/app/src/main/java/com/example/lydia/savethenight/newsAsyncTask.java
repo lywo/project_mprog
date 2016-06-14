@@ -80,40 +80,48 @@ public class newsAsyncTask extends AsyncTask<String, Integer, String> {
                         if (XmlPullParser.START_TAG == event && name.equalsIgnoreCase(KEY_ITEM)) {
                             Log.d("making new newsitem", "making a new newsitem" + name);
                             newsItem = new NewsItem(null, null, null);
-                            event = xpp.next();
-                            name = xpp.getName();
+                            event = xpp.nextTag();
+                                name = xpp.getName();
+                                Log.d("name after item", "Name: " + event);
 
-                            assert name != null;
-                            while (!(event == XmlPullParser.END_TAG && name.equals(KEY_DESCRIPTION))) {
-                                Log.d("in item", "looping in item" + name);
-                                if (name != null) {
-                                    switch (name) {
-                                        // start en title
-                                        case KEY_TITLE:
-                                            Log.d("title", "found title");
-                                            event = xpp.next();
-                                            newsItem.setTitle(xpp.getText());
-                                            break;
-                                        case KEY_LINK:
-                                            Log.d("link", "found link");
-                                            event = xpp.next();
-                                            newsItem.setLink(xpp.getText());
-                                            break;
-                                        case KEY_DESCRIPTION:
-                                            Log.d("description", "found description");
-                                            event = xpp.next();
-                                            newsItem.setDescription(xpp.getText());
-                                            currentNewsItems.add(newsItem);
-                                            break;
-                                        default:
-                                            break;
+                                assert name != null;
+                                while (!(event == XmlPullParser.END_TAG && name.equals(KEY_DESCRIPTION))) {
+                                    Log.d("in item", "looping in item" + name);
+                                    if (name != null) {
+                                        switch (name) {
+                                            // start en title
+                                            case KEY_TITLE:
+                                                Log.d("title", "found title");
+                                                event = xpp.next();
+                                                newsItem.setTitle(xpp.getText());
+                                                break;
+                                            case KEY_LINK:
+                                                Log.d("link", "found link");
+                                                event = xpp.next();
+                                                newsItem.setLink(xpp.getText());
+                                                break;
+                                            case KEY_DESCRIPTION:
+                                                Log.d("description", "found description");
+                                                event = xpp.next();
+                                                newsItem.setDescription(xpp.getText());
+                                                Log.d("adding", "Adding items to ArrayList");
+                                                currentNewsItems.add(newsItem);
+                                                break;
+                                            default:
+                                                event = xpp.nextTag();
+                                        }
+                                        //event = xpp.nextTag();
+                                        name = xpp.getName();
                                     }
+                                    else{
+                                        event = xpp.next();
+                                        name= xpp.getName();
+                                    }
+                                    // break;
+                                    // event = xpp.nextTag();
                                 }
-//                                break;
-                                event = xpp.next();
-                            }
                         }
-                        Log.d("next", "go to next event");
+                        Log.d("next", "go to next item");
                         event = xpp.next();
                     }
                 } catch (XmlPullParserException e) {

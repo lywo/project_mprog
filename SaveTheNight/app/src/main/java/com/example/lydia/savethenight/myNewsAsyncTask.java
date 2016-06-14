@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /**
  * Created by Lydia on 14-6-2016.
  */
-public class myNewsAsyncTask extends AsyncTask<String, Integer, String>{
+public class myNewsAsyncTask extends AsyncTask<String, Integer, String> {
     Context context;
     Activity activity;
 
@@ -31,7 +31,7 @@ public class myNewsAsyncTask extends AsyncTask<String, Integer, String>{
     }
 
     @Override
-    protected void onPreExecute(){
+    protected void onPreExecute() {
         Toast.makeText(context, "News is loading from server", Toast.LENGTH_SHORT).show();
     }
 
@@ -46,7 +46,7 @@ public class myNewsAsyncTask extends AsyncTask<String, Integer, String>{
     }
 
     @Override
-    protected void onPostExecute(String result){
+    protected void onPostExecute(String result) {
         ArrayList<NewsItem> currentNewsItems = new ArrayList<>();
         super.onPostExecute(result);
         if (result.length() == 0) {
@@ -57,21 +57,22 @@ public class myNewsAsyncTask extends AsyncTask<String, Integer, String>{
             } else {
                 // convert RSS feed XML result to JSON
                 JSONObject jsonObj = null;
-                try {
-                    jsonObj = XML.toJSONObject(result);
-                } catch (JSONException e) {
-                    Log.e("JSON exception", e.getMessage());
-                    e.printStackTrace();
-                }
-
-                Log.d("XML", result);
-
-                Log.d("JSON", jsonObj.toString());
-
-                // parse JSON
-
+//                try {
+//                    jsonObj = XML.toJSONObject(result);
+//                } catch (JSONException e) {
+//                    Log.e("JSON exception", e.getMessage());
+//                    e.printStackTrace();
+//                }
+//
+//                Log.d("XML", result);
+//
+//                Log.d("JSON", jsonObj.toString());
+//
+//                // parse JSON
+//
+//            }
+//            activity.setData(currentNewsItems);
             }
-            activity.setData(currentNewsItems);
         }
     }
 }

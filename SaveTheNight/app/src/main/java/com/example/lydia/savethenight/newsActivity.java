@@ -14,11 +14,11 @@ public class newsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
-//        newsAsyncTask newsFeedHandler = new newsAsyncTask(newsActivity.this);
-//        newsFeedHandler.execute(URL);
-
-        myNewsAsyncTask newsFeedHandler =  new myNewsAsyncTask(newsActivity.this);
+        newsAsyncTask newsFeedHandler = new newsAsyncTask(newsActivity.this);
         newsFeedHandler.execute(URL);
+
+//        myNewsAsyncTask newsFeedHandler =  new myNewsAsyncTask(newsActivity.this);
+//        newsFeedHandler.execute(URL);
     }
 
     /*
