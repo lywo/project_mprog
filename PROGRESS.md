@@ -70,7 +70,7 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 
 ### Day 10 
 - presentation day
-- contact toegevoegd
+- contact toegevoegd aan telefoon, was een probleem
 - mogelijk om naar contacten te gaan
 
 ### Day 11
@@ -85,3 +85,7 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 - button om sms op te slaan is enabled = false wanneer er niets is ingevuld.
 - TextView toegevoegd om opgeslagen sms weer te geven
 - hide keyboard als het sms is opgeslagen. 
+
+### Day 12
+- werken aan parsen newsfeed. 
+- TODO error handling!!! 
