@@ -1,6 +1,7 @@
 package com.example.lydia.savethenight;
 
 import android.util.Log;
+import android.util.Xml;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,6 +9,10 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import org.json.JSONException;
+import org.json.JSONObject;
+//import org.json.XML;
+
 
 /**
  * Created by Lydia on 3-6-2016.
@@ -70,7 +75,6 @@ public class HTTPRequestHelper {
                 e.printStackTrace();
             }
         }
-        String lengthResult = String.valueOf(result.length());
         return result;
     }
 }
