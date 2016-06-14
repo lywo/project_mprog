@@ -69,7 +69,7 @@ Fake-A-Call at your next meeting, class, or awkward date!"
 
 Hierbij kan een timer worden gezet en een belletje worden nagemaakt met contactenlijst en een nep stem aan de andere kant. 
 
-**My First Date Questions**: Deze app heeft 101 vragen gehardcoded en in een list view gezet. Je kan erdoor heen scrollen en zo je date verder helpen. Ook kan je favorieten opslaan, want het terugzoeken makkelijker maakt. 
+**My First Date Questions**: Deze app heeft 101 vragen gehardcoded en in een list view gezet. Je kan erdoor heen scrollen en zo je date verder helpen. Ook kan je favorieten opslaan, want het terugzoeken makkelijker maakt. Dit lijkt erg op mijn idee, alleen is het 
 
 
 
