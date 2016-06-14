@@ -1,5 +1,7 @@
 package com.example.lydia.savethenight;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -68,6 +70,7 @@ public class HTTPRequestHelper {
                 e.printStackTrace();
             }
         }
+        String lengthResult = String.valueOf(result.length());
         return result;
     }
 }
