@@ -16,9 +16,6 @@ public class newsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news);
         newsAsyncTask newsFeedHandler = new newsAsyncTask(newsActivity.this);
         newsFeedHandler.execute(URL);
-
-//        myNewsAsyncTask newsFeedHandler =  new myNewsAsyncTask(newsActivity.this);
-//        newsFeedHandler.execute(URL);
     }
 
     /*
