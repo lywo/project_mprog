@@ -65,7 +65,7 @@ public class newsAsyncTask extends AsyncTask<String, Integer, String> {
             }
             else {
                 // parse RSS feed
-                NewsItem newsItem = null;
+                NewsItem newsItem;
 
                 try {
                     XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
@@ -78,50 +78,40 @@ public class newsAsyncTask extends AsyncTask<String, Integer, String> {
                         String name = xpp.getName();
 
                         if (XmlPullParser.START_TAG == event && name.equalsIgnoreCase(KEY_ITEM)) {
-                            Log.d("making new newsitem", "making a new newsitem" + name);
                             newsItem = new NewsItem(null, null, null);
                             event = xpp.nextTag();
-                                name = xpp.getName();
-                                Log.d("name after item", "Name: " + event);
+                            name = xpp.getName();
 
-                                assert name != null;
-                                while (!(event == XmlPullParser.END_TAG && name.equals(KEY_DESCRIPTION))) {
-                                    Log.d("in item", "looping in item" + name);
-                                    if (name != null) {
-                                        switch (name) {
-                                            // start en title
-                                            case KEY_TITLE:
-                                                Log.d("title", "found title");
-                                                event = xpp.next();
-                                                newsItem.setTitle(xpp.getText());
-                                                break;
-                                            case KEY_LINK:
-                                                Log.d("link", "found link");
-                                                event = xpp.next();
-                                                newsItem.setLink(xpp.getText());
-                                                break;
-                                            case KEY_DESCRIPTION:
-                                                Log.d("description", "found description");
-                                                event = xpp.next();
-                                                newsItem.setDescription(xpp.getText());
-                                                Log.d("adding", "Adding items to ArrayList");
-                                                currentNewsItems.add(newsItem);
-                                                break;
-                                            default:
-                                                event = xpp.nextTag();
-                                        }
-                                        //event = xpp.nextTag();
-                                        name = xpp.getName();
+                            assert name != null;
+                            while (!(event == XmlPullParser.END_TAG && name.equals(KEY_DESCRIPTION))) {
+                                if (name != null && event == XmlPullParser.START_TAG) {
+                                    switch (name) {
+                                        // start en title
+                                        case KEY_TITLE:
+                                            event = xpp.nextToken();
+                                            String title = xpp.getText();
+                                            newsItem.setTitle(title);
+                                            break;
+                                        case KEY_LINK:
+                                            event = xpp.next();
+                                            newsItem.setLink(xpp.getText());
+                                            break;
+                                        case KEY_DESCRIPTION:
+                                            event = xpp.next();
+                                            newsItem.setDescription(xpp.getText());
+                                            break;
+                                        default:
+                                            event = xpp.nextTag();
                                     }
-                                    else{
-                                        event = xpp.next();
-                                        name= xpp.getName();
-                                    }
-                                    // break;
-                                    // event = xpp.nextTag();
+                                    name = xpp.getName();
                                 }
+                                else{
+                                    event = xpp.next();
+                                    name= xpp.getName();
+                                }
+                            }
+                            currentNewsItems.add(newsItem);
                         }
-                        Log.d("next", "go to next item");
                         event = xpp.next();
                     }
                 } catch (XmlPullParserException e) {
@@ -131,44 +121,8 @@ public class newsAsyncTask extends AsyncTask<String, Integer, String> {
                 }
             }
             // fill data in ListView
-            Log.d("return ArrayList", "AynsTask returned:" + currentNewsItems.toString());
             this.activity.setData(currentNewsItems);
         }
     }
 }
-
-//                            switch (event) {
-//                                //                            case XmlPullParser.START_TAG:
-//                                //                                if (name.equalsIgnoreCase(KEY_ITEM)) {
-//                                //                                    Log.d("making new newsitem", "making a new newsitem");
-//                                //                                    newsItem = new NewsItem(title, link, description);
-//                                //                                }
-//                                //                                break;
-//
-//                                case XmlPullParser.TEXT:
-//                                    curText = xpp.getText();
-//                                    break;
-//
-//                                case XmlPullParser.END_TAG:
-//                                    if (name.equalsIgnoreCase(KEY_ITEM)) {
-//                                        Log.d("adding new newsitem", "adding a new newsitem");
-//                                        currentNewsItems.add(newsItem);
-//                                    } else if (name.equalsIgnoreCase(KEY_TITLE)) {
-//                                        assert newsItem != null;
-//                                        newsItem.setTitle(curText);
-//                                    } else if (name.equalsIgnoreCase(KEY_LINK)) {
-//                                        assert newsItem != null;
-//                                        newsItem.setLink(curText);
-//                                    } else if (name.equalsIgnoreCase(KEY_DESCRIPTION)) {
-//                                        assert newsItem != null;
-//                                        newsItem.setDescription(curText);
-//                                    }
-//                                    break;
-//                                default:
-//                                    event = xpp.next();
-//                            }
-//                        }
-//                        event = xpp.next();
-//                    }
-
 

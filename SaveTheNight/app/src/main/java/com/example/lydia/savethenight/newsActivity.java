@@ -1,7 +1,11 @@
 package com.example.lydia.savethenight;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -16,6 +20,20 @@ public class newsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news);
         newsAsyncTask newsFeedHandler = new newsAsyncTask(newsActivity.this);
         newsFeedHandler.execute(URL);
+        final ListView newsList  = (ListView) findViewById(R.id.newsLV);
+
+//        assert newsList != null;
+//        newsList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+//            @Override
+//            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+//                NewsItem selectedNewsItem = (NewsItem) newsList.getItemAtPosition(position);
+//                String link = selectedNewsItem.link;
+//                Intent i = new Intent(Intent.ACTION_VIEW);
+//                i.setData(Uri.parse(link));
+//                startActivity(i);
+//                return true;
+//            }
+//        });
     }
 
     /*

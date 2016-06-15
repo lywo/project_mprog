@@ -1,6 +1,7 @@
 package com.example.lydia.savethenight;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,9 +32,14 @@ public class NewsAdapter extends ArrayAdapter {
         TextView newsLinkTV = (TextView) view.findViewById(R.id.newsLinkTV);
         TextView newsDescriptionTV = (TextView) view.findViewById(R.id.newsDescriptionTV);
 
+        // split description for clean information
+        String currentDescription = currentNewsItem.description;
+        String[] separatedDescription = currentDescription.split("<");
+
+        // fill TextViews
         newsTitleTV.setText(currentNewsItem.title);
         newsLinkTV.setText(currentNewsItem.link);
-        newsDescriptionTV.setText(currentNewsItem.description);
+        newsDescriptionTV.setText(separatedDescription[0]);
 
         return view;
     }
