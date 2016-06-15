@@ -89,3 +89,13 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 ### Day 12
 - werken aan parsen newsfeed. 
 - TODO error handling!!! 
+- parsing soort van werkend
+
+### Day 13
+- werkende newsfeed parser
+- title is clickable en gaat naar de link
+- nieuwe icons (google android)
+- cleaned start scherm
+- todolist gemaakt voor bugs en nieuwe feature (swipe textview)
+
+
