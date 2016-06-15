@@ -16,7 +16,7 @@
         android:layout_width="170dp"
         android:layout_height="140dp"
         android:id="@+id/questionIV"
-        android:src="@mipmap/ic_help_black_24dp"
+        android:src="@drawable/question_final"
         android:onClick="questionClicked"
         android:layout_alignBottom="@+id/newsIV"
         android:layout_alignParentRight="true"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/smsIV"
-        android:src="@mipmap/message"
+        android:src="@drawable/sms_message_final"
         android:onClick="SMSClicked"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -40,7 +40,7 @@
         android:layout_width="170dp"
         android:layout_height="140dp"
         android:id="@+id/phoneIV"
-        android:src="@mipmap/mobile_phone_icon"
+        android:src="@drawable/final_phone_icon"
         android:onClick="phoneClicked"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
@@ -58,35 +58,35 @@
 
     <ImageView
         android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@mipmap/ic_settings_black_24dp"
+        android:layout_height="10dp"
+        android:src="@drawable/settings_final"
         android:onClick="settingsClicked"
         android:id="@+id/settingsIV"
-        android:layout_above="@+id/smsIV"
-        android:layout_below="@+id/questionIV"
+        android:layout_above="@+id/questionIV"
+        android:layout_below="@+id/titleTV"
         android:layout_alignRight="@+id/smsIV"/>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:text="SaveTheNight"
         android:textSize="50sp"
         android:textStyle="bold"
-        android:background="#DAEFE8"
-        android:id="@+id/textView"
+        android:id="@+id/titleTV"
         android:gravity="center"
         android:layout_below="@+id/imageView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"/>
 
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/hart_icon_color"
+        android:src="@drawable/hart"
         android:background="#DAEFE8"
-        android:layout_toLeftOf="@+id/settingsIV"
-        android:layout_toStartOf="@+id/settingsIV"
         android:id="@+id/imageView"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/titleTV"
+        android:layout_alignEnd="@+id/titleTV" />
 
 </RelativeLayout>
