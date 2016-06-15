@@ -8,26 +8,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#ffffff"
+    android:background="#DAEFE8"
     tools:context="com.example.lydia.savethenight.MainActivity">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/logoIV"
-        android:src="@drawable/brokenheart"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
 
     <ImageView
         android:layout_width="170dp"
         android:layout_height="140dp"
         android:id="@+id/questionIV"
-        android:src="@mipmap/icon1question"
+        android:src="@mipmap/ic_help_black_24dp"
         android:onClick="questionClicked"
         android:layout_alignBottom="@+id/newsIV"
         android:layout_alignParentRight="true"
@@ -37,17 +26,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/smsIV"
-        android:src="@mipmap/sendsms"
+        android:src="@mipmap/message"
         android:onClick="SMSClicked"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/phoneIV"
+        android:layout_toRightOf="@+id/phoneIV"
+        android:layout_toEndOf="@+id/phoneIV"
+        />
 
     <ImageView
         android:layout_width="170dp"
         android:layout_height="140dp"
         android:id="@+id/phoneIV"
-        android:src="@mipmap/phoneicon"
+        android:src="@mipmap/mobile_phone_icon"
         android:onClick="phoneClicked"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
@@ -69,8 +62,31 @@
         android:src="@mipmap/ic_settings_black_24dp"
         android:onClick="settingsClicked"
         android:id="@+id/settingsIV"
-        android:layout_below="@+id/logoIV"
-        android:layout_alignRight="@+id/logoIV"
-        android:layout_alignEnd="@+id/logoIV" />
+        android:layout_above="@+id/smsIV"
+        android:layout_below="@+id/questionIV"
+        android:layout_alignRight="@+id/smsIV"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="SaveTheNight"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:background="#DAEFE8"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/hart_icon_color"
+        android:background="#DAEFE8"
+        android:layout_toLeftOf="@+id/settingsIV"
+        android:layout_toStartOf="@+id/settingsIV"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true" />
 
 </RelativeLayout>

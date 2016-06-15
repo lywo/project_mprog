@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -21,7 +23,8 @@ public class newsActivity extends AppCompatActivity {
         newsAsyncTask newsFeedHandler = new newsAsyncTask(newsActivity.this);
         newsFeedHandler.execute(URL);
         final ListView newsList  = (ListView) findViewById(R.id.newsLV);
-
+//        LinearLayout newsListLL = (LinearLayout)findViewById(R.id.linearLayoutNews);
+//
 //        assert newsList != null;
 //        newsList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 //            @Override
