@@ -8,9 +8,11 @@ import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -43,18 +45,29 @@ public class SettingsActivity extends AppCompatActivity {
         TextView contactNameTV = (TextView) findViewById(R.id.contactTV);
         String contactName = settingsHelper.getName();
         String savedSMS = settingsHelper.getSMS();
-        contactNameTV.setText("Saved contact is " + contactName);
+        if(contactName.length() != 0){
+            assert contactNameTV != null;
+            contactNameTV.setText("Saved contact is " + contactName);
+        }
+        else{
+            assert contactNameTV != null;
+            contactNameTV.setText("No saved contact " + contactName);
+        }
         TextView savedSMSText = (TextView) findViewById(R.id.savedSMSTV);
         if(savedSMS.length() != 0){
+            assert savedSMSText != null;
             savedSMSText.setText("Your saved sms: " + savedSMS);
         }
 
         EditText textSMS = (EditText) findViewById(R.id.smsET);
         final Button saveSMSBT = (Button) findViewById(R.id.saveSMSBT);
+        assert saveSMSBT != null;
         saveSMSBT.setEnabled(false);
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         assert textSMS != null;
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        textSMS.setText(prefs.getString("autoSave", ""));
         textSMS.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -72,10 +85,9 @@ public class SettingsActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-
+                prefs.edit().putString("autoSave", s.toString()).apply();
             }
         });
-
     }
 
     protected void goToContacts(View view){

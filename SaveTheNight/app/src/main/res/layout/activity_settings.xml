@@ -39,14 +39,15 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:gravity="center"
         android:id="@+id/smsTV"
         android:text="Type your sms"
         android:textSize="22sp"
+        android:layout_marginTop="48dp"
         android:layout_below="@+id/goToContactsBT"
         android:layout_alignRight="@+id/goToContactsBT"
-        android:layout_alignEnd="@+id/goToContactsBT"
-        android:layout_marginTop="72dp" />
+        android:layout_alignEnd="@+id/goToContactsBT" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,7 +56,8 @@
         android:layout_alignParentStart="true"
         android:id="@+id/smsET"
         android:layout_alignRight="@+id/titleTV"
-        android:layout_alignEnd="@+id/titleTV" />
+        android:layout_alignEnd="@+id/titleTV"
+        android:maxLength="160" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -63,10 +65,10 @@
         android:layout_height="wrap_content"
         android:text="Save"
         android:id="@+id/saveSMSBT"
-        android:layout_alignTop="@+id/smsET"
-        android:layout_alignRight="@+id/smsET"
-        android:layout_alignEnd="@+id/smsET"
-        android:onClick="saveSMS"/>
+        android:onClick="saveSMS"
+        android:layout_above="@+id/smsET"
+        android:layout_alignRight="@+id/smsTV"
+        android:layout_alignEnd="@+id/smsET" />
 
     <TextView
         android:layout_width="match_parent"

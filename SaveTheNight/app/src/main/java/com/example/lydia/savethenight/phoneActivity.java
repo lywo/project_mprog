@@ -40,7 +40,17 @@ public class PhoneActivity extends AppCompatActivity {
     }
 
     protected void pickUpPhone(View view){
-        // stop playing ringtone
+        stopRingtone();
+    }
+
+    public void onBackPressed(){
+        stopRingtone();
+    }
+
+    /*
+    Check the
+     */
+    protected void stopRingtone(){
         switch (am.getRingerMode()) {
             case AudioManager.RINGER_MODE_SILENT:
                 break;

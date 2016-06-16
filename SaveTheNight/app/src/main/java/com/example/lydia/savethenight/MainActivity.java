@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /*
+    Phone Icon clicked
+     */
     protected void phoneClicked(View view){
         final Intent phoneIntent = new Intent(this, PhoneActivity.class);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -107,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             if (settingsDBhelper.getName().length() == 0 || settingsDBhelper.getNumber().length() == 0){
                 AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
                 AlertContact.setMessage("Select a contact from contact list to send SMS");
-                AlertContact.setTitle("Contact Error");
+                AlertContact.setTitle("Settings Error");
                 AlertContact.setPositiveButton("OK", null);
                 AlertContact.setCancelable(true);
                 AlertContact.create().show();
@@ -119,8 +122,17 @@ public class MainActivity extends AppCompatActivity {
             }
 
             else if (settingsDBhelper.getSMS().length() == 0 ){
-                Toast.makeText(this, "No sms text was found, please type your sms message",
-                        Toast.LENGTH_SHORT).show();
+                AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
+                AlertContact.setMessage("No sms text was found, please type your sms message");
+                AlertContact.setTitle("Settings Error");
+                AlertContact.setPositiveButton("OK", null);
+                AlertContact.setCancelable(true);
+                AlertContact.create().show();
+                AlertContact.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
             }
             else{
                 // get sms message and phonenumber from database
