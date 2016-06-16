@@ -2,10 +2,13 @@ package com.example.lydia.savethenight;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -43,11 +46,40 @@ public class MainActivity extends AppCompatActivity {
         }, 10000);
     }
 
+    /*
+    News icon is clicked
+    If correct connection, go to NewsActivity and load news
+     */
     protected void newsClicked(View view){
-        Intent newsIntent = new Intent(this, newsActivity.class);
-        startActivity(newsIntent);
+        if(NetworkCheck.isNetworkAvailable(this)){
+            if(NetworkCheck.isWifi()){
+                // check is correct wifi connection
+                if(!NetworkCheck.isAuthentication(this)){
+                    // message to user no wifi authentication
+                    Toast.makeText(this, "No WiFi authentication", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Intent newsIntent = new Intent(this, newsActivity.class);
+                    startActivity(newsIntent);
+                }
+            }
+            else {
+                Intent newsIntent = new Intent(this, newsActivity.class);
+                startActivity(newsIntent);
+            }
+        }
+        else{
+            // message to user no internet connection
+            Toast.makeText(this, "No internet connection", Toast.LENGTH_SHORT).show();
+        }
     }
 
+    /*
+    SMS icon is clicked
+    Check if authorized to send sms
+    Check is contact selected and sms typed
+    Load sms and contact from database
+     */
     protected void SMSClicked(View view) {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) !=
                 PackageManager.PERMISSION_GRANTED) {
@@ -55,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     Manifest.permission.SEND_SMS)) {
                 AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
                 AlertContact.setMessage("Permission to send SMS is required to send SMS");
-                AlertContact.setTitle("Save the night");
+                AlertContact.setTitle("Permission Error");
                 AlertContact.setPositiveButton("OK", null);
                 AlertContact.setCancelable(true);
                 AlertContact.create().show();
@@ -69,17 +101,37 @@ public class MainActivity extends AppCompatActivity {
                 ActivityCompat.requestPermissions(this, new String[]{
                         Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
             }
-        }
-        else{
-            // get sms message and phonenumber from database
-            DBhelper settingsDBhelper = new DBhelper(this);
-            String smsMessage = settingsDBhelper.getSMS();
-            String phoneNumber = settingsDBhelper.getNumber();
+        } else {
+            // Check is contact selected and sms typed
+            final DBhelper settingsDBhelper = new DBhelper(this);
+            if (settingsDBhelper.getName().length() == 0 || settingsDBhelper.getNumber().length() == 0){
+                AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
+                AlertContact.setMessage("Select a contact from contact list to send SMS");
+                AlertContact.setTitle("Contact Error");
+                AlertContact.setPositiveButton("OK", null);
+                AlertContact.setCancelable(true);
+                AlertContact.create().show();
+                AlertContact.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                });
+            }
 
-            // send sms
-            SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage(phoneNumber, null, smsMessage, null, null);
-            Toast.makeText(this, "SMS is send",Toast.LENGTH_SHORT).show();
+            else if (settingsDBhelper.getSMS().length() == 0 ){
+                Toast.makeText(this, "No sms text was found, please type your sms message",
+                        Toast.LENGTH_SHORT).show();
+            }
+            else{
+                // get sms message and phonenumber from database
+                String smsMessage = settingsDBhelper.getSMS();
+                String phoneNumber = settingsDBhelper.getNumber();
+
+                // send sms
+                SmsManager smsManager = SmsManager.getDefault();
+                smsManager.sendTextMessage(phoneNumber, null, smsMessage, null, null);
+                Toast.makeText(this, "SMS is send", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -98,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
         Intent settingsIntent = new Intent(this, SettingsActivity.class);
         startActivity(settingsIntent);
     }
+
 
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {

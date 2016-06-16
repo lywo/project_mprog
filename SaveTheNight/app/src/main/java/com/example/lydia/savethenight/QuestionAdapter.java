@@ -30,4 +30,10 @@ public class QuestionAdapter extends ArrayAdapter {
 
         return view;
     }
+
+    @Override
+    public void notifyDataSetChanged() // Create this function in your adapter class
+    {
+        super.notifyDataSetChanged();
+    }
 }

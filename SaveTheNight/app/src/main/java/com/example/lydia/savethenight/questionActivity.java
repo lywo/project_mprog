@@ -16,8 +16,6 @@ public class QuestionActivity extends AppCompatActivity {
     QuestionAdapter myQuestionAdapter;
     DBhelper myQuestionDBHelper;
     ArrayList<String> favouriteQuestions;
-    private float x1,x2;
-    static final int MIN_DISTANCE = 150;
     TextView currentQuestion ;
 
     @Override
@@ -34,11 +32,30 @@ public class QuestionActivity extends AppCompatActivity {
 
         // get all questions and fill TextView
         currentQuestion=(TextView) findViewById(R.id.questionTV);
-        ArrayList questions = getIntent().getStringArrayListExtra("questionsArrayList");
-        assert currentQuestion != null;
+        final ArrayList questions = getIntent().getStringArrayListExtra("questionsArrayList");
         int randomNum=getRandomInt();
         String selectedQuestion = questions.get(randomNum).toString();
         currentQuestion.setText(selectedQuestion);
+
+        /*
+        onSwipe show new random question from list.
+        Both right and left swipes are alowed
+         */
+        assert currentQuestion != null;
+        currentQuestion.setOnTouchListener(new OnSwipeTouchListener(this) {
+            @Override
+            public void onSwipeLeft() {
+                int randomNum=getRandomInt();
+                String selectedQuestion = questions.get(randomNum).toString();
+                currentQuestion.setText(selectedQuestion);
+            }
+
+            public void onSwipeRight(){
+                int randomNum=getRandomInt();
+                String selectedQuestion = questions.get(randomNum).toString();
+                currentQuestion.setText(selectedQuestion);
+            }
+        });
 
         favQuestionLV.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
@@ -48,8 +65,11 @@ public class QuestionActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Item deleted", Toast.LENGTH_SHORT).show();
                 String oldQuestion = favQuestionLV.getItemAtPosition(position).toString();
 
-                // Delete old weather info
+                // Set question to non favourite, find new List and set Adapter
                 myQuestionDBHelper.setBoolFalse(oldQuestion);
+                ArrayList<String> favouriteQuestions = myQuestionDBHelper.getFavouriteQuestions();
+                myQuestionAdapter =  new QuestionAdapter(QuestionActivity.this, favouriteQuestions);
+                favQuestionLV.setAdapter(myQuestionAdapter);
 
                 // Update ListView
                 myQuestionAdapter.notifyDataSetChanged();
@@ -59,55 +79,33 @@ public class QuestionActivity extends AppCompatActivity {
 
     }
 
+    /*
+    Method on Button click add question to favourites (Boolean reset to true)
+    Update the ListView
+     */
     protected void addQuestion(View view){
         ListView favouriteQuestionsLV = (ListView) findViewById(R.id.favouriteQuestionsLV);
         currentQuestion = (TextView) findViewById(R.id.questionTV);
         assert currentQuestion != null;
         String newFavourite = currentQuestion.getText().toString();
         myQuestionDBHelper.setBoolTrue(newFavourite);
-        favouriteQuestions = myQuestionDBHelper.getFavouriteQuestions();
-        if(favouriteQuestionsLV != null){favouriteQuestionsLV.setAdapter(myQuestionAdapter);}
-        else{
-            myQuestionAdapter = new QuestionAdapter(this, favouriteQuestions);
-        }
+        ArrayList<String> favouriteQuestions = myQuestionDBHelper.getFavouriteQuestions();
+        myQuestionAdapter =  new QuestionAdapter(QuestionActivity.this, favouriteQuestions);
         favouriteQuestionsLV.setAdapter(myQuestionAdapter);
 
-
+        // Update ListView
+        myQuestionAdapter.notifyDataSetChanged();
     }
 
-    protected void nextQuestion(View view){
-        currentQuestion = (TextView) findViewById(R.id.questionTV);
-        ArrayList questions = getIntent().getStringArrayListExtra("questionsArrayList");
-        assert currentQuestion != null;
-        int randomNum=getRandomInt();
-        String selectedQuestion = questions.get(randomNum).toString();
-        currentQuestion.setText(selectedQuestion);
-    }
-
-//    @Override
-//    public boolean onTouchEvent(MotionEvent event)
-//    {
-//        switch(event.getAction())
-//        {
-//            case MotionEvent.ACTION_DOWN:
-//                x1 = event.getX();
-//                break;
-//            case MotionEvent.ACTION_UP:
-//                x2 = event.getX();
-//                float deltaX = x2 - x1;
-//                if (Math.abs(deltaX) > MIN_DISTANCE)
-//                {
-//                    currentQuestion = (TextView) findViewById(R.id.questionTV);
-//                    currentQuestion.setText(getRandomInt());
-//                }
-//                else
-//                {
-//                    // consider as something else - a screen tap for example
-//                }
-//                break;
-//        }
-//        return super.onTouchEvent(event);
+//    protected void nextQuestion(View view){
+//        currentQuestion = (TextView) findViewById(R.id.questionTV);
+//        ArrayList questions = getIntent().getStringArrayListExtra("questionsArrayList");
+//        assert currentQuestion != null;
+//        int randomNum=getRandomInt();
+//        String selectedQuestion = questions.get(randomNum).toString();
+//        currentQuestion.setText(selectedQuestion);
 //    }
+
 
     public int getRandomInt(){
         Random rand = new Random();
