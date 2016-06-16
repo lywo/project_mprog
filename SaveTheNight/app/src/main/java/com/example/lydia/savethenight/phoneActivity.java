@@ -1,11 +1,13 @@
 package com.example.lydia.savethenight;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Vibrator;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +16,7 @@ public class PhoneActivity extends AppCompatActivity {
     MediaPlayer mp;
     Vibrator v;
     AudioManager am;
+    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,23 +30,28 @@ public class PhoneActivity extends AppCompatActivity {
             case AudioManager.RINGER_MODE_VIBRATE:
                 v= (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
                 // Vibrate infinite
-                long[] pattern = {0, 100, 1000};
-                v.vibrate(pattern, 0);
+                // long[] pattern = {0, 100, 1000};
+                v.vibrate(30000);
                 break;
             case AudioManager.RINGER_MODE_NORMAL:
                 // play ringtone
                 Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
                 mp = MediaPlayer.create(getApplicationContext(), notification);
+                // set end time
                 mp.start();
                 break;
         }
     }
 
     protected void pickUpPhone(View view){
+        // set boolean false
+        prefs.edit().putBoolean("init", false).apply();
         stopRingtone();
     }
 
     public void onBackPressed(){
+        // set boolean false
+        prefs.edit().putBoolean("init", false).apply();
         stopRingtone();
     }
 

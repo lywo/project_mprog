@@ -4,8 +4,10 @@ import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -31,17 +33,25 @@ public class MainActivity extends AppCompatActivity {
     Phone Icon clicked
      */
     protected void phoneClicked(View view){
-        final Intent phoneIntent = new Intent(this, PhoneActivity.class);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        final Handler handler = new Handler();
-        Toast.makeText(this, "Fake call is initialized",Toast.LENGTH_SHORT).show();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // wait half a minute, start fake calling.
-                startActivity(phoneIntent);
-            }
-        }, 10000);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        boolean initiated = prefs.getBoolean("init", false);
+        if (initiated){
+            Toast.makeText(this, "Call already initialized", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            prefs.edit().putBoolean("initialized", true).apply();
+            final Intent phoneIntent = new Intent(this, PhoneActivity.class);
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+            final Handler handler = new Handler();
+            Toast.makeText(this, "Fake call is initialized", Toast.LENGTH_SHORT).show();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    // wait half a minute, start fake calling.
+                    startActivity(phoneIntent);
+                }
+            }, 10000);
+        }
     }
 
     /*
@@ -147,7 +157,6 @@ public class MainActivity extends AppCompatActivity {
         Intent settingsIntent = new Intent(this, SettingsActivity.class);
         startActivity(settingsIntent);
     }
-
 
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
