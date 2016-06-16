@@ -96,17 +96,8 @@ public class SettingsActivity extends AppCompatActivity {
                 PackageManager.PERMISSION_GRANTED){
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.READ_CONTACTS)) {
-                AlertDialog.Builder AlertContact  = new AlertDialog.Builder(this);
-                AlertContact.setMessage("Permission to read Contacts is required to send SMS");
-                AlertContact.setTitle("Save the night");
-                AlertContact.setPositiveButton("OK", null);
-                AlertContact.setCancelable(true);
-                AlertContact.create().show();
-                AlertContact.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
+                ActivityCompat.requestPermissions(this, new String[]{
+                        Manifest.permission.READ_CONTACTS},MY_PERMISSIONS_REQUEST_READ_CONTACTS);
             } else {
                 // request permission
                 ActivityCompat.requestPermissions(this, new String[]{

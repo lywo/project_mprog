@@ -27,22 +27,21 @@ public class NetworkCheck {
     Check if internet connection is a WiFi connection
      */
     public static boolean isWifi() {
-        return cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI)
-                .isConnectedOrConnecting();
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        return activeNetwork.getType() == ConnectivityManager.TYPE_WIFI;
     }
 
     /*
     Check WiFi connection on correct authentication
      */
     public static boolean isAuthentication (Context context){
-        boolean isAuth = false;
+        boolean isAuth = true;
         WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
         WifiInfo wifiInfo = wifiManager.getConnectionInfo();
         SupplicantState supState = wifiInfo.getSupplicantState();
-        if (supState == SupplicantState.COMPLETED){
-            isAuth = true;
+        if (supState != SupplicantState.COMPLETED){
+            isAuth = false;
         }
         return isAuth;
     }
-
 }

@@ -2,20 +2,15 @@ package com.example.lydia.savethenight;
 
 import android.Manifest;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
@@ -87,18 +82,8 @@ public class MainActivity extends AppCompatActivity {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) !=
                 PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.SEND_SMS)) {
-                AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
-                AlertContact.setMessage("Permission to send SMS is required to send SMS");
-                AlertContact.setTitle("Permission Error");
-                AlertContact.setPositiveButton("OK", null);
-                AlertContact.setCancelable(true);
-                AlertContact.create().show();
-                AlertContact.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
+                    Manifest.permission.SEND_SMS)) { ActivityCompat.requestPermissions(this, new String[]{
+                    Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
             } else {
                 // request permission
                 ActivityCompat.requestPermissions(this, new String[]{
