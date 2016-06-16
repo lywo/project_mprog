@@ -98,4 +98,11 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 - cleaned start scherm
 - todolist gemaakt voor bugs en nieuwe feature (swipe textview)
 
-
+### Day 14
+- implemented swipe voor TextView van de questions
+- fixed bug niet meteen updatende ListView
+- Internet connectie check
+- maximum lengte edittext voor sms
+- edittext tekst opslaan in sharedpreferences zodat je verder kan typen tot je hem saved. Dan wordt de edittext weer leeg. 
+- bug fix nog een keer om permissie vragen bij contacten en sms versturen 
+- zorgen dat je maar 1 call tegelijk mag doen: boolean in shared pref aanpassen en ophalen. 

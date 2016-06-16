@@ -10,10 +10,10 @@ Student nummer: 10338217
 
 
 #### Features
-Het implementeren van een fake call. Dit is een nagemaakt scherm. 
-Het laten sturen van een ready to go emergency sms naar vantevoren gekozen nummer uit je telefoonboek. Hierdoor hoef je niet ongemakkelijk nog een sms te typen en een contactpersoon te kiezen. 
-Het ophalen van lokaal news voor een interessant gespreksonderwerp. 
-Een voorstel voor een interessante eerste date vraag om je date een beetje los te krijgen. 
+- Het implementeren van een fake call. Dit is een nagemaakt scherm. 
+- Het laten sturen van een ready to go emergency sms naar vantevoren gekozen nummer uit je telefoonboek. Hierdoor hoef je niet ongemakkelijk nog een sms te typen en een contactpersoon te kiezen. 
+- Het ophalen van lokaal news voor een interessant gespreksonderwerp. 
+- Een voorstel voor een interessante eerste date vraag om je date een beetje los te krijgen. Door over de vraag links of rechts te swipen komt een nieuwe vraag in beeld. 
 
 Er wordt gebruik gemaakt van een dataset met news die live opgehaald wordt, een dataset met date vragen die is gehardcoded, een dataset met telefoonnummers die je binnenhaalt vanuit de cantactpersonen app van de telefoon. In een SQLiteDatabase worden 2 tabellen gemaakt met alle info: 1 voor de instellingen van sms (contacpersoon naam, nummer en sms tekst).
 
