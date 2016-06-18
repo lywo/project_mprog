@@ -16,7 +16,7 @@ public class PhoneActivity extends AppCompatActivity {
     MediaPlayer mp;
     Vibrator v;
     AudioManager am;
-    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+   // SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +45,13 @@ public class PhoneActivity extends AppCompatActivity {
 
     protected void pickUpPhone(View view){
         // set boolean false
-        prefs.edit().putBoolean("init", false).apply();
+       // prefs.edit().putBoolean("init", false).apply();
         stopRingtone();
     }
 
     public void onBackPressed(){
         // set boolean false
-        prefs.edit().putBoolean("init", false).apply();
+       // prefs.edit().putBoolean("init", false).apply();
         stopRingtone();
     }
 

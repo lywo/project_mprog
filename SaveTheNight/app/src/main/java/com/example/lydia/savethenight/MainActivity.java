@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
     protected void phoneClicked(View view){
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         boolean initiated = prefs.getBoolean("init", false);
-        if (initiated){
-            Toast.makeText(this, "Call already initialized", Toast.LENGTH_SHORT).show();
-        }
-        else {
+//        if (initiated){
+//            Toast.makeText(this, "Call already initialized", Toast.LENGTH_SHORT).show();
+//        }
+//        else {
             prefs.edit().putBoolean("initialized", true).apply();
             final Intent phoneIntent = new Intent(this, PhoneActivity.class);
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(phoneIntent);
                 }
             }, 10000);
-        }
+//        }
     }
 
     /*
