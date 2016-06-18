@@ -106,3 +106,15 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 - edittext tekst opslaan in sharedpreferences zodat je verder kan typen tot je hem saved. Dan wordt de edittext weer leeg. 
 - bug fix nog een keer om permissie vragen bij contacten en sms versturen 
 - zorgen dat je maar 1 call tegelijk mag doen: boolean in shared pref aanpassen en ophalen. 
+
+### Day 15
+**(Bugs) to fix**
+
+- cursor to end
+- check of sms echt is verstuurd
+- cursor to end
+- geen tweede telefoon call mogelijk (Check if initialized via shared preferendes)
+- dialog screen wanneer je op never show again drukt : je hebt die permissie wel echt nodig. 
+- implement een icon voor de app
+
+
