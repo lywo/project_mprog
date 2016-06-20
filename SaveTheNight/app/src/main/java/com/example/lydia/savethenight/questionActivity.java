@@ -1,8 +1,8 @@
-package com.example.lydia.savethenight;
 /*
 Lydia Wolfs
 QuestionActivity.java called from MainActivity
  */
+package com.example.lydia.savethenight;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

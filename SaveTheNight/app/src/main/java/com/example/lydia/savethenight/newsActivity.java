@@ -1,9 +1,9 @@
-package com.example.lydia.savethenight;
 /*
 Lydia Wolfs
 NewsActivity
 Reached from MainActivity via intent when news icon is clicked
  */
+package com.example.lydia.savethenight;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -48,15 +48,5 @@ public class NewsActivity extends AppCompatActivity {
     public void onBackPressed(){
         super.onBackPressed();
         this.finish();
-    }
-
-    @Override
-    public void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
     }
 }

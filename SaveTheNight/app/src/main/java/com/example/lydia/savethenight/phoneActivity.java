@@ -1,9 +1,10 @@
-package com.example.lydia.savethenight;
 /*
 Lydia Wolfs
 PhoneActivity
 Called from MainActivity when phone icon is clicked
  */
+package com.example.lydia.savethenight;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
@@ -38,9 +39,9 @@ public class PhoneActivity extends AppCompatActivity {
                 break;
             case AudioManager.RINGER_MODE_VIBRATE:
                 v= (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
-                // Vibrate infinite
-                // long[] pattern = {0, 100, 1000};
-                v.vibrate(30000);
+
+                // vibrate for maximum 25 seconds
+                v.vibrate(25000);
                 break;
             case AudioManager.RINGER_MODE_NORMAL:
 
@@ -55,14 +56,14 @@ public class PhoneActivity extends AppCompatActivity {
     }
 
     /*
-    Phone icon is clicked, stop vibration or ringtone
+    Phone icon is clicked, stop vibration or ringtone and return to MainActivity
      */
     protected void pickUpPhone(View view){
         stopRingtone();
     }
 
     /*
-    Back Button is pressed, stop vibration or ringtone
+    Back Button is pressed, stop vibration or ringtone and return to MainActivity
      */
     public void onBackPressed(){
         stopRingtone();

@@ -1,10 +1,9 @@
-package com.example.lydia.savethenight;
-
 /*
 Lydia Wolfs
 MainActivity.java
 Activity for main/first screen
  */
+package com.example.lydia.savethenight;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -30,6 +29,11 @@ import android.telephony.TelephonyManager;
 
 import java.util.ArrayList;
 
+/*
+In this Activity are 5 clickable icons for settings, fake call initialization, dating questions Screen
+and loading current news. Each screen has a function is in this activity.
+Last function shows Dialog
+ */
 public class MainActivity extends AppCompatActivity {
     ArrayList<String> questions;
     final int MY_PERMISSIONS_REQUEST_SEND_SMS = 2;
@@ -47,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     starts after 10 sec delay phoneActivity , via intent
      */
     protected void phoneClicked(View view){
+
         // Check if call is already initialized from boolean in shared preferences
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = prefs.edit();
@@ -56,10 +61,9 @@ public class MainActivity extends AppCompatActivity {
         if (initialized){
             Toast.makeText(this, "Call already initialized", Toast.LENGTH_SHORT).show();
         }
+        else {// Call is not yet initialized
 
-        // Call is not yet initialized
-        else {
-            // Change boolean init to true and update user
+            // Change Boolean init to true because fake call is now initialized and communicate to user
             editor.putBoolean("init", true).apply();
             Toast.makeText(this, "Fake call is initialized", Toast.LENGTH_SHORT).show();
 
@@ -72,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    // wait half a minute, start fake calling.
+
+                    // wait 10 seconds, start fake calling
                     startActivity(phoneIntent);
                 }
             }, 10000);
@@ -84,56 +89,56 @@ public class MainActivity extends AppCompatActivity {
      */
     protected void newsClicked(View view){
         if(NetworkCheck.isNetworkAvailable(this)){
-            // Check extra Wifi connections
+
+            // If user is on Wifi connection do an extra check
             if(NetworkCheck.isWifi()){
+
                 // Check is correct wifi connection
                 if(!NetworkCheck.isAuthentication(this)){
                     // Message to user no wifi authentication
                     Toast.makeText(this, "No WiFi authentication", Toast.LENGTH_SHORT).show();
                 }
-                // Start NewsActivity
-                else{
+                else{ // News can be loaded
                     Intent newsIntent = new Intent(this, NewsActivity.class);
                     startActivity(newsIntent);
                 }
             }
-            // Start NewsActivity
-            else {
+            else { // News can be loaded
                 Intent newsIntent = new Intent(this, NewsActivity.class);
                 startActivity(newsIntent);
             }
         }
         else{
-            // Message to user no internet connection
+
+            // Update user
             Toast.makeText(this, "No internet connection", Toast.LENGTH_SHORT).show();
         }
     }
 
     /*
-    Check if authorized to send sms
-    Check is contact selected and sms typed
+    Check if app authorized to send sms
+    Check if user selected a contact and typed an sms
     Load sms and contact from database, send sms and check response data
      */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     protected void SMSClicked(View view) {
+
         // Permission to send sms is not granted
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) !=
                 PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.SEND_SMS)) {
-                Log.d("in de if ", " nu in de if");
                 ActivityCompat.requestPermissions(this, new String[]{
                     Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
-
             }
-            // First  time  permission check of never ask again
+
+            // First  time  permission check or checked the 'never ask again' box
             else {
-                Log.d("in de else ", " nu in de else");
+
                 // Request permission
                 ActivityCompat.requestPermissions(this, new String[]{
                         Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
 
-                // Else //  never ask again clicked
                 // Show Dialog with warning for user
                 showDialogOK("Permission to send sms is needed, please allow", "Permission Error",
                         new DialogInterface.OnClickListener() {
@@ -144,8 +149,8 @@ public class MainActivity extends AppCompatActivity {
                         });
             }
         }
-        // Permission to send sms is granted
-        else {
+        else { // Permission to send sms is granted
+
             // Check is contact selected and sms typed
             final DBhelper settingsDBhelper = new DBhelper(this);
             if (settingsDBhelper.getName().length() == 0 || settingsDBhelper.getNumber().length() == 0){
@@ -167,16 +172,18 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
             else{
-                // Get sms message and phonenumber from database
+
+                // Get sms message and phone number from database
                 String smsMessage = settingsDBhelper.getSMS();
                 String phoneNumber = settingsDBhelper.getNumber();
                 String SENT = "SMS_SENT";
                 String DELIVERED = "SMS_DELIVERED";
 
-                TelephonyManager telephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
                 // Check device is able to send sms
+                TelephonyManager telephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
                 if(telephonyManager.isSmsCapable()){
-                    // Check connection
+
+                    // Check if sms can be send
                     PendingIntent sendingPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(SENT), 0);
                     PendingIntent deliveryPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(DELIVERED), 0);
 
@@ -187,6 +194,7 @@ public class MainActivity extends AppCompatActivity {
                     // Check response code
                     if ( sendingPendingIntent.getCreatorUid() == RESULT_OK) { // response is OK
                         Toast.makeText(this, "SMS is send", Toast.LENGTH_SHORT).show();
+
                         // Check if SMS is delivered
                         if (deliveryPendingIntent== null){
                             Toast.makeText(this, "SMS delivery failed", Toast.LENGTH_SHORT).show();
@@ -238,15 +246,5 @@ public class MainActivity extends AppCompatActivity {
         AlertContact.setPositiveButton("OK", okListener);
         AlertContact.setCancelable(true);
         AlertContact.create().show();
-    }
-
-    @Override
-    public void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
     }
 }

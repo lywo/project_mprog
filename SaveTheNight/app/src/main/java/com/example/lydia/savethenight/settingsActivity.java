@@ -123,6 +123,7 @@ public class SettingsActivity extends AppCompatActivity {
 
             // Permission was not asked before or 'never asked again' box was checked
             else {
+
                 // Request permission when first time asking
                 ActivityCompat.requestPermissions(this, new String[]{
                         Manifest.permission.READ_CONTACTS},MY_PERMISSIONS_REQUEST_READ_CONTACTS);
@@ -206,7 +207,7 @@ public class SettingsActivity extends AppCompatActivity {
             if (Boolean.parseBoolean(hasPhone))
             {
 
-                // Read over saved phonenumbers
+                // Read over saved phone numbers
                 Cursor phones = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,ContactsContract.CommonDataKinds.Phone.CONTACT_ID +" = "+ contactId,null, null);
                 while (phones.moveToNext())
                 {
