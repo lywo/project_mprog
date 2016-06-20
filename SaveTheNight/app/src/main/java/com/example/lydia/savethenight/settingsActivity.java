@@ -65,9 +65,13 @@ public class SettingsActivity extends AppCompatActivity {
         saveSMSBT.setEnabled(false);
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
+        // fill editText with saved text and set cursor to end
         assert textSMS != null;
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         textSMS.setText(prefs.getString("autoSave", ""));
+        textSMS.setSelection(textSMS.getText().length());
+
+
         textSMS.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
