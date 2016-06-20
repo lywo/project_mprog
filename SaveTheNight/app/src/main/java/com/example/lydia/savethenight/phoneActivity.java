@@ -1,5 +1,6 @@
 package com.example.lydia.savethenight;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
@@ -16,7 +17,6 @@ public class PhoneActivity extends AppCompatActivity {
     MediaPlayer mp;
     Vibrator v;
     AudioManager am;
-   // SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +45,17 @@ public class PhoneActivity extends AppCompatActivity {
 
     protected void pickUpPhone(View view){
         // set boolean false
-       // prefs.edit().putBoolean("init", false).apply();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putBoolean("init", false).apply();
         stopRingtone();
     }
 
     public void onBackPressed(){
         // set boolean false
-       // prefs.edit().putBoolean("init", false).apply();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putBoolean("init", false).apply();
         stopRingtone();
     }
 
