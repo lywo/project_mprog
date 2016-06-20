@@ -3,7 +3,7 @@
 
 ## Short Description ##
 
-## Techincal Description(Design.md)##
+## Technical Description(Design.md)##
 
 ## Challenges during development (progress.md) ##
 
