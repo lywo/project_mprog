@@ -1,11 +1,17 @@
 package com.example.lydia.savethenight;
 
 import android.Manifest;
+import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.v4.app.ActivityCompat;
@@ -13,9 +19,11 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
+import android.telephony.TelephonyManager;
 
 import java.util.ArrayList;
 
@@ -83,11 +91,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-    SMS icon is clicked
     Check if authorized to send sms
     Check is contact selected and sms typed
-    Load sms and contact from database
+    Load sms and contact from database, send sms and check response data
      */
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     protected void SMSClicked(View view) {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) !=
                 PackageManager.PERMISSION_GRANTED) {
@@ -133,11 +141,33 @@ public class MainActivity extends AppCompatActivity {
                 // get sms message and phonenumber from database
                 String smsMessage = settingsDBhelper.getSMS();
                 String phoneNumber = settingsDBhelper.getNumber();
+                String SENT = "SMS_SENT";
+                String DELIVERED = "SMS_DELIVERED";
 
-                // send sms
-                SmsManager smsManager = SmsManager.getDefault();
-                smsManager.sendTextMessage(phoneNumber, null, smsMessage, null, null);
-                Toast.makeText(this, "SMS is send", Toast.LENGTH_SHORT).show();
+                TelephonyManager telephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
+                // check device is able to send sms
+                if(telephonyManager.isSmsCapable()){
+                    // check connection
+                    PendingIntent sendingPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(SENT), 0);
+                    PendingIntent deliveryPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(DELIVERED), 0);
+//
+                    // send sms
+                    SmsManager smsManager = SmsManager.getDefault();
+                    smsManager.sendTextMessage(phoneNumber, null, smsMessage, sendingPendingIntent, deliveryPendingIntent);
+
+                    // check response code
+                    if ( sendingPendingIntent.getCreatorUid() == RESULT_OK) {
+                        Toast.makeText(this, "SMS is send", Toast.LENGTH_SHORT).show();
+                        // check if SMS is delivered
+                        if (deliveryPendingIntent== null){
+                            Toast.makeText(this, "SMS delivery failed", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    else{
+                        Toast.makeText(this, "SMS failed, please check your connection and try again later.",
+                            Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         }
     }
