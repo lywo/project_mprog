@@ -108,13 +108,21 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 - zorgen dat je maar 1 call tegelijk mag doen: boolean in shared pref aanpassen en ophalen. 
 
 ### Day 15
-**(Bugs) to fix**
+**made list of (Bugs) to fix**
 
 - cursor to end
 - check of sms echt is verstuurd
-- cursor to end
 - geen tweede telefoon call mogelijk (Check if initialized via shared preferendes)
 - dialog screen wanneer je op never show again drukt : je hebt die permissie wel echt nodig. 
 - implement een icon voor de app
+
+### Day 16
+- fixed bug cursor to end
+- alle strings die aan de user gepresenteerd worden in de xml opslaan. 
+- check of sms is verstuurd geïmplementeerd 
+- bug van maar 1 call tegelijk mogelijk is gefixed
+- gekeken naar extra check wanneer 'never ask again' is clicked (niet mogelijk) overleg met Jaap. 
+- NEW BUG: trillen/ringtone voor een bepaalde tijd en automatisch stoppen na 30 sec
+
 
 
