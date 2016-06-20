@@ -1,16 +1,19 @@
 package com.example.lydia.savethenight;
 
+/*
+Lydia Wolfs
+MainActivity.java
+Activity for main/first screen
+ */
+
 import android.Manifest;
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import android.preference.PreferenceManager;
@@ -40,12 +43,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-    Phone Icon clicked
+    check if call is already initialized
+    starts after 10 sec delay phoneActivity , via intent
      */
     protected void phoneClicked(View view){
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = prefs.edit();
-        initialized = prefs.getBoolean("init", true);
+        initialized = prefs.getBoolean("init", false);
         if (initialized){
             Toast.makeText(this, "Call already initialized", Toast.LENGTH_SHORT).show();
         }
@@ -66,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-    News icon is clicked
     If correct connection, go to NewsActivity and load news
      */
     protected void newsClicked(View view){
@@ -100,41 +103,51 @@ public class MainActivity extends AppCompatActivity {
      */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     protected void SMSClicked(View view) {
+        // permission to send sms is not granted
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) !=
                 PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.SEND_SMS)) { ActivityCompat.requestPermissions(this, new String[]{
+                    Manifest.permission.SEND_SMS)) {
+                Log.d("in de if ", " nu in de if");
+                ActivityCompat.requestPermissions(this, new String[]{
                     Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
-            } else {
+
+            }
+            // first  time  permission check of never ask again
+            else {
+                Log.d("in de else ", " nu in de else");
                 // request permission
                 ActivityCompat.requestPermissions(this, new String[]{
                         Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
-            }
-        } else {
-            // Check is contact selected and sms typed
-            final DBhelper settingsDBhelper = new DBhelper(this);
-            if (settingsDBhelper.getName().length() == 0 || settingsDBhelper.getNumber().length() == 0){
-                AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
-                AlertContact.setMessage("Select a contact from contact list to send SMS");
-                AlertContact.setTitle("Settings Error");
-                AlertContact.setPositiveButton("OK", null);
-                AlertContact.setCancelable(true);
-                AlertContact.create().show();
-                AlertContact.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+
+                // else //  never ask again clicked
+                // show Dialog with warning for user
+                showDialogOK("Permission to send sms is needed, please allow", "Permission Error",
+                        new DialogInterface.OnClickListener() {
+                            @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
                             }
+                        });
+            }
+        }
+        // permission to send sms is granted
+        else {
+            // Check is contact selected and sms typed
+            final DBhelper settingsDBhelper = new DBhelper(this);
+            if (settingsDBhelper.getName().length() == 0 || settingsDBhelper.getNumber().length() == 0){
+                showDialogOK("Select a contact from contact list to send SMS", "Settings Error",
+                        new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
                 });
             }
-
             else if (settingsDBhelper.getSMS().length() == 0 ){
-                AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
-                AlertContact.setMessage("No sms text was found, please type your sms message");
-                AlertContact.setTitle("Settings Error");
-                AlertContact.setPositiveButton("OK", null);
-                AlertContact.setCancelable(true);
-                AlertContact.create().show();
-                AlertContact.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                showDialogOK("No sms text was found, please type your sms message", "Settings Error",
+                        new DialogInterface.OnClickListener() {
+                    @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
                     }
@@ -153,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
                     // check connection
                     PendingIntent sendingPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(SENT), 0);
                     PendingIntent deliveryPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(DELIVERED), 0);
-//
+
                     // send sms
                     SmsManager smsManager = SmsManager.getDefault();
                     smsManager.sendTextMessage(phoneNumber, null, smsMessage, sendingPendingIntent, deliveryPendingIntent);
@@ -189,6 +202,18 @@ public class MainActivity extends AppCompatActivity {
     protected void settingsClicked(View view){
         Intent settingsIntent = new Intent(this, SettingsActivity.class);
         startActivity(settingsIntent);
+    }
+
+    /*
+    Shows Dialog with ok button, input message and input title
+     */
+    private void showDialogOK(String message, String title, DialogInterface.OnClickListener okListener) {
+        AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
+        AlertContact.setMessage(message);
+        AlertContact.setTitle(title);
+        AlertContact.setPositiveButton("OK", okListener);
+        AlertContact.setCancelable(true);
+        AlertContact.create().show();
     }
 
     @Override
