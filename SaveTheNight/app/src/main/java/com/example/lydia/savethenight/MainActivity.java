@@ -47,18 +47,28 @@ public class MainActivity extends AppCompatActivity {
     starts after 10 sec delay phoneActivity , via intent
      */
     protected void phoneClicked(View view){
+        // Check if call is already initialized from boolean in shared preferences
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = prefs.edit();
         initialized = prefs.getBoolean("init", false);
+
+        // Call is already initialized
         if (initialized){
             Toast.makeText(this, "Call already initialized", Toast.LENGTH_SHORT).show();
         }
+
+        // Call is not yet initialized
         else {
+            // Change boolean init to true and update user
             editor.putBoolean("init", true).apply();
-            final Intent phoneIntent = new Intent(this, PhoneActivity.class);
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-            final Handler handler = new Handler();
             Toast.makeText(this, "Fake call is initialized", Toast.LENGTH_SHORT).show();
+
+            // Do not allow screen to sleep
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
+            // After delay, go to next PhoneActivity
+            final Intent phoneIntent = new Intent(this, PhoneActivity.class);
+            final Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -74,24 +84,27 @@ public class MainActivity extends AppCompatActivity {
      */
     protected void newsClicked(View view){
         if(NetworkCheck.isNetworkAvailable(this)){
+            // Check extra Wifi connections
             if(NetworkCheck.isWifi()){
-                // check is correct wifi connection
+                // Check is correct wifi connection
                 if(!NetworkCheck.isAuthentication(this)){
-                    // message to user no wifi authentication
+                    // Message to user no wifi authentication
                     Toast.makeText(this, "No WiFi authentication", Toast.LENGTH_SHORT).show();
                 }
+                // Start NewsActivity
                 else{
-                    Intent newsIntent = new Intent(this, newsActivity.class);
+                    Intent newsIntent = new Intent(this, NewsActivity.class);
                     startActivity(newsIntent);
                 }
             }
+            // Start NewsActivity
             else {
-                Intent newsIntent = new Intent(this, newsActivity.class);
+                Intent newsIntent = new Intent(this, NewsActivity.class);
                 startActivity(newsIntent);
             }
         }
         else{
-            // message to user no internet connection
+            // Message to user no internet connection
             Toast.makeText(this, "No internet connection", Toast.LENGTH_SHORT).show();
         }
     }
@@ -103,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
      */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     protected void SMSClicked(View view) {
-        // permission to send sms is not granted
+        // Permission to send sms is not granted
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) !=
                 PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
@@ -113,15 +126,15 @@ public class MainActivity extends AppCompatActivity {
                     Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
 
             }
-            // first  time  permission check of never ask again
+            // First  time  permission check of never ask again
             else {
                 Log.d("in de else ", " nu in de else");
-                // request permission
+                // Request permission
                 ActivityCompat.requestPermissions(this, new String[]{
                         Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
 
-                // else //  never ask again clicked
-                // show Dialog with warning for user
+                // Else //  never ask again clicked
+                // Show Dialog with warning for user
                 showDialogOK("Permission to send sms is needed, please allow", "Permission Error",
                         new DialogInterface.OnClickListener() {
                             @Override
@@ -131,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                         });
             }
         }
-        // permission to send sms is granted
+        // Permission to send sms is granted
         else {
             // Check is contact selected and sms typed
             final DBhelper settingsDBhelper = new DBhelper(this);
@@ -154,32 +167,33 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
             else{
-                // get sms message and phonenumber from database
+                // Get sms message and phonenumber from database
                 String smsMessage = settingsDBhelper.getSMS();
                 String phoneNumber = settingsDBhelper.getNumber();
                 String SENT = "SMS_SENT";
                 String DELIVERED = "SMS_DELIVERED";
 
                 TelephonyManager telephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
-                // check device is able to send sms
+                // Check device is able to send sms
                 if(telephonyManager.isSmsCapable()){
-                    // check connection
+                    // Check connection
                     PendingIntent sendingPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(SENT), 0);
                     PendingIntent deliveryPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(DELIVERED), 0);
 
-                    // send sms
+                    // Send sms
                     SmsManager smsManager = SmsManager.getDefault();
                     smsManager.sendTextMessage(phoneNumber, null, smsMessage, sendingPendingIntent, deliveryPendingIntent);
 
-                    // check response code
-                    if ( sendingPendingIntent.getCreatorUid() == RESULT_OK) {
+                    // Check response code
+                    if ( sendingPendingIntent.getCreatorUid() == RESULT_OK) { // response is OK
                         Toast.makeText(this, "SMS is send", Toast.LENGTH_SHORT).show();
-                        // check if SMS is delivered
+                        // Check if SMS is delivered
                         if (deliveryPendingIntent== null){
                             Toast.makeText(this, "SMS delivery failed", Toast.LENGTH_SHORT).show();
                         }
                     }
-                    else{
+
+                    else{ // SMS could not be send (No connection)
                         Toast.makeText(this, "SMS failed, please check your connection and try again later.",
                             Toast.LENGTH_SHORT).show();
                     }
@@ -188,17 +202,27 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /*
+    Load hardcoded questions
+    Give questions to next QuestionActivity
+     */
     protected void questionClicked(View view){
-        Bundle b=new Bundle();
+        Bundle questionBundle=new Bundle();
         DBhelper questionHelper = new DBhelper(this);
         questions = questionHelper.loadQuestions();
 
-        b.putStringArrayList("questionsArrayList", questions);
+        // Load questions from XML in Bundle
+        questionBundle.putStringArrayList("questionsArrayList", questions);
+
+        // Prepare for QuestionActivity
         Intent questionIntent = new Intent(this, QuestionActivity.class);
-        questionIntent.putExtras(b);
+        questionIntent.putExtras(questionBundle);
         startActivity(questionIntent);
     }
 
+    /*
+    Start next SettingsActivity
+     */
     protected void settingsClicked(View view){
         Intent settingsIntent = new Intent(this, SettingsActivity.class);
         startActivity(settingsIntent);

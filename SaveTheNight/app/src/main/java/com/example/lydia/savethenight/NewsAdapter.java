@@ -1,30 +1,30 @@
 package com.example.lydia.savethenight;
+/**
+ * Created by Lydia on 6-6-2016.
+ * NewsAdapter.java is adapter to handle ArrayList of NewItems
+ */
 
 import android.content.Context;
 import android.text.Html;
-import android.text.Layout;
 import android.text.method.LinkMovementMethod;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
-/**
- * Created by Lydia on 6-6-2016.
+/*
+Class gets ArrayList and Fill ListView as assigned
  */
 public class NewsAdapter extends ArrayAdapter {
     public NewsAdapter(Context context, ArrayList<NewsItem> currentNews) {
         super(context, 0, currentNews);
     }
 
-
+    /*
+    Get View, fill View with data and return filled View
+     */
     @Override
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(getContext());

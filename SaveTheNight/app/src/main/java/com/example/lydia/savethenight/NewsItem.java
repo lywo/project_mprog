@@ -1,19 +1,17 @@
 package com.example.lydia.savethenight;
-
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
-
 /**
  * Created by Lydia on 3-6-2016.
+ * NewsItem.java is a NewsItem class
+ */
+
+/*
+Allows components of the News returned from newsFeed Parser to be saved together
+Has a constructor and 3 functions
  */
 public class NewsItem {
     public String title;
     public String link;
     public String description;
-
-    private static final String ns = null;
 
     // constructor
     public NewsItem(String title, String link, String description) {
@@ -23,25 +21,14 @@ public class NewsItem {
         this.description = description;
     }
 
-    // methods
-    public String getTitle() {
-        return title;
-    }
-
+    // Methods
+    // Only setters are used
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getLink() {
-        return link;
     }
 
     public void setLink(String link) {

@@ -1,21 +1,27 @@
 package com.example.lydia.savethenight;
+/*
+Lydia Wolfs
+QuestionActivity.java called from MainActivity
+ */
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.Random;
 
+/*
+Set Text in TextView with random picked question and update onSwipe
+Fill ListView with favourite Questions
+Allow favourite questions to be added by clicking on  + icon
+ */
 public class QuestionActivity extends AppCompatActivity {
     QuestionAdapter myQuestionAdapter;
     DBhelper myQuestionDBHelper;
-    ArrayList<String> favouriteQuestions;
     TextView currentQuestion ;
 
     @Override
@@ -23,23 +29,26 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
 
-        // get favourite questions and fill ListView
+        // Fill ListView with all the favourite questions
         myQuestionDBHelper = new DBhelper(this);
         final ArrayList<String> favouriteQuestions = myQuestionDBHelper.getFavouriteQuestions();
         myQuestionAdapter =  new QuestionAdapter(this, favouriteQuestions);
         final ListView favQuestionLV = (ListView) findViewById(R.id.favouriteQuestionsLV);
+        assert favQuestionLV != null;
         favQuestionLV.setAdapter(myQuestionAdapter);
 
-        // get all questions and fill TextView
+        // Load all questions and fill TextView
         currentQuestion=(TextView) findViewById(R.id.questionTV);
         final ArrayList questions = getIntent().getStringArrayListExtra("questionsArrayList");
+
+        // Select one random questions from all questions and fill TextView
         int randomNum=getRandomInt();
         String selectedQuestion = questions.get(randomNum).toString();
         currentQuestion.setText(selectedQuestion);
 
         /*
         onSwipe show new random question from list.
-        Both right and left swipes are alowed
+        Both right and left swipes are allowed
          */
         assert currentQuestion != null;
         currentQuestion.setOnTouchListener(new OnSwipeTouchListener(this) {
@@ -58,15 +67,16 @@ public class QuestionActivity extends AppCompatActivity {
         });
 
         favQuestionLV.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 // Toast to let user know item was deleted
                 Toast.makeText(getApplicationContext(), "Item deleted", Toast.LENGTH_SHORT).show();
                 String oldQuestion = favQuestionLV.getItemAtPosition(position).toString();
 
-                // Set question to non favourite, find new List and set Adapter
+                // Remove questions from favourites, by calling function from DBhelper
                 myQuestionDBHelper.setBoolFalse(oldQuestion);
+
+                // Update the favourites list
                 ArrayList<String> favouriteQuestions = myQuestionDBHelper.getFavouriteQuestions();
                 myQuestionAdapter =  new QuestionAdapter(QuestionActivity.this, favouriteQuestions);
                 favQuestionLV.setAdapter(myQuestionAdapter);
@@ -80,36 +90,35 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     /*
-    Method on Button click add question to favourites (Boolean reset to true)
+    Save current question in TextView as a favourite question
     Update the ListView
      */
     protected void addQuestion(View view){
         ListView favouriteQuestionsLV = (ListView) findViewById(R.id.favouriteQuestionsLV);
         currentQuestion = (TextView) findViewById(R.id.questionTV);
+
         assert currentQuestion != null;
         String newFavourite = currentQuestion.getText().toString();
+
+        // Update the current quesition as a favourite by calling function from DBhelper
         myQuestionDBHelper.setBoolTrue(newFavourite);
+
+        // Make new ArrayList of current favourite questions
         ArrayList<String> favouriteQuestions = myQuestionDBHelper.getFavouriteQuestions();
         myQuestionAdapter =  new QuestionAdapter(QuestionActivity.this, favouriteQuestions);
-        favouriteQuestionsLV.setAdapter(myQuestionAdapter);
 
         // Update ListView
+        assert favouriteQuestionsLV != null;
+        favouriteQuestionsLV.setAdapter(myQuestionAdapter);
         myQuestionAdapter.notifyDataSetChanged();
     }
 
-//    protected void nextQuestion(View view){
-//        currentQuestion = (TextView) findViewById(R.id.questionTV);
-//        ArrayList questions = getIntent().getStringArrayListExtra("questionsArrayList");
-//        assert currentQuestion != null;
-//        int randomNum=getRandomInt();
-//        String selectedQuestion = questions.get(randomNum).toString();
-//        currentQuestion.setText(selectedQuestion);
-//    }
-
-
+    /*
+    Calculate random int between 0 and 100
+    Return integer
+     */
     public int getRandomInt(){
         Random rand = new Random();
-        int randomNum = rand.nextInt((100) + 1);
-        return randomNum;
+        return rand.nextInt((100) + 1);
     }
 }

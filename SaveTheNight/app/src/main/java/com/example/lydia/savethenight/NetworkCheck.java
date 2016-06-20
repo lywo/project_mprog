@@ -1,4 +1,8 @@
 package com.example.lydia.savethenight;
+/**
+ * Created by Lydia on 16-6-2016.
+ * Extra class to separate functions
+ */
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -7,8 +11,8 @@ import android.net.wifi.SupplicantState;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 
-/**
- * Created by Lydia on 16-6-2016.
+/*
+NetWorkCheck is a class with 3 functions to check different network connections
  */
 public class NetworkCheck {
     static ConnectivityManager cm;

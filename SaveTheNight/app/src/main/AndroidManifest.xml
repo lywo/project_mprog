@@ -33,7 +33,7 @@
             android:name=".QuestionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".newsActivity"
+            android:name=".NewsActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".SettingsActivity"

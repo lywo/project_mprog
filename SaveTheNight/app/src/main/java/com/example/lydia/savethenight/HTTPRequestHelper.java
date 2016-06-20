@@ -1,7 +1,9 @@
 package com.example.lydia.savethenight;
-
-import android.util.Log;
-import android.util.Xml;
+/*
+ * Created by Lydia on 3-6-2016.
+ * HTTPRequestHelper.java
+ * Called from NewsAsyncTask
+ */
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,23 +11,25 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import org.json.JSONException;
-import org.json.JSONObject;
-//import org.json.XML;
 
-
-/**
- * Created by Lydia on 3-6-2016.
+/*
+Class that executes request with news URL
+Handles return code
+Returns String with result
  */
 public class HTTPRequestHelper {
-    // news URL
+    // News URL
     private static final String newsURL = "http://feeds.nos.nl/nosjournaal";
 
+    /*
+    Make connection to server, execute result and handle response
+    Return String with result from request
+     */
     protected static synchronized String serverDownload(String... values) {
-        // declare return String result
+        // Declare return String result
         String result = "";
 
-        // convert String to url
+        // Convert String to url
         URL url = null;
         try {
             url = new URL(newsURL);
@@ -33,19 +37,19 @@ public class HTTPRequestHelper {
             e.printStackTrace();
         }
 
-        // make connection
+        // Make connection
         HttpURLConnection connection = null;
         if (url != null) {
             try {
                 connection = (HttpURLConnection) url.openConnection();
 
-                // open connection ; set request method
+                // Open connection
                 connection.setRequestMethod("GET");
 
-                // get response code
+                // Get response code
                 Integer responseCode = connection.getResponseCode();
 
-                // if 200-299 read inpustream
+                // If 200-299 (ok) read InputStream
                 if (200 <= responseCode && responseCode <= 299) {
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
                     String currentLine;
@@ -54,7 +58,7 @@ public class HTTPRequestHelper {
                     }
                 }
 
-                // else read error stream
+                // Read error stream
                 else {
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connection.getErrorStream()));
                     if (responseCode >= 300 && responseCode < 400) {
@@ -66,6 +70,7 @@ public class HTTPRequestHelper {
                     if (responseCode >= 500) {
                         result = "ERROR: server error:\n";
                     }
+                    // Fill result String
                     String currentLine;
                     while ((currentLine = bufferedReader.readLine()) != null) {
                         result = result + currentLine;

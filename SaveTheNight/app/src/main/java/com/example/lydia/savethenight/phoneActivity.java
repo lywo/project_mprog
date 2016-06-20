@@ -1,6 +1,9 @@
 package com.example.lydia.savethenight;
-
-import android.app.Activity;
+/*
+Lydia Wolfs
+PhoneActivity
+Called from MainActivity when phone icon is clicked
+ */
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
@@ -13,6 +16,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+/*
+Listen to Ringtone settings of user to depend volume
+2 ways to stop ringtone or vibration, on back pressed and icon clicked
+Stop via function which is called twice
+ */
 public class PhoneActivity extends AppCompatActivity {
     MediaPlayer mp;
     Vibrator v;
@@ -24,6 +32,7 @@ public class PhoneActivity extends AppCompatActivity {
         setContentView(R.layout.activity_phone);
         am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
 
+        // Check phone settings ringtone volume to adapt ringtone to ringtone, vibration or silent
         switch (am.getRingerMode()) {
             case AudioManager.RINGER_MODE_SILENT:
                 break;
@@ -34,35 +43,42 @@ public class PhoneActivity extends AppCompatActivity {
                 v.vibrate(30000);
                 break;
             case AudioManager.RINGER_MODE_NORMAL:
+
                 // play ringtone
                 Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
                 mp = MediaPlayer.create(getApplicationContext(), notification);
+
                 // set end time
                 mp.start();
                 break;
         }
     }
 
+    /*
+    Phone icon is clicked, stop vibration or ringtone
+     */
     protected void pickUpPhone(View view){
-        // set boolean false
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean("init", false).apply();
-        stopRingtone();
-    }
-
-    public void onBackPressed(){
-        // set boolean false
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean("init", false).apply();
         stopRingtone();
     }
 
     /*
-    Check the
+    Back Button is pressed, stop vibration or ringtone
+     */
+    public void onBackPressed(){
+        stopRingtone();
+    }
+
+    /*
+    Check the Sound settings and stop if needed sounds/ vibration
      */
     protected void stopRingtone(){
+
+        // Set Boolean fake call initialized to false so a new fake call can be initialized in MainActivity
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putBoolean("init", false).apply();
+
+        // Check ringTone volume settings from phone to adapt RingTone stop
         switch (am.getRingerMode()) {
             case AudioManager.RINGER_MODE_SILENT:
                 break;

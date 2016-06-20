@@ -11,19 +11,23 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 
 /**
- * Detects left and right swipes across a view.
+ * Detects left and right swipes across TextView with questions
+ * Update content form View onSwipe
  */
 class OnSwipeTouchListener implements OnTouchListener {
 
     private final GestureDetector gestureDetector;
 
+    /*
+    Initiate Listener
+     */
     public OnSwipeTouchListener(Context context) {
         gestureDetector = new GestureDetector(context, new GestureListener());
     }
 
+    // Initiate swipe functions
     public void onSwipeLeft() {
     }
-
     public void onSwipeRight() {
     }
 
@@ -31,8 +35,11 @@ class OnSwipeTouchListener implements OnTouchListener {
         return gestureDetector.onTouchEvent(event);
     }
 
+    /*
+    Create Listener and addapt to movements
+    Reset content
+     */
     private final class GestureListener extends GestureDetector.SimpleOnGestureListener {
-
         private static final int SWIPE_DISTANCE_THRESHOLD = 100;
         private static final int SWIPE_VELOCITY_THRESHOLD = 100;
 

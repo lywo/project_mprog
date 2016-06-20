@@ -1,20 +1,21 @@
 package com.example.lydia.savethenight;
-
-import android.content.ContentValues;
+/*
+ * Created by Lydia on 3-6-2016.
+ * DBhelper.java called
+ */
 import android.content.Context;
-import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
-
 import java.util.ArrayList;
-import java.util.List;
 
-/**
- * Created by Lydia on 3-6-2016.
+/*
+ * constructs a SQLiteDatabase when app is installed (never again until uninstalled)
+ * makes 2 tables and various functions to alter those.
  */
 public class DBhelper extends SQLiteOpenHelper {
+
+    // define Strings and queries
     private static final String DATABASE_NAME = "date.db";
     private static final int DATABASE_VERSION = 1;
     private static final String TABLE_NAME_QUESTION = "questionData";
@@ -32,15 +33,16 @@ public class DBhelper extends SQLiteOpenHelper {
             + COLUMN_ITEM_NAME + " TEXT" + " , " + COLUMN_ITEM_NUMBER +  " TEXT" + " , "
             + COLUMN_ITEM_SMS + " TEXT" + ")";
     public static String[] questions = null;
-    private final Context context;
 
     // constructor
     public DBhelper(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        this.context = context;
         questions = context.getResources().getStringArray(R.array.questions);
     }
 
+    /*
+    Execute create tables queries and insert questions in database
+     */
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_QUESTION_TABLE);
@@ -49,10 +51,12 @@ public class DBhelper extends SQLiteOpenHelper {
         for (String question : questions) {
             db.execSQL("INSERT INTO questionData (question, status) VALUES ('" + question + "', 0)");
         }
-
         db.execSQL("INSERT INTO settingsData (name, number, sms) VALUES ('', '', '')");
     }
 
+    /*
+    If database exists, drop and to go onCreate()
+     */
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // drop tables
@@ -62,15 +66,25 @@ public class DBhelper extends SQLiteOpenHelper {
     }
 
     // CRUD methods
+
+    /*
+    Save selected Strings name and phone number in database
+     */
     public void saveContact(String name, String phoneNumber){
         SQLiteDatabase db = getWritableDatabase();
         db.execSQL("UPDATE settingsData SET name = '" + name + "', number = '" + phoneNumber + "'");
     }
 
+    /*
+    Get saved name from selected contact from database to show in View
+    Return name from saved contact as a String
+     */
     public String getName(){
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_NAME + " FROM " + TABLE_NAME_SETTINGS, null);
-        String result=null;
+        String result = null;
+
+        // loop over  cursor
         if (cursor != null) {
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
@@ -78,15 +92,24 @@ public class DBhelper extends SQLiteOpenHelper {
                 cursor.moveToNext();
             }
         }
+
+        assert cursor != null;
         cursor.close();
         db.close();
+
         return result;
     }
 
+    /*
+    Get saved number from selected contact from database to send sms
+    Return saved number as a String
+     */
     public String getNumber(){
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_NUMBER + " FROM " + TABLE_NAME_SETTINGS, null);
         String result=null;
+
+        // loop over cursor
         if (cursor != null) {
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
@@ -94,20 +117,32 @@ public class DBhelper extends SQLiteOpenHelper {
                 cursor.moveToNext();
             }
         }
+
+        assert cursor != null;
         cursor.close();
         db.close();
+
         return result;
     }
 
+    /*
+    Save sms text from input String in database
+     */
     public void saveSMS(String smsText){
         SQLiteDatabase db = getWritableDatabase();
         db.execSQL("UPDATE settingsData SET sms = '" + smsText + "'");
     }
 
+    /*
+    Get saved sms text from database to send sms
+    Returns String with sms text
+     */
     public String getSMS(){
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_SMS + " FROM " + TABLE_NAME_SETTINGS, null);
         String result=null;
+
+        // loop over cursor
         if (cursor != null) {
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
@@ -115,28 +150,43 @@ public class DBhelper extends SQLiteOpenHelper {
                 cursor.moveToNext();
             }
         }
+
+        assert cursor != null;
         cursor.close();
         db.close();
+
         return result;
     }
 
+    /*
+    Add question to favourites by editing boolean to true
+     */
     public void setBoolTrue(String newFavouriteQuestion){
         SQLiteDatabase db = getReadableDatabase();
         db.execSQL("UPDATE " + TABLE_NAME_QUESTION + " SET " + COLUMN_ITEM_STATUS + " = 1 WHERE "
                 + COLUMN_ITEM_QUESTION + " = '" + newFavouriteQuestion + "'");
     }
 
+    /*
+    Delete questions from favourites by editing boolean to false
+     */
     public void setBoolFalse (String oldFavouriteQuestion){
         SQLiteDatabase db = getWritableDatabase();
         db.execSQL("UPDATE " + TABLE_NAME_QUESTION + " SET " + COLUMN_ITEM_STATUS + " = 0 WHERE "
                 + COLUMN_ITEM_QUESTION + " = '" + oldFavouriteQuestion + "'");
     }
 
+    /*
+    Get all questions where boolean is true to get ArrayList favourite questions
+    Return ArrayList with all favourite questions in Strings
+     */
     public ArrayList<String> getFavouriteQuestions(){
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_QUESTION + " FROM " + TABLE_NAME_QUESTION
                 + " WHERE " + COLUMN_ITEM_STATUS + " = 1", null);
         ArrayList<String> result = new ArrayList<>();
+
+        // loop over cursor
         if (cursor != null) {
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
@@ -145,16 +195,24 @@ public class DBhelper extends SQLiteOpenHelper {
                 cursor.moveToNext();
             }
         }
+
+        assert cursor != null;
         cursor.close();
         db.close();
 
         return result;
     }
 
+    /*
+    Get all questions stored in database
+    Return ArrayList with questions in Strings
+     */
     ArrayList<String> loadQuestions (){
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_QUESTION + " FROM " + TABLE_NAME_QUESTION, null);
         ArrayList<String> result = new ArrayList<>();
+
+        // run over cursor
         if (cursor != null) {
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
