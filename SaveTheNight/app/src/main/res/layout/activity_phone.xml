@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PhoneActivity"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:src="@mipmap/callingpicture"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="pickUpPhone"
+        android:id="@+id/callingIV" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/phonered"
+        android:layout_marginBottom="102dp"
+        android:layout_alignBottom="@+id/callingIV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/redPhoneIV" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/phonegreen2"
+        android:layout_alignTop="@+id/redPhoneIV"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/incomingcallytop"
+        android:id="@+id/topCallingIV"
+        android:layout_below="@+id/adressTV"
+        android:layout_alignLeft="@+id/adressTV"
+        android:layout_alignStart="@+id/adressTV" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tante Paulien"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/nameTV"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kerkstraat 45\nEtten-Leur"
+        android:id="@+id/adressTV"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/nameTV"
+        android:layout_alignLeft="@+id/nameTV"
+        android:layout_alignStart="@+id/nameTV"
+        android:textSize="20dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_alignTop="@+id/callingIV"
+        android:layout_toRightOf="@+id/topCallingIV"
+        android:layout_toEndOf="@+id/topCallingIV"
+        android:layout_marginLeft="228dp"
+        android:layout_marginStart="228dp" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "questions">
+        <item>What excites you about (insert city in which you live)?</item>
+        <item>If today was the last day of your life, how would you spend it?</item>
+        <item>What impact do you want to leave the world?</item>
+        <item> Would you rather be less attractive and rich or extremely attractive and poor?</item>
+        <item>Would you break the law to save a family member?</item>
+        <item>What type of guy are you attracted to?</item>
+        <item>Which song makes you feel amazing and why?</item>
+        <item>What is the most romantic experience you have ever had?</item>
+        <item>Would you rather have true love or win the lottery?</item>
+        <item>Favourite childhood animated movie?</item>
+        <item>Describe your best holiday experience in your life.</item>
+        <item> If you could visit any country in the world, which would you visit and why?</item>
+        <item>What was your childhood fear?</item>
+        <item>How would you spent 10 million pounds?</item>
+        <item>If your boyfriend cheated on you, would you slap him or cheat on him?</item>
+        <item>Can you describe your greatest fantasy?</item>
+        <item>What was the weirdest relationship you have ever had?</item>
+        <item> If I was an ice cream, how would you eat me?</item>
+        <item>How close are you to your family?</item>
+        <item>What makes you smile in life?</item>
+        <item>What is your favourite ice cream flavour and why?</item>
+        <item>Who was your first crush?</item>
+        <item>What are your ideas about true love?</item>
+        <item>What is your favourite colour?</item>
+        <item>Describe the most embarrassing moment in your life?</item>
+        <item>What is the habit you are proudest of breaking?</item>
+        <item>What was your funniest moment in your life?</item>
+        <item>If you ruled the world, what would your change?</item>
+        <item>Who is the person in your life that you admire most, and why?</item>
+        <item>Do you like spontaneity or do you like routine?</item>
+        <item>Tell me about your friends?</item>
+        <item>Is there anything you are really passionate about?</item>
+        <item>Do you believe in love at first sight?</item>
+        <item>Can you describe your dream house to me?</item>
+        <item>Are there any causes you strongly believe in?</item>
+        <item>3 physical features you get complimented on a lot?</item>
+        <item>Can you describe your first kiss?</item>
+        <item>Give the names of 3 things you dislike most and why?</item>
+        <item>What is the worst injury you have ever had?</item>
+        <item>Do you have any pet names? If yes, how did you get them?</item>
+        <item>Do you believe that the cup is half empty or half full?</item>
+        <item>Do you remember who taught you to ride a bike?</item>
+        <item>Can you describe the craziest thing you have ever done?</item>
+        <item>Favourite film star?</item>
+        <item>How do you like to spend New Years Eve?</item>
+        <item>Describe your relationship with your parents?</item>
+        <item>Favourite day of the week?</item>
+        <item>Do you have any bad habits?</item>
+        <item>Do you consider yourself sexually open minded?</item>
+        <item>How do you feel about porn?</item>
+        <item>What is your biggest goal in life?</item>
+        <item>How would your friends describe you in three words?</item>
+        <item>Have you ever experimented with drugs?</item>
+        <item>Which living celebrity would you like to know?</item>
+        <item>If you could invite any three people from history to dinner, who would you invite?</item>
+        <item>Do you have a favourite film?</item>
+        <item>What is the most courageous thing you have ever done in your life?</item>
+        <item>What is your earliest memory?</item>
+        <item>If you had three wishes, what would you wish for?</item>
+        <item>If you could have a superpower, what would be your superpower?</item>
+        <item>What is the best advice you have ever received?</item>
+        <item>Who was your hottest boyfriend?</item>
+        <item>Has a guy ever asked to marry you?</item>
+        <item>Have you ever kissed a girl?</item>
+        <item>Ever been in a catfight? Who scratched who?</item>
+        <item>Can you fake any accent? If yes, would you show me?</item>
+        <item>If you had one day in your life to live over again, which would you choose and why?</item>
+        <item>If your house was on fire and you could save one possession, what would you save?</item>
+        <item>How often do you talk to your parents?</item>
+        <item>Favourite quote in life?</item>
+        <item>If you could speak one language, what would it be and why?</item>
+        <item>If you had your own country, what would be some of the rules?</item>
+        <item>What is your favourite four letter word and why?</item>
+        <item>If you had a label round your neck, what would it say?</item>
+        <item>What was the last nice thing your dad did for your mum?</item>
+        <item>How many times have you lost your mobile, and were there any interesting ways?</item>
+        <item>American pancakes or English (flat) pancakes?</item>
+        <item>Put your iTunes on shuffle. Give me the first 6 songs that pop up.</item>
+        <item>How do you vent your anger?</item>
+        <item>How would you define art?</item>
+        <item>What is your astrological sign?</item>
+        <item>What would be a question you would be afraid to tell the truth on?</item>
+        <item>In your opinion, what makes a great relationship?</item>
+        <item>What is your ethnic background?</item>
+        <item>Do you save money or spend it?</item>
+        <item>Ever had a rumour spread about you?</item>
+        <item>If you could change your natural hair colour, would you? To what?</item>
+        <item>Coolest thing you have ever been for Halloween/Carnaval?</item>
+        <item>Pirates or ninjas? Why?</item>
+        <item>What kind of smoothie sounds really good right now?</item>
+        <item>Do you prefer to wake up early or stay in bed till late in the morning?</item>
+        <item>Ever tried online dating? Worst experience?</item>
+        <item>What is your favourite way to spend a Saturday?</item>
+        <item>Where do you see yourself 10 years from now?</item>
+        <item>If your life were a book, what would you name it?</item>
+        <item>Beach holiday or sightseeing holiday? Why?</item>
+        <item>Would you prefer an exotic meal in a five-star hotel or a delicious chocolate-cake from a local bakery?</item>
+        <item>Do you believe in God?</item>
+        <item>How many kids would you like to have?</item>
+        <item>What turns you off the most?</item>
+        <item>Did you ever have a crush on a male teacher?</item>
+    </string-array>
+</resources>
