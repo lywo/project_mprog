@@ -123,6 +123,8 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 - bug van maar 1 call tegelijk mogelijk is gefixed
 - gekeken naar extra check wanneer 'never ask again' is clicked (niet mogelijk) overleg met Jaap. 
 - NEW BUG: trillen/ringtone voor een bepaalde tijd en automatisch stoppen na 30 sec
-
+- report.md gemaakt
+- UML geupdate (2x)
+- fixed maximum duratie van vibratie
 
 
