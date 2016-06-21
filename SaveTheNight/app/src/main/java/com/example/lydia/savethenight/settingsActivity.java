@@ -175,10 +175,9 @@ public class SettingsActivity extends AppCompatActivity {
      */
     public void onActivityResult(int requestCode, int resultCode, Intent intent)
     {
-        if (requestCode == PICK_CONTACT) {
-            // Make sure the request was successful
-            if (resultCode == RESULT_OK) {
-                // The user picked a contact.
+        if (requestCode == PICK_CONTACT) { // Make sure the request was successful
+
+            if (resultCode == RESULT_OK) { // The user picked a contact.
                 getContactInfo(intent);
             }
             else{

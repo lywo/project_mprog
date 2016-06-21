@@ -140,13 +140,17 @@ public class MainActivity extends AppCompatActivity {
                         Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
 
                 // Show Dialog with warning for user
-                showDialogOK("Permission to send sms is needed, please allow", "Permission Error",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        });
+                AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
+                AlertContact.setMessage("Permission to send sms is needed, please allow");
+                AlertContact.setTitle("Permission Error");
+                AlertContact.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                AlertContact.setCancelable(true);
+                AlertContact.create().show();
             }
         }
         else { // Permission to send sms is granted
@@ -154,8 +158,13 @@ public class MainActivity extends AppCompatActivity {
             // Check is contact selected and sms typed
             final DBhelper settingsDBhelper = new DBhelper(this);
             if (settingsDBhelper.getName().length() == 0 || settingsDBhelper.getNumber().length() == 0){
-                showDialogOK("Select a contact from contact list to send SMS", "Settings Error",
-                        new DialogInterface.OnClickListener() {
+                showDialogOK( "Select a contact from contact list to send SMS", "Settings Error", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent settingsIntent = new Intent(getBaseContext(), SettingsActivity.class);
+                        startActivity(settingsIntent);
+                    }
+                }, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -163,8 +172,13 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
             else if (settingsDBhelper.getSMS().length() == 0 ){
-                showDialogOK("No sms text was found, please type your sms message", "Settings Error",
-                        new DialogInterface.OnClickListener() {
+                showDialogOK("No sms text was found, please type your sms message", "Settings Error", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent settingsIntent = new Intent(getBaseContext(), SettingsActivity.class);
+                        startActivity(settingsIntent);
+                    }
+                }, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -239,11 +253,13 @@ public class MainActivity extends AppCompatActivity {
     /*
     Shows Dialog with ok button, input message and input title
      */
-    private void showDialogOK(String message, String title, DialogInterface.OnClickListener okListener) {
+    private void showDialogOK(String message, String title, DialogInterface.OnClickListener okListener,
+                              DialogInterface.OnClickListener cancelListener) {
         AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
         AlertContact.setMessage(message);
         AlertContact.setTitle(title);
         AlertContact.setPositiveButton("OK", okListener);
+        AlertContact.setNegativeButton("Cancel",cancelListener);
         AlertContact.setCancelable(true);
         AlertContact.create().show();
     }
