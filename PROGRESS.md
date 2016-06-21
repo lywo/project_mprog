@@ -127,4 +127,7 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 - UML geupdate (2x)
 - fixed maximum duratie van vibratie
 
+### Day 17
+- naar links swipen is vorige vraag en naar rechts swipen is volgende vraag. 
+
 
