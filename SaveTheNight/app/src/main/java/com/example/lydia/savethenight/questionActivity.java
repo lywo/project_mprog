@@ -23,6 +23,7 @@ public class QuestionActivity extends AppCompatActivity {
     QuestionAdapter myQuestionAdapter;
     DBhelper myQuestionDBHelper;
     TextView currentQuestion ;
+    int randomNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +38,12 @@ public class QuestionActivity extends AppCompatActivity {
         assert favQuestionLV != null;
         favQuestionLV.setAdapter(myQuestionAdapter);
 
-        // Load all questions and fill TextView
+        // Load all questions
         currentQuestion=(TextView) findViewById(R.id.questionTV);
         final ArrayList questions = getIntent().getStringArrayListExtra("questionsArrayList");
 
         // Select one random questions from all questions and fill TextView
-        int randomNum=getRandomInt();
+        randomNum=getRandomInt();
         String selectedQuestion = questions.get(randomNum).toString();
         currentQuestion.setText(selectedQuestion);
 
@@ -54,14 +55,28 @@ public class QuestionActivity extends AppCompatActivity {
         currentQuestion.setOnTouchListener(new OnSwipeTouchListener(this) {
             @Override
             public void onSwipeLeft() {
-                int randomNum=getRandomInt();
-                String selectedQuestion = questions.get(randomNum).toString();
+                if (randomNum >= 2){ // Go to previous question
+                    randomNum --;
+                }
+                else{ // Go back to the end of the list
+                    randomNum = 101;
+                }
+
+                // Select question from database on individual id number and fill in TextView
+                String selectedQuestion = DBhelper.getOneQuestion(randomNum);
                 currentQuestion.setText(selectedQuestion);
             }
 
             public void onSwipeRight(){
-                int randomNum=getRandomInt();
-                String selectedQuestion = questions.get(randomNum).toString();
+                if (randomNum <= 100){ // Go to next question in list
+                    randomNum ++;
+                }
+                else{ // start at the begin
+                    randomNum = 1;
+                }
+
+                // Select question from database on individual id number and fill in TextView
+                String selectedQuestion = DBhelper.getOneQuestion(randomNum);
                 currentQuestion.setText(selectedQuestion);
             }
         });

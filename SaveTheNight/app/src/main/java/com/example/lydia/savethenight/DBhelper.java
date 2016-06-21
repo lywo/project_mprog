@@ -25,6 +25,7 @@ public class DBhelper extends SQLiteOpenHelper {
     public static final String COLUMN_ITEM_NAME = "name";
     public static final String COLUMN_ITEM_NUMBER =  "number";
     public static final String COLUMN_ITEM_SMS = "sms";
+    public static final String COLUMN_ITEM_ID = "_id";
     public static final String CREATE_QUESTION_TABLE = "CREATE TABLE " + TABLE_NAME_QUESTION + "("
             + "_id INTEGER PRIMARY KEY AUTOINCREMENT"
             + " , " + COLUMN_ITEM_QUESTION + " TEXT"+ " , " + COLUMN_ITEM_STATUS
@@ -221,6 +222,28 @@ public class DBhelper extends SQLiteOpenHelper {
                 cursor.moveToNext();
             }
         }
+        assert cursor != null;
+        cursor.close();
+        db.close();
+
+        return result;
+    }
+
+    public String getOneQuestion(int _id){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_QUESTION + " FROM " + TABLE_NAME_QUESTION
+                + " WHERE " + COLUMN_ITEM_ID + " = " + _id, null);
+        String result = null;
+
+        // loop over  cursor
+        if (cursor != null) {
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                result = cursor.getString(cursor.getColumnIndex("question"));
+                cursor.moveToNext();
+            }
+        }
+
         assert cursor != null;
         cursor.close();
         db.close();
