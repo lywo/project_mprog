@@ -61,10 +61,9 @@ public class QuestionActivity extends AppCompatActivity {
                 else{ // Go back to the end of the list
                     randomNum = 101;
                 }
-
-//                // Select question from database on individual id number and fill in TextView
-//                String selectedQuestion = myQuestionDBHelper.getOneQuestion(randomNum);
-//                currentQuestion.setText(selectedQuestion);
+                // Select question from database on individual id number and fill in TextView
+                String selectedQuestion = myQuestionDBHelper.getOneQuestion(randomNum);
+                currentQuestion.setText(selectedQuestion);
             }
 
             public void onSwipeRight(){

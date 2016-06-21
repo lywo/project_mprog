@@ -208,7 +208,7 @@ public class DBhelper extends SQLiteOpenHelper {
     Get all questions stored in database
     Return ArrayList with questions in Strings
      */
-    ArrayList<String> loadQuestions (){
+    public ArrayList<String> loadQuestions (){
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_QUESTION + " FROM " + TABLE_NAME_QUESTION, null);
         ArrayList<String> result = new ArrayList<>();
@@ -229,6 +229,10 @@ public class DBhelper extends SQLiteOpenHelper {
         return result;
     }
 
+    /*
+    Select one question from the list in the database by a given integer as id
+    Return 1 String with the selected question
+     */
     public String getOneQuestion(int _id){
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ITEM_QUESTION + " FROM " + TABLE_NAME_QUESTION
