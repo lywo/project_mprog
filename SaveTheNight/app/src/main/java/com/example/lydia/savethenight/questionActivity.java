@@ -62,9 +62,9 @@ public class QuestionActivity extends AppCompatActivity {
                     randomNum = 101;
                 }
 
-                // Select question from database on individual id number and fill in TextView
-                String selectedQuestion = DBhelper.getOneQuestion(randomNum);
-                currentQuestion.setText(selectedQuestion);
+//                // Select question from database on individual id number and fill in TextView
+//                String selectedQuestion = myQuestionDBHelper.getOneQuestion(randomNum);
+//                currentQuestion.setText(selectedQuestion);
             }
 
             public void onSwipeRight(){
@@ -76,7 +76,7 @@ public class QuestionActivity extends AppCompatActivity {
                 }
 
                 // Select question from database on individual id number and fill in TextView
-                String selectedQuestion = DBhelper.getOneQuestion(randomNum);
+                String selectedQuestion = myQuestionDBHelper.getOneQuestion(randomNum);
                 currentQuestion.setText(selectedQuestion);
             }
         });
