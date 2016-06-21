@@ -25,6 +25,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.provider.ContactsContract;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /*
 Gets user input and saves text message and selected contact in SQLitedatabase
@@ -176,7 +177,12 @@ public class SettingsActivity extends AppCompatActivity {
     {
         if (requestCode == PICK_CONTACT)
         {
-            getContactInfo(intent);
+            if (resultCode == RESULT_OK){ // user picked a contact
+                getContactInfo(intent);
+            }
+            else{
+                Toast.makeText(this, "No contact was selected", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 

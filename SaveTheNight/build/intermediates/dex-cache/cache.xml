@@ -40,7 +40,7 @@
         jar="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="c183ba2e315f8bc0fe237043a22dfbead3db3e18">
+        sha1="b36022cb72cf7a08959a89f5e6d74ccf9947ac9f">
         <dex dex="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0d752da2a36c54f696b13438a0991572cb6ac68e\classes.dex" />
     </item>
     <item
@@ -54,7 +54,7 @@
         jar="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="6eb212e2aa5a971c4abb12d8546417a309a3f4be">
+        sha1="93407c9f66407cdec06cfeabdf0a9a2003a66363">
         <dex dex="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d8f543387656562e9f4623834f9919a9281fa58b\classes.dex" />
     </item>
 
