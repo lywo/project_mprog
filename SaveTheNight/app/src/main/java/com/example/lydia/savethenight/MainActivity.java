@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
                             switch (getResultCode())
                             {
                                 case Activity.RESULT_OK:
-                                    Toast.makeText(getBaseContext(), "SMS sent",
+                                    Toast.makeText(getBaseContext(), getString(R.string.smsok),
                                             Toast.LENGTH_SHORT).show();
                                     break;
                                 case SmsManager.RESULT_ERROR_GENERIC_FAILURE:
