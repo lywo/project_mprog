@@ -129,5 +129,16 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 
 ### Day 17
 - naar links swipen is vorige vraag en naar rechts swipen is volgende vraag. 
+- added star voor betere UI ipv plus
+- geen crash meer wanneer terug zonder een contact te selecteren 
+- Update Dialog met 2 knoppen, 1tje meteen naar settings, andere is cancel
+- GROTE GIT PROBLEMEN , nu via de branch "test" werken 
+- gewerkt aan report: screenshot, description en technical design UML's
+
+### Day 18
+- gewerkt aan report: challenges during development
+- clean up code: exporteer alle strings die met de gebruiker communiceren. 
+- fixed pop-up when never asked checked 
+- update recieving response code sms
 
 
