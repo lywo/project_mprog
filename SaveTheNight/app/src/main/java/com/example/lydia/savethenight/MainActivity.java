@@ -7,10 +7,14 @@ package com.example.lydia.savethenight;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -134,11 +138,6 @@ public class MainActivity extends AppCompatActivity {
 
             // First  time  permission check or checked the 'never ask again' box
             else {
-
-                // Request permission
-                ActivityCompat.requestPermissions(this, new String[]{
-                        Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
-
                 // Show Dialog with warning for user permission is needed
                 AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
                 AlertContact.setMessage(getString(R.string.smspermission));
@@ -146,11 +145,15 @@ public class MainActivity extends AppCompatActivity {
                 AlertContact.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        // Request permission
+                        ActivityCompat.requestPermissions(MainActivity.this, new String[]{
+                                Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
                         dialog.dismiss();
                     }
                 });
                 AlertContact.setCancelable(true);
                 AlertContact.create().show();
+
             }
         }
         else { // Permission to send sms is granted
@@ -199,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
                 TelephonyManager telephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
                 if(telephonyManager.isSmsCapable()){
 
-                    // Check if sms can be send
+                    // Check if sms can be send using PendingIntents
                     PendingIntent sendingPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(SENT), 0);
                     PendingIntent deliveryPendingIntent = PendingIntent.getBroadcast(this, 0, new Intent(DELIVERED), 0);
 
@@ -207,20 +210,38 @@ public class MainActivity extends AppCompatActivity {
                     SmsManager smsManager = SmsManager.getDefault();
                     smsManager.sendTextMessage(phoneNumber, null, smsMessage, sendingPendingIntent, deliveryPendingIntent);
 
-                    // Check response code
-                    if ( sendingPendingIntent.getCreatorUid() == RESULT_OK) { // response is OK
-                        Toast.makeText(this, "SMS is send", Toast.LENGTH_SHORT).show();
-
-                        // Check if SMS is delivered
-                        if (deliveryPendingIntent== null){
-                            Toast.makeText(this, "SMS delivery failed", Toast.LENGTH_SHORT).show();
+                    /*
+                    Handle response when sms message is send
+                    Check for different response cases and communicate with user
+                     */
+                    registerReceiver(new BroadcastReceiver(){
+                        @Override
+                        public void onReceive(Context arg0, Intent arg1) {
+                            switch (getResultCode())
+                            {
+                                case Activity.RESULT_OK:
+                                    Toast.makeText(getBaseContext(), "SMS sent",
+                                            Toast.LENGTH_SHORT).show();
+                                    break;
+                                case SmsManager.RESULT_ERROR_GENERIC_FAILURE:
+                                    Toast.makeText(getBaseContext(), getString(R.string.genericfailure),
+                                            Toast.LENGTH_SHORT).show();
+                                    break;
+                                case SmsManager.RESULT_ERROR_NO_SERVICE:
+                                    Toast.makeText(getBaseContext(), getString(R.string.smsfailedcon),
+                                            Toast.LENGTH_SHORT).show();
+                                    break;
+                                case SmsManager.RESULT_ERROR_NULL_PDU:
+                                    Toast.makeText(getBaseContext(), getString(R.string.nullPDU),
+                                            Toast.LENGTH_SHORT).show();
+                                    break;
+                                case SmsManager.RESULT_ERROR_RADIO_OFF:
+                                    Toast.makeText(getBaseContext(), getString(R.string.radio_off),
+                                            Toast.LENGTH_SHORT).show();
+                                    break;
+                            }
                         }
-                    }
-
-                    else{ // SMS could not be send (No connection)
-                        Toast.makeText(this, getString(R.string.smsfailed),
-                            Toast.LENGTH_SHORT).show();
-                    }
+                    }, new IntentFilter(SENT));
                 }
             }
         }

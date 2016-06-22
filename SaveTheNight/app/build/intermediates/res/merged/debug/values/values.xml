@@ -317,7 +317,18 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">SaveTheNight</string>
+    <string name="callisinit">Call already initialized</string>
+    <string name="callisnotinit">Fake call is initialized</string>
+    <string name="nocontact">No contact was selected</string>
+    <string name="noic">No internet connection</string>
+    <string name="nosmstext">No sms text was found, please type your sms message</string>
+    <string name="permission_error">Permission Error</string>
+    <string name="select_contact">Select a contact from contact list to send SMS</string>
+    <string name="settings_error">Settings Error</string>
+    <string name="smsfailed">"SMS failed, please check your connection and try again later"</string>
+    <string name="smspermission">Permission to send sms is needed, please allow</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="wifiauth">No WiFi authentication</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
