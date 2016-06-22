@@ -228,7 +228,7 @@ public class SettingsActivity extends AppCompatActivity {
         // Update TextView with name from selected contact
         TextView contactNameTV = (TextView) findViewById(R.id.contactTV);
         assert contactNameTV != null;
-        contactNameTV.setText("Saved contact is " + name);
+        contactNameTV.setText(getString(R.string.savedcontact) + name);
 
         // Save the name and phone number from selected contact
         contactDBhelper.saveContact(name, phoneNumber);

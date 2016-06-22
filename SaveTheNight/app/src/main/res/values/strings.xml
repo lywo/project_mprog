@@ -11,7 +11,7 @@
     <string name="nosmstext">No sms text was found, please type your sms message</string>
     <string name="smsfailedcon">SMS failed, please check your connection and try again later</string>
     <string name="nocontact">No contact was selected</string>
-    <string name="genericfailure">SMS failed, generic failure</string>
+    <string name="genericfailure">SMS failed, generic failure. Please check sms requirements</string>
     <string name="nullPDU">SMS failed, missing information</string>
     <string name="radio_off">SMS failed, phone radio is off</string>
     <string name="smsok">SMS sent</string>
