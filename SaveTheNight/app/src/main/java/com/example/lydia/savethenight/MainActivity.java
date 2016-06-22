@@ -59,13 +59,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Call is already initialized
         if (initialized){
-            Toast.makeText(this, "Call already initialized", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.callisinit), Toast.LENGTH_SHORT).show();
         }
         else {// Call is not yet initialized
 
             // Change Boolean init to true because fake call is now initialized and communicate to user
             editor.putBoolean("init", true).apply();
-            Toast.makeText(this, "Fake call is initialized", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.callisnotinit), Toast.LENGTH_SHORT).show();
 
             // Do not allow screen to sleep
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -95,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
 
                 // Check is correct wifi connection
                 if(!NetworkCheck.isAuthentication(this)){
-                    // Message to user no wifi authentication
-                    Toast.makeText(this, "No WiFi authentication", Toast.LENGTH_SHORT).show();
+                    // Message to user there is no wifi authentication
+                    Toast.makeText(this, getString(R.string.wifiauth), Toast.LENGTH_SHORT).show();
                 }
                 else{ // News can be loaded
                     Intent newsIntent = new Intent(this, NewsActivity.class);
@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
 
-            // Update user
-            Toast.makeText(this, "No internet connection", Toast.LENGTH_SHORT).show();
+            // Update user there is no internet connection
+            Toast.makeText(this, getString(R.string.noic), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -139,10 +139,10 @@ public class MainActivity extends AppCompatActivity {
                 ActivityCompat.requestPermissions(this, new String[]{
                         Manifest.permission.SEND_SMS}, MY_PERMISSIONS_REQUEST_SEND_SMS);
 
-                // Show Dialog with warning for user
+                // Show Dialog with warning for user permission is needed
                 AlertDialog.Builder AlertContact = new AlertDialog.Builder(this);
-                AlertContact.setMessage("Permission to send sms is needed, please allow");
-                AlertContact.setTitle("Permission Error");
+                AlertContact.setMessage(getString(R.string.smspermission));
+                AlertContact.setTitle(getString(R.string.permission_error));
                 AlertContact.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -158,7 +158,8 @@ public class MainActivity extends AppCompatActivity {
             // Check is contact selected and sms typed
             final DBhelper settingsDBhelper = new DBhelper(this);
             if (settingsDBhelper.getName().length() == 0 || settingsDBhelper.getNumber().length() == 0){
-                showDialogOK("Select a contact from contact list to send SMS", "Settings Error",new DialogInterface.OnClickListener() {
+                showDialogOK(getString(R.string.select_contact), getString(R.string.settings_error),
+                        new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent settingsIntent = new Intent (getBaseContext(), SettingsActivity.class);
@@ -172,7 +173,8 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
             else if (settingsDBhelper.getSMS().length() == 0 ){
-                showDialogOK("No sms text was found, please type your sms message", "Settings Error", new DialogInterface.OnClickListener() {
+                showDialogOK(getString(R.string.nosmstext), getString(R.string.settings_error),
+                        new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent settingsIntent = new Intent (getBaseContext(), SettingsActivity.class);
@@ -216,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     else{ // SMS could not be send (No connection)
-                        Toast.makeText(this, "SMS failed, please check your connection and try again later.",
+                        Toast.makeText(this, getString(R.string.smsfailed),
                             Toast.LENGTH_SHORT).show();
                     }
                 }

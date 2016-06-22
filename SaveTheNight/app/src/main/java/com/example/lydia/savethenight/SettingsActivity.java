@@ -181,7 +181,7 @@ public class SettingsActivity extends AppCompatActivity {
                 getContactInfo(intent);
             }
             else{
-                Toast.makeText(this, "No contact was selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.nocontact), Toast.LENGTH_SHORT).show();
             }
         }
     }

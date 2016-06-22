@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">SaveTheNight</string>
+    <string name="callisinit">Call already initialized</string>
+    <string name="callisnotinit">Fake call is initialized</string>
+    <string name="wifiauth">No WiFi authentication</string>
+    <string name="noic">No internet connection</string>
+    <string name="smspermission">Permission to send sms is needed, please allow</string>
+    <string name="permission_error">Permission Error</string>
+    <string name="select_contact">Select a contact from contact list to send SMS</string>
+    <string name="settings_error">Settings Error</string>
+    <string name="nosmstext">No sms text was found, please type your sms message</string>
+    <string name="smsfailed">"SMS failed, please check your connection and try again later"</string>
+    <string name="nocontact">No contact was selected</string>
 </resources>
