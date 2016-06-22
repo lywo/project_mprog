@@ -49,20 +49,20 @@ public class SettingsActivity extends AppCompatActivity {
         // A contact is already saved in the database
         if(contactName.length() != 0){
             assert contactNameTV != null;
-            contactNameTV.setText("Saved contact is " + contactName);
+            contactNameTV.setText(getString(R.string.savedcontact) + contactName);
         }
 
         // There is no contact saved in database
         else{
             assert contactNameTV != null;
-            contactNameTV.setText("No saved contact " + contactName);
+            contactNameTV.setText(getString(R.string.nosavedcontact) + contactName);
         }
 
         // Fill TextView with saved sms is there is already a sms saved in the database
         TextView savedSMSText = (TextView) findViewById(R.id.savedSMSTV);
         if(savedSMS.length() != 0){
             assert savedSMSText != null;
-            savedSMSText.setText("Your saved sms: " + savedSMS);
+            savedSMSText.setText(getString(R.string.savedsms) + savedSMS);
         }
 
         // Set save button standard on false, so it is not possible to save empty sms message
@@ -162,7 +162,7 @@ public class SettingsActivity extends AppCompatActivity {
         TextView savedSMSText = (TextView) findViewById(R.id.savedSMSTV);
         if(savedSMS.length() != 0){
             assert savedSMSText != null;
-            savedSMSText.setText("Your saved sms: " + savedSMS);
+            savedSMSText.setText(getString(R.string.savedsms)+ savedSMS);
         }
 
         // Hide keyboard when sms is saved

@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\hart_icon_square.png",
+        "source": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\mipmap-xxhdpi\\hart_icon_square.png"
     }
 ]

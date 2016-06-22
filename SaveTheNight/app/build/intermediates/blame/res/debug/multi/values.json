@@ -3581,8 +3581,8 @@
                     "startLine": 321,
                     "startColumn": 4,
                     "startOffset": 35973,
-                    "endColumn": 75,
-                    "endOffset": 36044
+                    "endColumn": 70,
+                    "endOffset": 36039
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3590,8 +3590,8 @@
                         "startLine": 13,
                         "startColumn": 4,
                         "startOffset": 866,
-                        "endColumn": 75,
-                        "endOffset": 937
+                        "endColumn": 70,
+                        "endOffset": 932
                     }
                 }
             },
@@ -3599,9 +3599,9 @@
                 "to": {
                     "startLine": 322,
                     "startColumn": 4,
-                    "startOffset": 36049,
+                    "startOffset": 36044,
                     "endColumn": 61,
-                    "endOffset": 36106
+                    "endOffset": 36101
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3618,9 +3618,9 @@
                 "to": {
                     "startLine": 323,
                     "startColumn": 4,
-                    "startOffset": 36111,
+                    "startOffset": 36106,
                     "endColumn": 55,
-                    "endOffset": 36162
+                    "endOffset": 36157
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3637,9 +3637,9 @@
                 "to": {
                     "startLine": 324,
                     "startColumn": 4,
-                    "startOffset": 36167,
+                    "startOffset": 36162,
                     "endColumn": 89,
-                    "endOffset": 36252
+                    "endOffset": 36247
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3656,18 +3656,18 @@
                 "to": {
                     "startLine": 325,
                     "startColumn": 4,
-                    "startOffset": 36257,
+                    "startOffset": 36252,
                     "endColumn": 67,
-                    "endOffset": 36320
+                    "endOffset": 36315
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 942,
+                        "startOffset": 937,
                         "endColumn": 67,
-                        "endOffset": 1005
+                        "endOffset": 1000
                     }
                 }
             },
@@ -3675,9 +3675,9 @@
                 "to": {
                     "startLine": 326,
                     "startColumn": 4,
-                    "startOffset": 36325,
+                    "startOffset": 36320,
                     "endColumn": 61,
-                    "endOffset": 36382
+                    "endOffset": 36377
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3694,18 +3694,18 @@
                 "to": {
                     "startLine": 327,
                     "startColumn": 4,
-                    "startOffset": 36387,
+                    "startOffset": 36382,
                     "endColumn": 68,
-                    "endOffset": 36451
+                    "endOffset": 36446
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1010,
+                        "startOffset": 1005,
                         "endColumn": 68,
-                        "endOffset": 1074
+                        "endOffset": 1069
                     }
                 }
             },
@@ -3713,9 +3713,9 @@
                 "to": {
                     "startLine": 328,
                     "startColumn": 4,
-                    "startOffset": 36456,
+                    "startOffset": 36451,
                     "endColumn": 89,
-                    "endOffset": 36541
+                    "endOffset": 36536
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3732,9 +3732,9 @@
                 "to": {
                     "startLine": 329,
                     "startColumn": 4,
-                    "startOffset": 36546,
+                    "startOffset": 36541,
                     "endColumn": 57,
-                    "endOffset": 36599
+                    "endOffset": 36594
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3751,9 +3751,9 @@
                 "to": {
                     "startLine": 330,
                     "startColumn": 4,
-                    "startOffset": 36604,
+                    "startOffset": 36599,
                     "endColumn": 101,
-                    "endOffset": 36701
+                    "endOffset": 36696
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3770,18 +3770,18 @@
                 "to": {
                     "startLine": 331,
                     "startColumn": 4,
-                    "startOffset": 36706,
+                    "startOffset": 36701,
                     "endColumn": 42,
-                    "endOffset": 36744
+                    "endOffset": 36739
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1079,
+                        "startOffset": 1074,
                         "endColumn": 42,
-                        "endOffset": 1117
+                        "endOffset": 1112
                     }
                 }
             },
@@ -3789,9 +3789,9 @@
                 "to": {
                     "startLine": 332,
                     "startColumn": 4,
-                    "startOffset": 36749,
+                    "startOffset": 36744,
                     "endColumn": 88,
-                    "endOffset": 36833
+                    "endOffset": 36828
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3808,9 +3808,9 @@
                 "to": {
                     "startLine": 333,
                     "startColumn": 4,
-                    "startOffset": 36838,
+                    "startOffset": 36833,
                     "endColumn": 70,
-                    "endOffset": 36904
+                    "endOffset": 36899
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -3827,9 +3827,9 @@
                 "to": {
                     "startLine": 334,
                     "startColumn": 4,
-                    "startOffset": 36909,
+                    "startOffset": 36904,
                     "endColumn": 59,
-                    "endOffset": 36964
+                    "endOffset": 36959
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\strings.xml",
@@ -3846,9 +3846,9 @@
                 "to": {
                     "startLine": 335,
                     "startColumn": 4,
-                    "startOffset": 36969,
+                    "startOffset": 36964,
                     "endColumn": 77,
-                    "endOffset": 37042
+                    "endOffset": 37037
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -3865,9 +3865,9 @@
                 "to": {
                     "startLine": 336,
                     "startColumn": 4,
-                    "startOffset": 37047,
+                    "startOffset": 37042,
                     "endColumn": 89,
-                    "endOffset": 37132
+                    "endOffset": 37127
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -3884,9 +3884,9 @@
                 "to": {
                     "startLine": 337,
                     "startColumn": 4,
-                    "startOffset": 37137,
+                    "startOffset": 37132,
                     "endColumn": 87,
-                    "endOffset": 37220
+                    "endOffset": 37215
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -3903,9 +3903,9 @@
                 "to": {
                     "startLine": 338,
                     "startColumn": 4,
-                    "startOffset": 37225,
+                    "startOffset": 37220,
                     "endColumn": 95,
-                    "endOffset": 37316
+                    "endOffset": 37311
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -3922,10 +3922,10 @@
                 "to": {
                     "startLine": 339,
                     "startColumn": 4,
-                    "startOffset": 37321,
+                    "startOffset": 37316,
                     "endLine": 344,
                     "endColumn": 12,
-                    "endOffset": 37635
+                    "endOffset": 37630
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\src\\main\\res\\values\\styles.xml",
@@ -3943,10 +3943,10 @@
                 "to": {
                     "startLine": 345,
                     "startColumn": 4,
-                    "startOffset": 37640,
+                    "startOffset": 37635,
                     "endLine": 351,
                     "endColumn": 12,
-                    "endOffset": 38136
+                    "endOffset": 38131
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -3964,9 +3964,9 @@
                 "to": {
                     "startLine": 352,
                     "startColumn": 4,
-                    "startOffset": 38141,
+                    "startOffset": 38136,
                     "endColumn": 88,
-                    "endOffset": 38225
+                    "endOffset": 38220
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -3983,10 +3983,10 @@
                 "to": {
                     "startLine": 353,
                     "startColumn": 4,
-                    "startOffset": 38230,
+                    "startOffset": 38225,
                     "endLine": 356,
                     "endColumn": 12,
-                    "endOffset": 38472
+                    "endOffset": 38467
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4004,10 +4004,10 @@
                 "to": {
                     "startLine": 357,
                     "startColumn": 4,
-                    "startOffset": 38477,
+                    "startOffset": 38472,
                     "endLine": 360,
                     "endColumn": 12,
-                    "endOffset": 38753
+                    "endOffset": 38748
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4025,10 +4025,10 @@
                 "to": {
                     "startLine": 361,
                     "startColumn": 4,
-                    "startOffset": 38758,
+                    "startOffset": 38753,
                     "endLine": 365,
                     "endColumn": 12,
-                    "endOffset": 39038
+                    "endOffset": 39033
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4046,10 +4046,10 @@
                 "to": {
                     "startLine": 366,
                     "startColumn": 4,
-                    "startOffset": 39043,
+                    "startOffset": 39038,
                     "endLine": 371,
                     "endColumn": 12,
-                    "endOffset": 39431
+                    "endOffset": 39426
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4067,10 +4067,10 @@
                 "to": {
                     "startLine": 372,
                     "startColumn": 4,
-                    "startOffset": 39436,
+                    "startOffset": 39431,
                     "endLine": 378,
                     "endColumn": 12,
-                    "endOffset": 39908
+                    "endOffset": 39903
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4088,10 +4088,10 @@
                 "to": {
                     "startLine": 379,
                     "startColumn": 4,
-                    "startOffset": 39913,
+                    "startOffset": 39908,
                     "endLine": 382,
                     "endColumn": 12,
-                    "endOffset": 40130
+                    "endOffset": 40125
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4109,10 +4109,10 @@
                 "to": {
                     "startLine": 383,
                     "startColumn": 4,
-                    "startOffset": 40135,
+                    "startOffset": 40130,
                     "endLine": 386,
                     "endColumn": 12,
-                    "endOffset": 40352
+                    "endOffset": 40347
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4130,10 +4130,10 @@
                 "to": {
                     "startLine": 387,
                     "startColumn": 4,
-                    "startOffset": 40357,
+                    "startOffset": 40352,
                     "endLine": 391,
                     "endColumn": 12,
-                    "endOffset": 40620
+                    "endOffset": 40615
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4151,10 +4151,10 @@
                 "to": {
                     "startLine": 392,
                     "startColumn": 4,
-                    "startOffset": 40625,
+                    "startOffset": 40620,
                     "endLine": 395,
                     "endColumn": 12,
-                    "endOffset": 40847
+                    "endOffset": 40842
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4172,10 +4172,10 @@
                 "to": {
                     "startLine": 396,
                     "startColumn": 4,
-                    "startOffset": 40852,
+                    "startOffset": 40847,
                     "endLine": 399,
                     "endColumn": 12,
-                    "endOffset": 41077
+                    "endOffset": 41072
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4193,10 +4193,10 @@
                 "to": {
                     "startLine": 400,
                     "startColumn": 4,
-                    "startOffset": 41082,
+                    "startOffset": 41077,
                     "endLine": 403,
                     "endColumn": 12,
-                    "endOffset": 41307
+                    "endOffset": 41302
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4214,10 +4214,10 @@
                 "to": {
                     "startLine": 404,
                     "startColumn": 4,
-                    "startOffset": 41312,
+                    "startOffset": 41307,
                     "endLine": 407,
                     "endColumn": 12,
-                    "endOffset": 41537
+                    "endOffset": 41532
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4235,10 +4235,10 @@
                 "to": {
                     "startLine": 408,
                     "startColumn": 4,
-                    "startOffset": 41542,
+                    "startOffset": 41537,
                     "endLine": 411,
                     "endColumn": 12,
-                    "endOffset": 41767
+                    "endOffset": 41762
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4256,10 +4256,10 @@
                 "to": {
                     "startLine": 412,
                     "startColumn": 4,
-                    "startOffset": 41772,
+                    "startOffset": 41767,
                     "endLine": 415,
                     "endColumn": 12,
-                    "endOffset": 41994
+                    "endOffset": 41989
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4277,10 +4277,10 @@
                 "to": {
                     "startLine": 416,
                     "startColumn": 4,
-                    "startOffset": 41999,
+                    "startOffset": 41994,
                     "endLine": 419,
                     "endColumn": 12,
-                    "endOffset": 42233
+                    "endOffset": 42228
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4298,10 +4298,10 @@
                 "to": {
                     "startLine": 420,
                     "startColumn": 4,
-                    "startOffset": 42238,
+                    "startOffset": 42233,
                     "endLine": 423,
                     "endColumn": 12,
-                    "endOffset": 42459
+                    "endOffset": 42454
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4319,10 +4319,10 @@
                 "to": {
                     "startLine": 424,
                     "startColumn": 4,
-                    "startOffset": 42464,
+                    "startOffset": 42459,
                     "endLine": 427,
                     "endColumn": 12,
-                    "endOffset": 42704
+                    "endOffset": 42699
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4340,10 +4340,10 @@
                 "to": {
                     "startLine": 428,
                     "startColumn": 4,
-                    "startOffset": 42709,
+                    "startOffset": 42704,
                     "endLine": 429,
                     "endColumn": 12,
-                    "endOffset": 42834
+                    "endOffset": 42829
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4361,10 +4361,10 @@
                 "to": {
                     "startLine": 430,
                     "startColumn": 4,
-                    "startOffset": 42839,
+                    "startOffset": 42834,
                     "endLine": 431,
                     "endColumn": 12,
-                    "endOffset": 42964
+                    "endOffset": 42959
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4382,10 +4382,10 @@
                 "to": {
                     "startLine": 432,
                     "startColumn": 4,
-                    "startOffset": 42969,
+                    "startOffset": 42964,
                     "endLine": 435,
                     "endColumn": 12,
-                    "endOffset": 43194
+                    "endOffset": 43189
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4403,10 +4403,10 @@
                 "to": {
                     "startLine": 436,
                     "startColumn": 4,
-                    "startOffset": 43199,
+                    "startOffset": 43194,
                     "endLine": 439,
                     "endColumn": 12,
-                    "endOffset": 43442
+                    "endOffset": 43437
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4424,10 +4424,10 @@
                 "to": {
                     "startLine": 440,
                     "startColumn": 4,
-                    "startOffset": 43447,
+                    "startOffset": 43442,
                     "endLine": 443,
                     "endColumn": 12,
-                    "endOffset": 43661
+                    "endOffset": 43656
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4445,10 +4445,10 @@
                 "to": {
                     "startLine": 444,
                     "startColumn": 4,
-                    "startOffset": 43666,
+                    "startOffset": 43661,
                     "endLine": 448,
                     "endColumn": 12,
-                    "endOffset": 43944
+                    "endOffset": 43939
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4466,10 +4466,10 @@
                 "to": {
                     "startLine": 449,
                     "startColumn": 4,
-                    "startOffset": 43949,
+                    "startOffset": 43944,
                     "endLine": 452,
                     "endColumn": 12,
-                    "endOffset": 44152
+                    "endOffset": 44147
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4487,10 +4487,10 @@
                 "to": {
                     "startLine": 453,
                     "startColumn": 4,
-                    "startOffset": 44157,
+                    "startOffset": 44152,
                     "endLine": 455,
                     "endColumn": 12,
-                    "endOffset": 44283
+                    "endOffset": 44278
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4508,10 +4508,10 @@
                 "to": {
                     "startLine": 456,
                     "startColumn": 4,
-                    "startOffset": 44288,
+                    "startOffset": 44283,
                     "endLine": 459,
                     "endColumn": 12,
-                    "endOffset": 44510
+                    "endOffset": 44505
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4529,10 +4529,10 @@
                 "to": {
                     "startLine": 460,
                     "startColumn": 4,
-                    "startOffset": 44515,
+                    "startOffset": 44510,
                     "endLine": 463,
                     "endColumn": 12,
-                    "endOffset": 44756
+                    "endOffset": 44751
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4550,10 +4550,10 @@
                 "to": {
                     "startLine": 464,
                     "startColumn": 4,
-                    "startOffset": 44761,
+                    "startOffset": 44756,
                     "endLine": 467,
                     "endColumn": 12,
-                    "endOffset": 44981
+                    "endOffset": 44976
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4571,10 +4571,10 @@
                 "to": {
                     "startLine": 468,
                     "startColumn": 4,
-                    "startOffset": 44986,
+                    "startOffset": 44981,
                     "endLine": 471,
                     "endColumn": 12,
-                    "endOffset": 45228
+                    "endOffset": 45223
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4592,10 +4592,10 @@
                 "to": {
                     "startLine": 472,
                     "startColumn": 4,
-                    "startOffset": 45233,
+                    "startOffset": 45228,
                     "endLine": 475,
                     "endColumn": 12,
-                    "endOffset": 45449
+                    "endOffset": 45444
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4613,10 +4613,10 @@
                 "to": {
                     "startLine": 476,
                     "startColumn": 4,
-                    "startOffset": 45454,
+                    "startOffset": 45449,
                     "endLine": 479,
                     "endColumn": 12,
-                    "endOffset": 45694
+                    "endOffset": 45689
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4634,10 +4634,10 @@
                 "to": {
                     "startLine": 480,
                     "startColumn": 4,
-                    "startOffset": 45699,
+                    "startOffset": 45694,
                     "endLine": 483,
                     "endColumn": 12,
-                    "endOffset": 45970
+                    "endOffset": 45965
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4655,10 +4655,10 @@
                 "to": {
                     "startLine": 484,
                     "startColumn": 4,
-                    "startOffset": 45975,
+                    "startOffset": 45970,
                     "endLine": 487,
                     "endColumn": 12,
-                    "endOffset": 46271
+                    "endOffset": 46266
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4676,10 +4676,10 @@
                 "to": {
                     "startLine": 488,
                     "startColumn": 4,
-                    "startOffset": 46276,
+                    "startOffset": 46271,
                     "endLine": 491,
                     "endColumn": 12,
-                    "endOffset": 46595
+                    "endOffset": 46590
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4697,10 +4697,10 @@
                 "to": {
                     "startLine": 492,
                     "startColumn": 4,
-                    "startOffset": 46600,
+                    "startOffset": 46595,
                     "endLine": 495,
                     "endColumn": 12,
-                    "endOffset": 46886
+                    "endOffset": 46881
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4718,10 +4718,10 @@
                 "to": {
                     "startLine": 496,
                     "startColumn": 4,
-                    "startOffset": 46891,
+                    "startOffset": 46886,
                     "endLine": 499,
                     "endColumn": 12,
-                    "endOffset": 47200
+                    "endOffset": 47195
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4739,9 +4739,9 @@
                 "to": {
                     "startLine": 500,
                     "startColumn": 4,
-                    "startOffset": 47205,
+                    "startOffset": 47200,
                     "endColumn": 136,
-                    "endOffset": 47337
+                    "endOffset": 47332
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4758,9 +4758,9 @@
                 "to": {
                     "startLine": 501,
                     "startColumn": 4,
-                    "startOffset": 47342,
+                    "startOffset": 47337,
                     "endColumn": 130,
-                    "endOffset": 47468
+                    "endOffset": 47463
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4777,9 +4777,9 @@
                 "to": {
                     "startLine": 502,
                     "startColumn": 4,
-                    "startOffset": 47473,
+                    "startOffset": 47468,
                     "endColumn": 104,
-                    "endOffset": 47573
+                    "endOffset": 47568
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4796,10 +4796,10 @@
                 "to": {
                     "startLine": 503,
                     "startColumn": 4,
-                    "startOffset": 47578,
+                    "startOffset": 47573,
                     "endLine": 505,
                     "endColumn": 12,
-                    "endOffset": 47777
+                    "endOffset": 47772
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4817,10 +4817,10 @@
                 "to": {
                     "startLine": 506,
                     "startColumn": 4,
-                    "startOffset": 47782,
+                    "startOffset": 47777,
                     "endLine": 508,
                     "endColumn": 12,
-                    "endOffset": 47985
+                    "endOffset": 47980
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4838,10 +4838,10 @@
                 "to": {
                     "startLine": 509,
                     "startColumn": 4,
-                    "startOffset": 47990,
+                    "startOffset": 47985,
                     "endLine": 510,
                     "endColumn": 12,
-                    "endOffset": 48109
+                    "endOffset": 48104
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4859,10 +4859,10 @@
                 "to": {
                     "startLine": 511,
                     "startColumn": 4,
-                    "startOffset": 48114,
+                    "startOffset": 48109,
                     "endLine": 512,
                     "endColumn": 12,
-                    "endOffset": 48233
+                    "endOffset": 48228
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4880,9 +4880,9 @@
                 "to": {
                     "startLine": 513,
                     "startColumn": 4,
-                    "startOffset": 48238,
+                    "startOffset": 48233,
                     "endColumn": 104,
-                    "endOffset": 48338
+                    "endOffset": 48333
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4899,9 +4899,9 @@
                 "to": {
                     "startLine": 514,
                     "startColumn": 4,
-                    "startOffset": 48343,
+                    "startOffset": 48338,
                     "endColumn": 116,
-                    "endOffset": 48455
+                    "endOffset": 48450
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4918,10 +4918,10 @@
                 "to": {
                     "startLine": 515,
                     "startColumn": 4,
-                    "startOffset": 48460,
+                    "startOffset": 48455,
                     "endLine": 517,
                     "endColumn": 12,
-                    "endOffset": 48669
+                    "endOffset": 48664
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4939,10 +4939,10 @@
                 "to": {
                     "startLine": 518,
                     "startColumn": 4,
-                    "startOffset": 48674,
+                    "startOffset": 48669,
                     "endLine": 519,
                     "endColumn": 12,
-                    "endOffset": 48815
+                    "endOffset": 48810
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4960,10 +4960,10 @@
                 "to": {
                     "startLine": 520,
                     "startColumn": 4,
-                    "startOffset": 48820,
+                    "startOffset": 48815,
                     "endLine": 521,
                     "endColumn": 12,
-                    "endOffset": 48955
+                    "endOffset": 48950
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -4981,10 +4981,10 @@
                 "to": {
                     "startLine": 522,
                     "startColumn": 4,
-                    "startOffset": 48960,
+                    "startOffset": 48955,
                     "endLine": 523,
                     "endColumn": 12,
-                    "endOffset": 49041
+                    "endOffset": 49036
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5002,10 +5002,10 @@
                 "to": {
                     "startLine": 524,
                     "startColumn": 4,
-                    "startOffset": 49046,
+                    "startOffset": 49041,
                     "endLine": 528,
                     "endColumn": 12,
-                    "endOffset": 49389
+                    "endOffset": 49384
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5023,9 +5023,9 @@
                 "to": {
                     "startLine": 529,
                     "startColumn": 4,
-                    "startOffset": 49394,
+                    "startOffset": 49389,
                     "endColumn": 87,
-                    "endOffset": 49477
+                    "endOffset": 49472
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5042,10 +5042,10 @@
                 "to": {
                     "startLine": 530,
                     "startColumn": 4,
-                    "startOffset": 49482,
+                    "startOffset": 49477,
                     "endLine": 533,
                     "endColumn": 12,
-                    "endOffset": 49707
+                    "endOffset": 49702
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5063,10 +5063,10 @@
                 "to": {
                     "startLine": 534,
                     "startColumn": 4,
-                    "startOffset": 49712,
+                    "startOffset": 49707,
                     "endLine": 539,
                     "endColumn": 12,
-                    "endOffset": 50125
+                    "endOffset": 50120
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5084,10 +5084,10 @@
                 "to": {
                     "startLine": 540,
                     "startColumn": 4,
-                    "startOffset": 50130,
+                    "startOffset": 50125,
                     "endLine": 543,
                     "endColumn": 12,
-                    "endOffset": 50358
+                    "endOffset": 50353
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5105,9 +5105,9 @@
                 "to": {
                     "startLine": 544,
                     "startColumn": 4,
-                    "startOffset": 50363,
+                    "startOffset": 50358,
                     "endColumn": 81,
-                    "endOffset": 50440
+                    "endOffset": 50435
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5124,10 +5124,10 @@
                 "to": {
                     "startLine": 545,
                     "startColumn": 4,
-                    "startOffset": 50445,
+                    "startOffset": 50440,
                     "endLine": 546,
                     "endColumn": 12,
-                    "endOffset": 50538
+                    "endOffset": 50533
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5145,10 +5145,10 @@
                 "to": {
                     "startLine": 547,
                     "startColumn": 4,
-                    "startOffset": 50543,
+                    "startOffset": 50538,
                     "endLine": 557,
                     "endColumn": 12,
-                    "endOffset": 51155
+                    "endOffset": 51150
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5166,9 +5166,9 @@
                 "to": {
                     "startLine": 558,
                     "startColumn": 4,
-                    "startOffset": 51160,
+                    "startOffset": 51155,
                     "endColumn": 99,
-                    "endOffset": 51255
+                    "endOffset": 51250
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5185,10 +5185,10 @@
                 "to": {
                     "startLine": 559,
                     "startColumn": 4,
-                    "startOffset": 51260,
+                    "startOffset": 51255,
                     "endLine": 562,
                     "endColumn": 12,
-                    "endOffset": 51491
+                    "endOffset": 51486
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5206,10 +5206,10 @@
                 "to": {
                     "startLine": 563,
                     "startColumn": 4,
-                    "startOffset": 51496,
+                    "startOffset": 51491,
                     "endLine": 568,
                     "endColumn": 12,
-                    "endOffset": 51915
+                    "endOffset": 51910
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5227,10 +5227,10 @@
                 "to": {
                     "startLine": 569,
                     "startColumn": 4,
-                    "startOffset": 51920,
+                    "startOffset": 51915,
                     "endLine": 572,
                     "endColumn": 12,
-                    "endOffset": 52154
+                    "endOffset": 52149
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5248,9 +5248,9 @@
                 "to": {
                     "startLine": 573,
                     "startColumn": 4,
-                    "startOffset": 52159,
+                    "startOffset": 52154,
                     "endColumn": 93,
-                    "endOffset": 52248
+                    "endOffset": 52243
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5267,9 +5267,9 @@
                 "to": {
                     "startLine": 574,
                     "startColumn": 4,
-                    "startOffset": 52253,
+                    "startOffset": 52248,
                     "endColumn": 88,
-                    "endOffset": 52337
+                    "endOffset": 52332
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5286,10 +5286,10 @@
                 "to": {
                     "startLine": 575,
                     "startColumn": 4,
-                    "startOffset": 52342,
+                    "startOffset": 52337,
                     "endLine": 578,
                     "endColumn": 12,
-                    "endOffset": 52574
+                    "endOffset": 52569
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5307,10 +5307,10 @@
                 "to": {
                     "startLine": 579,
                     "startColumn": 4,
-                    "startOffset": 52579,
+                    "startOffset": 52574,
                     "endLine": 604,
                     "endColumn": 12,
-                    "endOffset": 54525
+                    "endOffset": 54520
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5328,10 +5328,10 @@
                 "to": {
                     "startLine": 605,
                     "startColumn": 4,
-                    "startOffset": 54530,
+                    "startOffset": 54525,
                     "endLine": 608,
                     "endColumn": 12,
-                    "endOffset": 54767
+                    "endOffset": 54762
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5349,10 +5349,10 @@
                 "to": {
                     "startLine": 609,
                     "startColumn": 4,
-                    "startOffset": 54772,
+                    "startOffset": 54767,
                     "endLine": 635,
                     "endColumn": 12,
-                    "endOffset": 56849
+                    "endOffset": 56844
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5370,10 +5370,10 @@
                 "to": {
                     "startLine": 636,
                     "startColumn": 4,
-                    "startOffset": 56854,
+                    "startOffset": 56849,
                     "endLine": 790,
                     "endColumn": 12,
-                    "endOffset": 66715
+                    "endOffset": 66710
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5391,10 +5391,10 @@
                 "to": {
                     "startLine": 791,
                     "startColumn": 4,
-                    "startOffset": 66720,
+                    "startOffset": 66715,
                     "endLine": 812,
                     "endColumn": 12,
-                    "endOffset": 67982
+                    "endOffset": 67977
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5412,10 +5412,10 @@
                 "to": {
                     "startLine": 813,
                     "startColumn": 4,
-                    "startOffset": 67987,
+                    "startOffset": 67982,
                     "endLine": 967,
                     "endColumn": 12,
-                    "endOffset": 77958
+                    "endOffset": 77953
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5433,10 +5433,10 @@
                 "to": {
                     "startLine": 968,
                     "startColumn": 4,
-                    "startOffset": 77963,
+                    "startOffset": 77958,
                     "endLine": 989,
                     "endColumn": 12,
-                    "endOffset": 79239
+                    "endOffset": 79234
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5454,10 +5454,10 @@
                 "to": {
                     "startLine": 990,
                     "startColumn": 4,
-                    "startOffset": 79244,
+                    "startOffset": 79239,
                     "endLine": 996,
                     "endColumn": 12,
-                    "endOffset": 79775
+                    "endOffset": 79770
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5475,10 +5475,10 @@
                 "to": {
                     "startLine": 997,
                     "startColumn": 4,
-                    "startOffset": 79780,
+                    "startOffset": 79775,
                     "endLine": 1001,
                     "endColumn": 12,
-                    "endOffset": 80105
+                    "endOffset": 80100
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5496,10 +5496,10 @@
                 "to": {
                     "startLine": 1002,
                     "startColumn": 4,
-                    "startOffset": 80110,
+                    "startOffset": 80105,
                     "endLine": 1022,
                     "endColumn": 12,
-                    "endOffset": 81228
+                    "endOffset": 81223
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5517,10 +5517,10 @@
                 "to": {
                     "startLine": 1023,
                     "startColumn": 4,
-                    "startOffset": 81233,
+                    "startOffset": 81228,
                     "endLine": 1027,
                     "endColumn": 12,
-                    "endOffset": 81484
+                    "endOffset": 81479
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5538,10 +5538,10 @@
                 "to": {
                     "startLine": 1028,
                     "startColumn": 4,
-                    "startOffset": 81489,
+                    "startOffset": 81484,
                     "endLine": 1032,
                     "endColumn": 12,
-                    "endOffset": 81720
+                    "endOffset": 81715
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5559,10 +5559,10 @@
                 "to": {
                     "startLine": 1033,
                     "startColumn": 4,
-                    "startOffset": 81725,
+                    "startOffset": 81720,
                     "endLine": 1042,
                     "endColumn": 12,
-                    "endOffset": 82267
+                    "endOffset": 82262
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5580,10 +5580,10 @@
                 "to": {
                     "startLine": 1043,
                     "startColumn": 4,
-                    "startOffset": 82272,
+                    "startOffset": 82267,
                     "endLine": 1051,
                     "endColumn": 12,
-                    "endOffset": 82761
+                    "endOffset": 82756
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5601,10 +5601,10 @@
                 "to": {
                     "startLine": 1052,
                     "startColumn": 4,
-                    "startOffset": 82766,
+                    "startOffset": 82761,
                     "endLine": 1060,
                     "endColumn": 12,
-                    "endOffset": 83366
+                    "endOffset": 83361
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5622,10 +5622,10 @@
                 "to": {
                     "startLine": 1061,
                     "startColumn": 4,
-                    "startOffset": 83371,
+                    "startOffset": 83366,
                     "endLine": 1063,
                     "endColumn": 12,
-                    "endOffset": 83514
+                    "endOffset": 83509
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5643,10 +5643,10 @@
                 "to": {
                     "startLine": 1064,
                     "startColumn": 4,
-                    "startOffset": 83519,
+                    "startOffset": 83514,
                     "endLine": 1070,
                     "endColumn": 12,
-                    "endOffset": 84102
+                    "endOffset": 84097
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5664,10 +5664,10 @@
                 "to": {
                     "startLine": 1071,
                     "startColumn": 4,
-                    "startOffset": 84107,
+                    "startOffset": 84102,
                     "endLine": 1078,
                     "endColumn": 12,
-                    "endOffset": 84666
+                    "endOffset": 84661
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5685,10 +5685,10 @@
                 "to": {
                     "startLine": 1079,
                     "startColumn": 4,
-                    "startOffset": 84671,
+                    "startOffset": 84666,
                     "endLine": 1085,
                     "endColumn": 12,
-                    "endOffset": 85041
+                    "endOffset": 85036
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5706,9 +5706,9 @@
                 "to": {
                     "startLine": 1086,
                     "startColumn": 4,
-                    "startOffset": 85046,
+                    "startOffset": 85041,
                     "endColumn": 117,
-                    "endOffset": 85159
+                    "endOffset": 85154
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5725,10 +5725,10 @@
                 "to": {
                     "startLine": 1087,
                     "startColumn": 4,
-                    "startOffset": 85164,
+                    "startOffset": 85159,
                     "endLine": 1095,
                     "endColumn": 12,
-                    "endOffset": 85697
+                    "endOffset": 85692
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5746,10 +5746,10 @@
                 "to": {
                     "startLine": 1096,
                     "startColumn": 4,
-                    "startOffset": 85702,
+                    "startOffset": 85697,
                     "endLine": 1098,
                     "endColumn": 12,
-                    "endOffset": 85854
+                    "endOffset": 85849
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5767,10 +5767,10 @@
                 "to": {
                     "startLine": 1099,
                     "startColumn": 4,
-                    "startOffset": 85859,
+                    "startOffset": 85854,
                     "endLine": 1101,
                     "endColumn": 12,
-                    "endOffset": 85998
+                    "endOffset": 85993
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5788,10 +5788,10 @@
                 "to": {
                     "startLine": 1102,
                     "startColumn": 4,
-                    "startOffset": 86003,
+                    "startOffset": 85998,
                     "endLine": 1106,
                     "endColumn": 12,
-                    "endOffset": 86318
+                    "endOffset": 86313
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5809,10 +5809,10 @@
                 "to": {
                     "startLine": 1107,
                     "startColumn": 4,
-                    "startOffset": 86323,
+                    "startOffset": 86318,
                     "endLine": 1110,
                     "endColumn": 12,
-                    "endOffset": 86574
+                    "endOffset": 86569
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5830,10 +5830,10 @@
                 "to": {
                     "startLine": 1111,
                     "startColumn": 4,
-                    "startOffset": 86579,
+                    "startOffset": 86574,
                     "endLine": 1114,
                     "endColumn": 12,
-                    "endOffset": 86744
+                    "endOffset": 86739
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5851,10 +5851,10 @@
                 "to": {
                     "startLine": 1115,
                     "startColumn": 4,
-                    "startOffset": 86749,
+                    "startOffset": 86744,
                     "endLine": 1117,
                     "endColumn": 12,
-                    "endOffset": 86885
+                    "endOffset": 86880
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5872,9 +5872,9 @@
                 "to": {
                     "startLine": 1118,
                     "startColumn": 4,
-                    "startOffset": 86890,
+                    "startOffset": 86885,
                     "endColumn": 63,
-                    "endOffset": 86949
+                    "endOffset": 86944
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5891,10 +5891,10 @@
                 "to": {
                     "startLine": 1119,
                     "startColumn": 4,
-                    "startOffset": 86954,
+                    "startOffset": 86949,
                     "endLine": 1122,
                     "endColumn": 12,
-                    "endOffset": 87231
+                    "endOffset": 87226
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5912,10 +5912,10 @@
                 "to": {
                     "startLine": 1123,
                     "startColumn": 4,
-                    "startOffset": 87236,
+                    "startOffset": 87231,
                     "endLine": 1126,
                     "endColumn": 12,
-                    "endOffset": 87517
+                    "endOffset": 87512
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5933,10 +5933,10 @@
                 "to": {
                     "startLine": 1127,
                     "startColumn": 4,
-                    "startOffset": 87522,
+                    "startOffset": 87517,
                     "endLine": 1136,
                     "endColumn": 12,
-                    "endOffset": 88193
+                    "endOffset": 88188
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5954,10 +5954,10 @@
                 "to": {
                     "startLine": 1137,
                     "startColumn": 4,
-                    "startOffset": 88198,
+                    "startOffset": 88193,
                     "endLine": 1141,
                     "endColumn": 12,
-                    "endOffset": 88457
+                    "endOffset": 88452
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5975,10 +5975,10 @@
                 "to": {
                     "startLine": 1142,
                     "startColumn": 4,
-                    "startOffset": 88462,
+                    "startOffset": 88457,
                     "endLine": 1148,
                     "endColumn": 12,
-                    "endOffset": 88795
+                    "endOffset": 88790
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -5996,10 +5996,10 @@
                 "to": {
                     "startLine": 1149,
                     "startColumn": 4,
-                    "startOffset": 88800,
+                    "startOffset": 88795,
                     "endLine": 1154,
                     "endColumn": 12,
-                    "endOffset": 89148
+                    "endOffset": 89143
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6017,9 +6017,9 @@
                 "to": {
                     "startLine": 1155,
                     "startColumn": 4,
-                    "startOffset": 89153,
+                    "startOffset": 89148,
                     "endColumn": 93,
-                    "endOffset": 89242
+                    "endOffset": 89237
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6036,10 +6036,10 @@
                 "to": {
                     "startLine": 1156,
                     "startColumn": 4,
-                    "startOffset": 89247,
+                    "startOffset": 89242,
                     "endLine": 1158,
                     "endColumn": 12,
-                    "endOffset": 89428
+                    "endOffset": 89423
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6057,10 +6057,10 @@
                 "to": {
                     "startLine": 1159,
                     "startColumn": 4,
-                    "startOffset": 89433,
+                    "startOffset": 89428,
                     "endLine": 1162,
                     "endColumn": 12,
-                    "endOffset": 89734
+                    "endOffset": 89729
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6078,10 +6078,10 @@
                 "to": {
                     "startLine": 1163,
                     "startColumn": 4,
-                    "startOffset": 89739,
+                    "startOffset": 89734,
                     "endLine": 1167,
                     "endColumn": 12,
-                    "endOffset": 89996
+                    "endOffset": 89991
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6099,10 +6099,10 @@
                 "to": {
                     "startLine": 1168,
                     "startColumn": 4,
-                    "startOffset": 90001,
+                    "startOffset": 89996,
                     "endLine": 1169,
                     "endColumn": 12,
-                    "endOffset": 90121
+                    "endOffset": 90116
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6120,10 +6120,10 @@
                 "to": {
                     "startLine": 1170,
                     "startColumn": 4,
-                    "startOffset": 90126,
+                    "startOffset": 90121,
                     "endLine": 1171,
                     "endColumn": 12,
-                    "endOffset": 90248
+                    "endOffset": 90243
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6141,10 +6141,10 @@
                 "to": {
                     "startLine": 1172,
                     "startColumn": 4,
-                    "startOffset": 90253,
+                    "startOffset": 90248,
                     "endLine": 1174,
                     "endColumn": 12,
-                    "endOffset": 90487
+                    "endOffset": 90482
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6162,10 +6162,10 @@
                 "to": {
                     "startLine": 1175,
                     "startColumn": 4,
-                    "startOffset": 90492,
+                    "startOffset": 90487,
                     "endLine": 1177,
                     "endColumn": 12,
-                    "endOffset": 90698
+                    "endOffset": 90693
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6183,10 +6183,10 @@
                 "to": {
                     "startLine": 1178,
                     "startColumn": 4,
-                    "startOffset": 90703,
+                    "startOffset": 90698,
                     "endLine": 1179,
                     "endColumn": 12,
-                    "endOffset": 90817
+                    "endOffset": 90812
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6204,10 +6204,10 @@
                 "to": {
                     "startLine": 1180,
                     "startColumn": 4,
-                    "startOffset": 90822,
+                    "startOffset": 90817,
                     "endLine": 1183,
                     "endColumn": 12,
-                    "endOffset": 91010
+                    "endOffset": 91005
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6225,10 +6225,10 @@
                 "to": {
                     "startLine": 1184,
                     "startColumn": 4,
-                    "startOffset": 91015,
+                    "startOffset": 91010,
                     "endLine": 1190,
                     "endColumn": 12,
-                    "endOffset": 91465
+                    "endOffset": 91460
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6246,10 +6246,10 @@
                 "to": {
                     "startLine": 1191,
                     "startColumn": 4,
-                    "startOffset": 91470,
+                    "startOffset": 91465,
                     "endLine": 1193,
                     "endColumn": 12,
-                    "endOffset": 91646
+                    "endOffset": 91641
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6267,10 +6267,10 @@
                 "to": {
                     "startLine": 1194,
                     "startColumn": 4,
-                    "startOffset": 91651,
+                    "startOffset": 91646,
                     "endLine": 1196,
                     "endColumn": 12,
-                    "endOffset": 91768
+                    "endOffset": 91763
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6288,10 +6288,10 @@
                 "to": {
                     "startLine": 1197,
                     "startColumn": 4,
-                    "startOffset": 91773,
+                    "startOffset": 91768,
                     "endLine": 1200,
                     "endColumn": 12,
-                    "endOffset": 92027
+                    "endOffset": 92022
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6309,10 +6309,10 @@
                 "to": {
                     "startLine": 1201,
                     "startColumn": 4,
-                    "startOffset": 92032,
+                    "startOffset": 92027,
                     "endLine": 1202,
                     "endColumn": 12,
-                    "endOffset": 92140
+                    "endOffset": 92135
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6330,10 +6330,10 @@
                 "to": {
                     "startLine": 1203,
                     "startColumn": 4,
-                    "startOffset": 92145,
+                    "startOffset": 92140,
                     "endLine": 1206,
                     "endColumn": 12,
-                    "endOffset": 92327
+                    "endOffset": 92322
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6351,10 +6351,10 @@
                 "to": {
                     "startLine": 1207,
                     "startColumn": 4,
-                    "startOffset": 92332,
+                    "startOffset": 92327,
                     "endLine": 1208,
                     "endColumn": 12,
-                    "endOffset": 92429
+                    "endOffset": 92424
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6372,10 +6372,10 @@
                 "to": {
                     "startLine": 1209,
                     "startColumn": 4,
-                    "startOffset": 92434,
+                    "startOffset": 92429,
                     "endLine": 1214,
                     "endColumn": 12,
-                    "endOffset": 92873
+                    "endOffset": 92868
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6393,10 +6393,10 @@
                 "to": {
                     "startLine": 1215,
                     "startColumn": 4,
-                    "startOffset": 92878,
+                    "startOffset": 92873,
                     "endLine": 1216,
                     "endColumn": 12,
-                    "endOffset": 92997
+                    "endOffset": 92992
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6414,10 +6414,10 @@
                 "to": {
                     "startLine": 1217,
                     "startColumn": 4,
-                    "startOffset": 93002,
+                    "startOffset": 92997,
                     "endLine": 1220,
                     "endColumn": 12,
-                    "endOffset": 93282
+                    "endOffset": 93277
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6435,10 +6435,10 @@
                 "to": {
                     "startLine": 1221,
                     "startColumn": 4,
-                    "startOffset": 93287,
+                    "startOffset": 93282,
                     "endLine": 1228,
                     "endColumn": 12,
-                    "endOffset": 93790
+                    "endOffset": 93785
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6456,10 +6456,10 @@
                 "to": {
                     "startLine": 1229,
                     "startColumn": 4,
-                    "startOffset": 93795,
+                    "startOffset": 93790,
                     "endLine": 1236,
                     "endColumn": 12,
-                    "endOffset": 94286
+                    "endOffset": 94281
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6477,10 +6477,10 @@
                 "to": {
                     "startLine": 1237,
                     "startColumn": 4,
-                    "startOffset": 94291,
+                    "startOffset": 94286,
                     "endLine": 1248,
                     "endColumn": 12,
-                    "endOffset": 95173
+                    "endOffset": 95168
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6498,10 +6498,10 @@
                 "to": {
                     "startLine": 1249,
                     "startColumn": 4,
-                    "startOffset": 95178,
+                    "startOffset": 95173,
                     "endLine": 1254,
                     "endColumn": 12,
-                    "endOffset": 95467
+                    "endOffset": 95462
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6519,10 +6519,10 @@
                 "to": {
                     "startLine": 1255,
                     "startColumn": 4,
-                    "startOffset": 95472,
+                    "startOffset": 95467,
                     "endLine": 1263,
                     "endColumn": 12,
-                    "endOffset": 96037
+                    "endOffset": 96032
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6540,10 +6540,10 @@
                 "to": {
                     "startLine": 1264,
                     "startColumn": 4,
-                    "startOffset": 96042,
+                    "startOffset": 96037,
                     "endLine": 1274,
                     "endColumn": 12,
-                    "endOffset": 96769
+                    "endOffset": 96764
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6561,10 +6561,10 @@
                 "to": {
                     "startLine": 1275,
                     "startColumn": 4,
-                    "startOffset": 96774,
+                    "startOffset": 96769,
                     "endLine": 1277,
                     "endColumn": 12,
-                    "endOffset": 96941
+                    "endOffset": 96936
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6582,10 +6582,10 @@
                 "to": {
                     "startLine": 1278,
                     "startColumn": 4,
-                    "startOffset": 96946,
+                    "startOffset": 96941,
                     "endLine": 1282,
                     "endColumn": 12,
-                    "endOffset": 97277
+                    "endOffset": 97272
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6603,10 +6603,10 @@
                 "to": {
                     "startLine": 1283,
                     "startColumn": 4,
-                    "startOffset": 97282,
+                    "startOffset": 97277,
                     "endLine": 1294,
                     "endColumn": 12,
-                    "endOffset": 98185
+                    "endOffset": 98180
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6624,10 +6624,10 @@
                 "to": {
                     "startLine": 1295,
                     "startColumn": 4,
-                    "startOffset": 98190,
+                    "startOffset": 98185,
                     "endLine": 1299,
                     "endColumn": 12,
-                    "endOffset": 98463
+                    "endOffset": 98458
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6645,10 +6645,10 @@
                 "to": {
                     "startLine": 1300,
                     "startColumn": 4,
-                    "startOffset": 98468,
+                    "startOffset": 98463,
                     "endLine": 1337,
                     "endColumn": 12,
-                    "endOffset": 101325
+                    "endOffset": 101320
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6666,10 +6666,10 @@
                 "to": {
                     "startLine": 1338,
                     "startColumn": 4,
-                    "startOffset": 101330,
+                    "startOffset": 101325,
                     "endLine": 1376,
                     "endColumn": 12,
-                    "endOffset": 104327
+                    "endOffset": 104322
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6687,9 +6687,9 @@
                 "to": {
                     "startLine": 1377,
                     "startColumn": 4,
-                    "startOffset": 104332,
+                    "startOffset": 104327,
                     "endColumn": 61,
-                    "endOffset": 104389
+                    "endOffset": 104384
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6706,10 +6706,10 @@
                 "to": {
                     "startLine": 1378,
                     "startColumn": 4,
-                    "startOffset": 104394,
+                    "startOffset": 104389,
                     "endLine": 1387,
                     "endColumn": 12,
-                    "endOffset": 105019
+                    "endOffset": 105014
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6727,10 +6727,10 @@
                 "to": {
                     "startLine": 1388,
                     "startColumn": 4,
-                    "startOffset": 105024,
+                    "startOffset": 105019,
                     "endLine": 1396,
                     "endColumn": 12,
-                    "endOffset": 105633
+                    "endOffset": 105628
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6748,9 +6748,9 @@
                 "to": {
                     "startLine": 1397,
                     "startColumn": 4,
-                    "startOffset": 105638,
+                    "startOffset": 105633,
                     "endColumn": 85,
-                    "endOffset": 105719
+                    "endOffset": 105714
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6767,10 +6767,10 @@
                 "to": {
                     "startLine": 1398,
                     "startColumn": 4,
-                    "startOffset": 105724,
+                    "startOffset": 105719,
                     "endLine": 1399,
                     "endColumn": 12,
-                    "endOffset": 105832
+                    "endOffset": 105827
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6788,10 +6788,10 @@
                 "to": {
                     "startLine": 1400,
                     "startColumn": 4,
-                    "startOffset": 105837,
+                    "startOffset": 105832,
                     "endLine": 1403,
                     "endColumn": 12,
-                    "endOffset": 106061
+                    "endOffset": 106056
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6809,10 +6809,10 @@
                 "to": {
                     "startLine": 1404,
                     "startColumn": 4,
-                    "startOffset": 106066,
+                    "startOffset": 106061,
                     "endLine": 1406,
                     "endColumn": 12,
-                    "endOffset": 106221
+                    "endOffset": 106216
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6830,10 +6830,10 @@
                 "to": {
                     "startLine": 1407,
                     "startColumn": 4,
-                    "startOffset": 106226,
+                    "startOffset": 106221,
                     "endLine": 1409,
                     "endColumn": 12,
-                    "endOffset": 106373
+                    "endOffset": 106368
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6851,10 +6851,10 @@
                 "to": {
                     "startLine": 1410,
                     "startColumn": 4,
-                    "startOffset": 106378,
+                    "startOffset": 106373,
                     "endLine": 1412,
                     "endColumn": 12,
-                    "endOffset": 106544
+                    "endOffset": 106539
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6872,10 +6872,10 @@
                 "to": {
                     "startLine": 1413,
                     "startColumn": 4,
-                    "startOffset": 106549,
+                    "startOffset": 106544,
                     "endLine": 1415,
                     "endColumn": 12,
-                    "endOffset": 106711
+                    "endOffset": 106706
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6893,10 +6893,10 @@
                 "to": {
                     "startLine": 1416,
                     "startColumn": 4,
-                    "startOffset": 106716,
+                    "startOffset": 106711,
                     "endLine": 1419,
                     "endColumn": 12,
-                    "endOffset": 106954
+                    "endOffset": 106949
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6914,10 +6914,10 @@
                 "to": {
                     "startLine": 1420,
                     "startColumn": 4,
-                    "startOffset": 106959,
+                    "startOffset": 106954,
                     "endLine": 1422,
                     "endColumn": 12,
-                    "endOffset": 107124
+                    "endOffset": 107119
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6935,10 +6935,10 @@
                 "to": {
                     "startLine": 1423,
                     "startColumn": 4,
-                    "startOffset": 107129,
+                    "startOffset": 107124,
                     "endLine": 1425,
                     "endColumn": 12,
-                    "endOffset": 107297
+                    "endOffset": 107292
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6956,10 +6956,10 @@
                 "to": {
                     "startLine": 1426,
                     "startColumn": 4,
-                    "startOffset": 107302,
+                    "startOffset": 107297,
                     "endLine": 1428,
                     "endColumn": 12,
-                    "endOffset": 107468
+                    "endOffset": 107463
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6977,10 +6977,10 @@
                 "to": {
                     "startLine": 1429,
                     "startColumn": 4,
-                    "startOffset": 107473,
+                    "startOffset": 107468,
                     "endLine": 1432,
                     "endColumn": 12,
-                    "endOffset": 107742
+                    "endOffset": 107737
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -6998,10 +6998,10 @@
                 "to": {
                     "startLine": 1433,
                     "startColumn": 4,
-                    "startOffset": 107747,
+                    "startOffset": 107742,
                     "endLine": 1435,
                     "endColumn": 12,
-                    "endOffset": 107941
+                    "endOffset": 107936
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7019,10 +7019,10 @@
                 "to": {
                     "startLine": 1436,
                     "startColumn": 4,
-                    "startOffset": 107946,
+                    "startOffset": 107941,
                     "endLine": 1439,
                     "endColumn": 12,
-                    "endOffset": 108146
+                    "endOffset": 108141
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7040,10 +7040,10 @@
                 "to": {
                     "startLine": 1440,
                     "startColumn": 4,
-                    "startOffset": 108151,
+                    "startOffset": 108146,
                     "endLine": 1443,
                     "endColumn": 12,
-                    "endOffset": 108476
+                    "endOffset": 108471
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7061,9 +7061,9 @@
                 "to": {
                     "startLine": 1444,
                     "startColumn": 4,
-                    "startOffset": 108481,
+                    "startOffset": 108476,
                     "endColumn": 83,
-                    "endOffset": 108560
+                    "endOffset": 108555
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7080,9 +7080,9 @@
                 "to": {
                     "startLine": 1445,
                     "startColumn": 4,
-                    "startOffset": 108565,
+                    "startOffset": 108560,
                     "endColumn": 95,
-                    "endOffset": 108656
+                    "endOffset": 108651
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7099,9 +7099,9 @@
                 "to": {
                     "startLine": 1446,
                     "startColumn": 4,
-                    "startOffset": 108661,
+                    "startOffset": 108656,
                     "endColumn": 95,
-                    "endOffset": 108752
+                    "endOffset": 108747
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7118,9 +7118,9 @@
                 "to": {
                     "startLine": 1447,
                     "startColumn": 4,
-                    "startOffset": 108757,
+                    "startOffset": 108752,
                     "endColumn": 97,
-                    "endOffset": 108850
+                    "endOffset": 108845
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7137,9 +7137,9 @@
                 "to": {
                     "startLine": 1448,
                     "startColumn": 4,
-                    "startOffset": 108855,
+                    "startOffset": 108850,
                     "endColumn": 99,
-                    "endOffset": 108950
+                    "endOffset": 108945
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7156,9 +7156,9 @@
                 "to": {
                     "startLine": 1449,
                     "startColumn": 4,
-                    "startOffset": 108955,
+                    "startOffset": 108950,
                     "endColumn": 101,
-                    "endOffset": 109052
+                    "endOffset": 109047
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7175,9 +7175,9 @@
                 "to": {
                     "startLine": 1450,
                     "startColumn": 4,
-                    "startOffset": 109057,
+                    "startOffset": 109052,
                     "endColumn": 101,
-                    "endOffset": 109154
+                    "endOffset": 109149
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7194,9 +7194,9 @@
                 "to": {
                     "startLine": 1451,
                     "startColumn": 4,
-                    "startOffset": 109159,
+                    "startOffset": 109154,
                     "endColumn": 101,
-                    "endOffset": 109256
+                    "endOffset": 109251
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7213,9 +7213,9 @@
                 "to": {
                     "startLine": 1452,
                     "startColumn": 4,
-                    "startOffset": 109261,
+                    "startOffset": 109256,
                     "endColumn": 101,
-                    "endOffset": 109358
+                    "endOffset": 109353
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7232,9 +7232,9 @@
                 "to": {
                     "startLine": 1453,
                     "startColumn": 4,
-                    "startOffset": 109363,
+                    "startOffset": 109358,
                     "endColumn": 101,
-                    "endOffset": 109460
+                    "endOffset": 109455
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7251,9 +7251,9 @@
                 "to": {
                     "startLine": 1454,
                     "startColumn": 4,
-                    "startOffset": 109465,
+                    "startOffset": 109460,
                     "endColumn": 99,
-                    "endOffset": 109560
+                    "endOffset": 109555
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7270,9 +7270,9 @@
                 "to": {
                     "startLine": 1455,
                     "startColumn": 4,
-                    "startOffset": 109565,
+                    "startOffset": 109560,
                     "endColumn": 95,
-                    "endOffset": 109656
+                    "endOffset": 109651
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7289,9 +7289,9 @@
                 "to": {
                     "startLine": 1456,
                     "startColumn": 4,
-                    "startOffset": 109661,
+                    "startOffset": 109656,
                     "endColumn": 111,
-                    "endOffset": 109768
+                    "endOffset": 109763
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7308,9 +7308,9 @@
                 "to": {
                     "startLine": 1457,
                     "startColumn": 4,
-                    "startOffset": 109773,
+                    "startOffset": 109768,
                     "endColumn": 128,
-                    "endOffset": 109897
+                    "endOffset": 109892
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7327,9 +7327,9 @@
                 "to": {
                     "startLine": 1458,
                     "startColumn": 4,
-                    "startOffset": 109902,
+                    "startOffset": 109897,
                     "endColumn": 122,
-                    "endOffset": 110020
+                    "endOffset": 110015
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7346,10 +7346,10 @@
                 "to": {
                     "startLine": 1459,
                     "startColumn": 4,
-                    "startOffset": 110025,
+                    "startOffset": 110020,
                     "endLine": 1460,
                     "endColumn": 12,
-                    "endOffset": 110174
+                    "endOffset": 110169
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7367,10 +7367,10 @@
                 "to": {
                     "startLine": 1461,
                     "startColumn": 4,
-                    "startOffset": 110179,
+                    "startOffset": 110174,
                     "endLine": 1462,
                     "endColumn": 12,
-                    "endOffset": 110328
+                    "endOffset": 110323
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7388,9 +7388,9 @@
                 "to": {
                     "startLine": 1463,
                     "startColumn": 4,
-                    "startOffset": 110333,
+                    "startOffset": 110328,
                     "endColumn": 97,
-                    "endOffset": 110426
+                    "endOffset": 110421
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7407,9 +7407,9 @@
                 "to": {
                     "startLine": 1464,
                     "startColumn": 4,
-                    "startOffset": 110431,
+                    "startOffset": 110426,
                     "endColumn": 113,
-                    "endOffset": 110540
+                    "endOffset": 110535
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7426,9 +7426,9 @@
                 "to": {
                     "startLine": 1465,
                     "startColumn": 4,
-                    "startOffset": 110545,
+                    "startOffset": 110540,
                     "endColumn": 93,
-                    "endOffset": 110634
+                    "endOffset": 110629
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7445,10 +7445,10 @@
                 "to": {
                     "startLine": 1466,
                     "startColumn": 4,
-                    "startOffset": 110639,
+                    "startOffset": 110634,
                     "endLine": 1467,
                     "endColumn": 12,
-                    "endOffset": 110774
+                    "endOffset": 110769
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7466,10 +7466,10 @@
                 "to": {
                     "startLine": 1468,
                     "startColumn": 4,
-                    "startOffset": 110779,
+                    "startOffset": 110774,
                     "endLine": 1469,
                     "endColumn": 12,
-                    "endOffset": 110908
+                    "endOffset": 110903
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7487,9 +7487,9 @@
                 "to": {
                     "startLine": 1470,
                     "startColumn": 4,
-                    "startOffset": 110913,
+                    "startOffset": 110908,
                     "endColumn": 95,
-                    "endOffset": 111004
+                    "endOffset": 110999
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7506,9 +7506,9 @@
                 "to": {
                     "startLine": 1471,
                     "startColumn": 4,
-                    "startOffset": 111009,
+                    "startOffset": 111004,
                     "endColumn": 111,
-                    "endOffset": 111116
+                    "endOffset": 111111
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7525,9 +7525,9 @@
                 "to": {
                     "startLine": 1472,
                     "startColumn": 4,
-                    "startOffset": 111121,
+                    "startOffset": 111116,
                     "endColumn": 99,
-                    "endOffset": 111216
+                    "endOffset": 111211
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7544,9 +7544,9 @@
                 "to": {
                     "startLine": 1473,
                     "startColumn": 4,
-                    "startOffset": 111221,
+                    "startOffset": 111216,
                     "endColumn": 115,
-                    "endOffset": 111332
+                    "endOffset": 111327
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7563,9 +7563,9 @@
                 "to": {
                     "startLine": 1474,
                     "startColumn": 4,
-                    "startOffset": 111337,
+                    "startOffset": 111332,
                     "endColumn": 95,
-                    "endOffset": 111428
+                    "endOffset": 111423
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7582,9 +7582,9 @@
                 "to": {
                     "startLine": 1475,
                     "startColumn": 4,
-                    "startOffset": 111433,
+                    "startOffset": 111428,
                     "endColumn": 111,
-                    "endOffset": 111540
+                    "endOffset": 111535
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7601,10 +7601,10 @@
                 "to": {
                     "startLine": 1476,
                     "startColumn": 4,
-                    "startOffset": 111545,
+                    "startOffset": 111540,
                     "endLine": 1477,
                     "endColumn": 12,
-                    "endOffset": 111680
+                    "endOffset": 111675
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7622,9 +7622,9 @@
                 "to": {
                     "startLine": 1478,
                     "startColumn": 4,
-                    "startOffset": 111685,
+                    "startOffset": 111680,
                     "endColumn": 135,
-                    "endOffset": 111816
+                    "endOffset": 111811
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7641,10 +7641,10 @@
                 "to": {
                     "startLine": 1479,
                     "startColumn": 4,
-                    "startOffset": 111821,
+                    "startOffset": 111816,
                     "endLine": 1480,
                     "endColumn": 12,
-                    "endOffset": 111980
+                    "endOffset": 111975
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7662,9 +7662,9 @@
                 "to": {
                     "startLine": 1481,
                     "startColumn": 4,
-                    "startOffset": 111985,
+                    "startOffset": 111980,
                     "endColumn": 129,
-                    "endOffset": 112110
+                    "endOffset": 112105
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7681,10 +7681,10 @@
                 "to": {
                     "startLine": 1482,
                     "startColumn": 4,
-                    "startOffset": 112115,
+                    "startOffset": 112110,
                     "endLine": 1483,
                     "endColumn": 12,
-                    "endOffset": 112268
+                    "endOffset": 112263
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7702,10 +7702,10 @@
                 "to": {
                     "startLine": 1484,
                     "startColumn": 4,
-                    "startOffset": 112273,
+                    "startOffset": 112268,
                     "endLine": 1485,
                     "endColumn": 12,
-                    "endOffset": 112418
+                    "endOffset": 112413
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7723,9 +7723,9 @@
                 "to": {
                     "startLine": 1486,
                     "startColumn": 4,
-                    "startOffset": 112423,
+                    "startOffset": 112418,
                     "endColumn": 140,
-                    "endOffset": 112559
+                    "endOffset": 112554
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7742,10 +7742,10 @@
                 "to": {
                     "startLine": 1487,
                     "startColumn": 4,
-                    "startOffset": 112564,
+                    "startOffset": 112559,
                     "endLine": 1488,
                     "endColumn": 12,
-                    "endOffset": 112703
+                    "endOffset": 112698
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7763,9 +7763,9 @@
                 "to": {
                     "startLine": 1489,
                     "startColumn": 4,
-                    "startOffset": 112708,
+                    "startOffset": 112703,
                     "endColumn": 134,
-                    "endOffset": 112838
+                    "endOffset": 112833
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7782,9 +7782,9 @@
                 "to": {
                     "startLine": 1490,
                     "startColumn": 4,
-                    "startOffset": 112843,
+                    "startOffset": 112838,
                     "endColumn": 111,
-                    "endOffset": 112950
+                    "endOffset": 112945
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7801,9 +7801,9 @@
                 "to": {
                     "startLine": 1491,
                     "startColumn": 4,
-                    "startOffset": 112955,
+                    "startOffset": 112950,
                     "endColumn": 127,
-                    "endOffset": 113078
+                    "endOffset": 113073
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7820,10 +7820,10 @@
                 "to": {
                     "startLine": 1492,
                     "startColumn": 4,
-                    "startOffset": 113083,
+                    "startOffset": 113078,
                     "endLine": 1493,
                     "endColumn": 12,
-                    "endOffset": 113214
+                    "endOffset": 113209
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7841,10 +7841,10 @@
                 "to": {
                     "startLine": 1494,
                     "startColumn": 4,
-                    "startOffset": 113219,
+                    "startOffset": 113214,
                     "endLine": 1495,
                     "endColumn": 12,
-                    "endOffset": 113356
+                    "endOffset": 113351
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7862,10 +7862,10 @@
                 "to": {
                     "startLine": 1496,
                     "startColumn": 4,
-                    "startOffset": 113361,
+                    "startOffset": 113356,
                     "endLine": 1497,
                     "endColumn": 12,
-                    "endOffset": 113498
+                    "endOffset": 113493
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7883,9 +7883,9 @@
                 "to": {
                     "startLine": 1498,
                     "startColumn": 4,
-                    "startOffset": 113503,
+                    "startOffset": 113498,
                     "endColumn": 111,
-                    "endOffset": 113610
+                    "endOffset": 113605
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7902,9 +7902,9 @@
                 "to": {
                     "startLine": 1499,
                     "startColumn": 4,
-                    "startOffset": 113615,
+                    "startOffset": 113610,
                     "endColumn": 139,
-                    "endOffset": 113750
+                    "endOffset": 113745
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7921,9 +7921,9 @@
                 "to": {
                     "startLine": 1500,
                     "startColumn": 4,
-                    "startOffset": 113755,
+                    "startOffset": 113750,
                     "endColumn": 67,
-                    "endOffset": 113818
+                    "endOffset": 113813
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7940,9 +7940,9 @@
                 "to": {
                     "startLine": 1501,
                     "startColumn": 4,
-                    "startOffset": 113823,
+                    "startOffset": 113818,
                     "endColumn": 72,
-                    "endOffset": 113891
+                    "endOffset": 113886
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7959,9 +7959,9 @@
                 "to": {
                     "startLine": 1502,
                     "startColumn": 4,
-                    "startOffset": 113896,
+                    "startOffset": 113891,
                     "endColumn": 73,
-                    "endOffset": 113965
+                    "endOffset": 113960
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7978,9 +7978,9 @@
                 "to": {
                     "startLine": 1503,
                     "startColumn": 4,
-                    "startOffset": 113970,
+                    "startOffset": 113965,
                     "endColumn": 72,
-                    "endOffset": 114038
+                    "endOffset": 114033
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -7997,9 +7997,9 @@
                 "to": {
                     "startLine": 1504,
                     "startColumn": 4,
-                    "startOffset": 114043,
+                    "startOffset": 114038,
                     "endColumn": 73,
-                    "endOffset": 114112
+                    "endOffset": 114107
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8016,10 +8016,10 @@
                 "to": {
                     "startLine": 1505,
                     "startColumn": 4,
-                    "startOffset": 114117,
+                    "startOffset": 114112,
                     "endLine": 1506,
                     "endColumn": 12,
-                    "endOffset": 114258
+                    "endOffset": 114253
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8037,10 +8037,10 @@
                 "to": {
                     "startLine": 1507,
                     "startColumn": 4,
-                    "startOffset": 114263,
+                    "startOffset": 114258,
                     "endLine": 1508,
                     "endColumn": 12,
-                    "endOffset": 114402
+                    "endOffset": 114397
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8058,10 +8058,10 @@
                 "to": {
                     "startLine": 1509,
                     "startColumn": 4,
-                    "startOffset": 114407,
+                    "startOffset": 114402,
                     "endLine": 1510,
                     "endColumn": 12,
-                    "endOffset": 114540
+                    "endOffset": 114535
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8079,9 +8079,9 @@
                 "to": {
                     "startLine": 1511,
                     "startColumn": 4,
-                    "startOffset": 114545,
+                    "startOffset": 114540,
                     "endColumn": 65,
-                    "endOffset": 114606
+                    "endOffset": 114601
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8098,9 +8098,9 @@
                 "to": {
                     "startLine": 1512,
                     "startColumn": 4,
-                    "startOffset": 114611,
+                    "startOffset": 114606,
                     "endColumn": 89,
-                    "endOffset": 114696
+                    "endOffset": 114691
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8117,9 +8117,9 @@
                 "to": {
                     "startLine": 1513,
                     "startColumn": 4,
-                    "startOffset": 114701,
+                    "startOffset": 114696,
                     "endColumn": 75,
-                    "endOffset": 114772
+                    "endOffset": 114767
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8136,9 +8136,9 @@
                 "to": {
                     "startLine": 1514,
                     "startColumn": 4,
-                    "startOffset": 114777,
+                    "startOffset": 114772,
                     "endColumn": 103,
-                    "endOffset": 114876
+                    "endOffset": 114871
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8155,9 +8155,9 @@
                 "to": {
                     "startLine": 1515,
                     "startColumn": 4,
-                    "startOffset": 114881,
+                    "startOffset": 114876,
                     "endColumn": 89,
-                    "endOffset": 114966
+                    "endOffset": 114961
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8174,9 +8174,9 @@
                 "to": {
                     "startLine": 1516,
                     "startColumn": 4,
-                    "startOffset": 114971,
+                    "startOffset": 114966,
                     "endColumn": 101,
-                    "endOffset": 115068
+                    "endOffset": 115063
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8193,9 +8193,9 @@
                 "to": {
                     "startLine": 1517,
                     "startColumn": 4,
-                    "startOffset": 115073,
+                    "startOffset": 115068,
                     "endColumn": 107,
-                    "endOffset": 115176
+                    "endOffset": 115171
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8212,9 +8212,9 @@
                 "to": {
                     "startLine": 1518,
                     "startColumn": 4,
-                    "startOffset": 115181,
+                    "startOffset": 115176,
                     "endColumn": 107,
-                    "endOffset": 115284
+                    "endOffset": 115279
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8231,9 +8231,9 @@
                 "to": {
                     "startLine": 1519,
                     "startColumn": 4,
-                    "startOffset": 115289,
+                    "startOffset": 115284,
                     "endColumn": 99,
-                    "endOffset": 115384
+                    "endOffset": 115379
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8250,9 +8250,9 @@
                 "to": {
                     "startLine": 1520,
                     "startColumn": 4,
-                    "startOffset": 115389,
+                    "startOffset": 115384,
                     "endColumn": 79,
-                    "endOffset": 115464
+                    "endOffset": 115459
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8269,9 +8269,9 @@
                 "to": {
                     "startLine": 1521,
                     "startColumn": 4,
-                    "startOffset": 115469,
+                    "startOffset": 115464,
                     "endColumn": 91,
-                    "endOffset": 115556
+                    "endOffset": 115551
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8288,9 +8288,9 @@
                 "to": {
                     "startLine": 1522,
                     "startColumn": 4,
-                    "startOffset": 115561,
+                    "startOffset": 115556,
                     "endColumn": 97,
-                    "endOffset": 115654
+                    "endOffset": 115649
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8307,10 +8307,10 @@
                 "to": {
                     "startLine": 1523,
                     "startColumn": 4,
-                    "startOffset": 115659,
+                    "startOffset": 115654,
                     "endLine": 1524,
                     "endColumn": 12,
-                    "endOffset": 115764
+                    "endOffset": 115759
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8328,9 +8328,9 @@
                 "to": {
                     "startLine": 1525,
                     "startColumn": 4,
-                    "startOffset": 115769,
+                    "startOffset": 115764,
                     "endColumn": 77,
-                    "endOffset": 115842
+                    "endOffset": 115837
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8347,9 +8347,9 @@
                 "to": {
                     "startLine": 1526,
                     "startColumn": 4,
-                    "startOffset": 115847,
+                    "startOffset": 115842,
                     "endColumn": 105,
-                    "endOffset": 115948
+                    "endOffset": 115943
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8366,9 +8366,9 @@
                 "to": {
                     "startLine": 1527,
                     "startColumn": 4,
-                    "startOffset": 115953,
+                    "startOffset": 115948,
                     "endColumn": 91,
-                    "endOffset": 116040
+                    "endOffset": 116035
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8385,9 +8385,9 @@
                 "to": {
                     "startLine": 1528,
                     "startColumn": 4,
-                    "startOffset": 116045,
+                    "startOffset": 116040,
                     "endColumn": 103,
-                    "endOffset": 116144
+                    "endOffset": 116139
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8404,9 +8404,9 @@
                 "to": {
                     "startLine": 1529,
                     "startColumn": 4,
-                    "startOffset": 116149,
+                    "startOffset": 116144,
                     "endColumn": 109,
-                    "endOffset": 116254
+                    "endOffset": 116249
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8423,10 +8423,10 @@
                 "to": {
                     "startLine": 1530,
                     "startColumn": 4,
-                    "startOffset": 116259,
+                    "startOffset": 116254,
                     "endLine": 1531,
                     "endColumn": 12,
-                    "endOffset": 116376
+                    "endOffset": 116371
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8444,10 +8444,10 @@
                 "to": {
                     "startLine": 1532,
                     "startColumn": 4,
-                    "startOffset": 116381,
+                    "startOffset": 116376,
                     "endLine": 1535,
                     "endColumn": 12,
-                    "endOffset": 116539
+                    "endOffset": 116534
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8465,10 +8465,10 @@
                 "to": {
                     "startLine": 1536,
                     "startColumn": 4,
-                    "startOffset": 116544,
+                    "startOffset": 116539,
                     "endLine": 1539,
                     "endColumn": 12,
-                    "endOffset": 116696
+                    "endOffset": 116691
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8486,9 +8486,9 @@
                 "to": {
                     "startLine": 1540,
                     "startColumn": 4,
-                    "startOffset": 116701,
+                    "startOffset": 116696,
                     "endColumn": 79,
-                    "endOffset": 116776
+                    "endOffset": 116771
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8505,9 +8505,9 @@
                 "to": {
                     "startLine": 1541,
                     "startColumn": 4,
-                    "startOffset": 116781,
+                    "startOffset": 116776,
                     "endColumn": 99,
-                    "endOffset": 116876
+                    "endOffset": 116871
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8524,9 +8524,9 @@
                 "to": {
                     "startLine": 1542,
                     "startColumn": 4,
-                    "startOffset": 116881,
+                    "startOffset": 116876,
                     "endColumn": 89,
-                    "endOffset": 116966
+                    "endOffset": 116961
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8543,9 +8543,9 @@
                 "to": {
                     "startLine": 1543,
                     "startColumn": 4,
-                    "startOffset": 116971,
+                    "startOffset": 116966,
                     "endColumn": 109,
-                    "endOffset": 117076
+                    "endOffset": 117071
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8562,9 +8562,9 @@
                 "to": {
                     "startLine": 1544,
                     "startColumn": 4,
-                    "startOffset": 117081,
+                    "startOffset": 117076,
                     "endColumn": 91,
-                    "endOffset": 117168
+                    "endOffset": 117163
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8581,10 +8581,10 @@
                 "to": {
                     "startLine": 1545,
                     "startColumn": 4,
-                    "startOffset": 117173,
+                    "startOffset": 117168,
                     "endLine": 1546,
                     "endColumn": 12,
-                    "endOffset": 117268
+                    "endOffset": 117263
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8602,10 +8602,10 @@
                 "to": {
                     "startLine": 1547,
                     "startColumn": 4,
-                    "startOffset": 117273,
+                    "startOffset": 117268,
                     "endLine": 1548,
                     "endColumn": 12,
-                    "endOffset": 117380
+                    "endOffset": 117375
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8623,10 +8623,10 @@
                 "to": {
                     "startLine": 1549,
                     "startColumn": 4,
-                    "startOffset": 117385,
+                    "startOffset": 117380,
                     "endLine": 1550,
                     "endColumn": 12,
-                    "endOffset": 117494
+                    "endOffset": 117489
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8644,10 +8644,10 @@
                 "to": {
                     "startLine": 1551,
                     "startColumn": 4,
-                    "startOffset": 117499,
+                    "startOffset": 117494,
                     "endLine": 1552,
                     "endColumn": 12,
-                    "endOffset": 117610
+                    "endOffset": 117605
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8665,10 +8665,10 @@
                 "to": {
                     "startLine": 1553,
                     "startColumn": 4,
-                    "startOffset": 117615,
+                    "startOffset": 117610,
                     "endLine": 1554,
                     "endColumn": 12,
-                    "endOffset": 117726
+                    "endOffset": 117721
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8686,9 +8686,9 @@
                 "to": {
                     "startLine": 1555,
                     "startColumn": 4,
-                    "startOffset": 117731,
+                    "startOffset": 117726,
                     "endColumn": 93,
-                    "endOffset": 117820
+                    "endOffset": 117815
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8705,9 +8705,9 @@
                 "to": {
                     "startLine": 1556,
                     "startColumn": 4,
-                    "startOffset": 117825,
+                    "startOffset": 117820,
                     "endColumn": 113,
-                    "endOffset": 117934
+                    "endOffset": 117929
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8724,9 +8724,9 @@
                 "to": {
                     "startLine": 1557,
                     "startColumn": 4,
-                    "startOffset": 117939,
+                    "startOffset": 117934,
                     "endColumn": 111,
-                    "endOffset": 118046
+                    "endOffset": 118041
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8743,10 +8743,10 @@
                 "to": {
                     "startLine": 1558,
                     "startColumn": 4,
-                    "startOffset": 118051,
+                    "startOffset": 118046,
                     "endLine": 1559,
                     "endColumn": 12,
-                    "endOffset": 118148
+                    "endOffset": 118143
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8764,10 +8764,10 @@
                 "to": {
                     "startLine": 1560,
                     "startColumn": 4,
-                    "startOffset": 118153,
+                    "startOffset": 118148,
                     "endLine": 1561,
                     "endColumn": 12,
-                    "endOffset": 118268
+                    "endOffset": 118263
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8785,10 +8785,10 @@
                 "to": {
                     "startLine": 1562,
                     "startColumn": 4,
-                    "startOffset": 118273,
+                    "startOffset": 118268,
                     "endLine": 1563,
                     "endColumn": 12,
-                    "endOffset": 118390
+                    "endOffset": 118385
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8806,9 +8806,9 @@
                 "to": {
                     "startLine": 1564,
                     "startColumn": 4,
-                    "startOffset": 118395,
+                    "startOffset": 118390,
                     "endColumn": 81,
-                    "endOffset": 118472
+                    "endOffset": 118467
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8825,9 +8825,9 @@
                 "to": {
                     "startLine": 1565,
                     "startColumn": 4,
-                    "startOffset": 118477,
+                    "startOffset": 118472,
                     "endColumn": 103,
-                    "endOffset": 118576
+                    "endOffset": 118571
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8844,9 +8844,9 @@
                 "to": {
                     "startLine": 1566,
                     "startColumn": 4,
-                    "startOffset": 118581,
+                    "startOffset": 118576,
                     "endColumn": 119,
-                    "endOffset": 118696
+                    "endOffset": 118691
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8863,9 +8863,9 @@
                 "to": {
                     "startLine": 1567,
                     "startColumn": 4,
-                    "startOffset": 118701,
+                    "startOffset": 118696,
                     "endColumn": 125,
-                    "endOffset": 118822
+                    "endOffset": 118817
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8882,9 +8882,9 @@
                 "to": {
                     "startLine": 1568,
                     "startColumn": 4,
-                    "startOffset": 118827,
+                    "startOffset": 118822,
                     "endColumn": 97,
-                    "endOffset": 118920
+                    "endOffset": 118915
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8901,9 +8901,9 @@
                 "to": {
                     "startLine": 1569,
                     "startColumn": 4,
-                    "startOffset": 118925,
+                    "startOffset": 118920,
                     "endColumn": 93,
-                    "endOffset": 119014
+                    "endOffset": 119009
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8920,9 +8920,9 @@
                 "to": {
                     "startLine": 1570,
                     "startColumn": 4,
-                    "startOffset": 119019,
+                    "startOffset": 119014,
                     "endColumn": 87,
-                    "endOffset": 119102
+                    "endOffset": 119097
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8939,9 +8939,9 @@
                 "to": {
                     "startLine": 1571,
                     "startColumn": 4,
-                    "startOffset": 119107,
+                    "startOffset": 119102,
                     "endColumn": 111,
-                    "endOffset": 119214
+                    "endOffset": 119209
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8958,9 +8958,9 @@
                 "to": {
                     "startLine": 1572,
                     "startColumn": 4,
-                    "startOffset": 119219,
+                    "startOffset": 119214,
                     "endColumn": 115,
-                    "endOffset": 119330
+                    "endOffset": 119325
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8977,9 +8977,9 @@
                 "to": {
                     "startLine": 1573,
                     "startColumn": 4,
-                    "startOffset": 119335,
+                    "startOffset": 119330,
                     "endColumn": 121,
-                    "endOffset": 119452
+                    "endOffset": 119447
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -8996,9 +8996,9 @@
                 "to": {
                     "startLine": 1574,
                     "startColumn": 4,
-                    "startOffset": 119457,
+                    "startOffset": 119452,
                     "endColumn": 111,
-                    "endOffset": 119564
+                    "endOffset": 119559
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9015,10 +9015,10 @@
                 "to": {
                     "startLine": 1575,
                     "startColumn": 4,
-                    "startOffset": 119569,
+                    "startOffset": 119564,
                     "endLine": 1577,
                     "endColumn": 12,
-                    "endOffset": 119739
+                    "endOffset": 119734
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9036,9 +9036,9 @@
                 "to": {
                     "startLine": 1578,
                     "startColumn": 4,
-                    "startOffset": 119744,
+                    "startOffset": 119739,
                     "endColumn": 115,
-                    "endOffset": 119855
+                    "endOffset": 119850
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9055,9 +9055,9 @@
                 "to": {
                     "startLine": 1579,
                     "startColumn": 4,
-                    "startOffset": 119860,
+                    "startOffset": 119855,
                     "endColumn": 85,
-                    "endOffset": 119941
+                    "endOffset": 119936
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9074,9 +9074,9 @@
                 "to": {
                     "startLine": 1580,
                     "startColumn": 4,
-                    "startOffset": 119946,
+                    "startOffset": 119941,
                     "endColumn": 91,
-                    "endOffset": 120033
+                    "endOffset": 120028
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9093,10 +9093,10 @@
                 "to": {
                     "startLine": 1581,
                     "startColumn": 4,
-                    "startOffset": 120038,
+                    "startOffset": 120033,
                     "endLine": 1582,
                     "endColumn": 12,
-                    "endOffset": 120145
+                    "endOffset": 120140
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9114,10 +9114,10 @@
                 "to": {
                     "startLine": 1583,
                     "startColumn": 4,
-                    "startOffset": 120150,
+                    "startOffset": 120145,
                     "endLine": 1584,
                     "endColumn": 12,
-                    "endOffset": 120269
+                    "endOffset": 120264
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9135,9 +9135,9 @@
                 "to": {
                     "startLine": 1585,
                     "startColumn": 4,
-                    "startOffset": 120274,
+                    "startOffset": 120269,
                     "endColumn": 66,
-                    "endOffset": 120336
+                    "endOffset": 120331
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9154,10 +9154,10 @@
                 "to": {
                     "startLine": 1586,
                     "startColumn": 4,
-                    "startOffset": 120341,
+                    "startOffset": 120336,
                     "endLine": 1587,
                     "endColumn": 12,
-                    "endOffset": 120462
+                    "endOffset": 120457
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9175,9 +9175,9 @@
                 "to": {
                     "startLine": 1588,
                     "startColumn": 4,
-                    "startOffset": 120467,
+                    "startOffset": 120462,
                     "endColumn": 67,
-                    "endOffset": 120530
+                    "endOffset": 120525
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9194,10 +9194,10 @@
                 "to": {
                     "startLine": 1589,
                     "startColumn": 4,
-                    "startOffset": 120535,
+                    "startOffset": 120530,
                     "endLine": 1590,
                     "endColumn": 12,
-                    "endOffset": 120658
+                    "endOffset": 120653
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9215,10 +9215,10 @@
                 "to": {
                     "startLine": 1591,
                     "startColumn": 4,
-                    "startOffset": 120663,
+                    "startOffset": 120658,
                     "endLine": 1592,
                     "endColumn": 12,
-                    "endOffset": 120802
+                    "endOffset": 120797
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9236,10 +9236,10 @@
                 "to": {
                     "startLine": 1593,
                     "startColumn": 4,
-                    "startOffset": 120807,
+                    "startOffset": 120802,
                     "endLine": 1594,
                     "endColumn": 12,
-                    "endOffset": 120930
+                    "endOffset": 120925
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9257,9 +9257,9 @@
                 "to": {
                     "startLine": 1595,
                     "startColumn": 4,
-                    "startOffset": 120935,
+                    "startOffset": 120930,
                     "endColumn": 68,
-                    "endOffset": 120999
+                    "endOffset": 120994
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9276,9 +9276,9 @@
                 "to": {
                     "startLine": 1596,
                     "startColumn": 4,
-                    "startOffset": 121004,
+                    "startOffset": 120999,
                     "endColumn": 94,
-                    "endOffset": 121094
+                    "endOffset": 121089
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9295,9 +9295,9 @@
                 "to": {
                     "startLine": 1597,
                     "startColumn": 4,
-                    "startOffset": 121099,
+                    "startOffset": 121094,
                     "endColumn": 114,
-                    "endOffset": 121209
+                    "endOffset": 121204
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9314,9 +9314,9 @@
                 "to": {
                     "startLine": 1598,
                     "startColumn": 4,
-                    "startOffset": 121214,
+                    "startOffset": 121209,
                     "endColumn": 112,
-                    "endOffset": 121322
+                    "endOffset": 121317
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9333,9 +9333,9 @@
                 "to": {
                     "startLine": 1599,
                     "startColumn": 4,
-                    "startOffset": 121327,
+                    "startOffset": 121322,
                     "endColumn": 98,
-                    "endOffset": 121421
+                    "endOffset": 121416
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9352,9 +9352,9 @@
                 "to": {
                     "startLine": 1600,
                     "startColumn": 4,
-                    "startOffset": 121426,
+                    "startOffset": 121421,
                     "endColumn": 108,
-                    "endOffset": 121530
+                    "endOffset": 121525
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9371,9 +9371,9 @@
                 "to": {
                     "startLine": 1601,
                     "startColumn": 4,
-                    "startOffset": 121535,
+                    "startOffset": 121530,
                     "endColumn": 110,
-                    "endOffset": 121641
+                    "endOffset": 121636
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9390,9 +9390,9 @@
                 "to": {
                     "startLine": 1602,
                     "startColumn": 4,
-                    "startOffset": 121646,
+                    "startOffset": 121641,
                     "endColumn": 110,
-                    "endOffset": 121752
+                    "endOffset": 121747
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9409,9 +9409,9 @@
                 "to": {
                     "startLine": 1603,
                     "startColumn": 4,
-                    "startOffset": 121757,
+                    "startOffset": 121752,
                     "endColumn": 100,
-                    "endOffset": 121853
+                    "endOffset": 121848
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9428,9 +9428,9 @@
                 "to": {
                     "startLine": 1604,
                     "startColumn": 4,
-                    "startOffset": 121858,
+                    "startOffset": 121853,
                     "endColumn": 104,
-                    "endOffset": 121958
+                    "endOffset": 121953
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9447,10 +9447,10 @@
                 "to": {
                     "startLine": 1605,
                     "startColumn": 4,
-                    "startOffset": 121963,
+                    "startOffset": 121958,
                     "endLine": 1606,
                     "endColumn": 12,
-                    "endOffset": 122070
+                    "endOffset": 122065
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9468,10 +9468,10 @@
                 "to": {
                     "startLine": 1607,
                     "startColumn": 4,
-                    "startOffset": 122075,
+                    "startOffset": 122070,
                     "endLine": 1608,
                     "endColumn": 12,
-                    "endOffset": 122200
+                    "endOffset": 122195
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9489,9 +9489,9 @@
                 "to": {
                     "startLine": 1609,
                     "startColumn": 4,
-                    "startOffset": 122205,
+                    "startOffset": 122200,
                     "endColumn": 90,
-                    "endOffset": 122291
+                    "endOffset": 122286
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9508,9 +9508,9 @@
                 "to": {
                     "startLine": 1610,
                     "startColumn": 4,
-                    "startOffset": 122296,
+                    "startOffset": 122291,
                     "endColumn": 122,
-                    "endOffset": 122414
+                    "endOffset": 122409
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9527,10 +9527,10 @@
                 "to": {
                     "startLine": 1611,
                     "startColumn": 4,
-                    "startOffset": 122419,
+                    "startOffset": 122414,
                     "endLine": 1612,
                     "endColumn": 12,
-                    "endOffset": 122526
+                    "endOffset": 122521
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9548,9 +9548,9 @@
                 "to": {
                     "startLine": 1613,
                     "startColumn": 4,
-                    "startOffset": 122531,
+                    "startOffset": 122526,
                     "endColumn": 85,
-                    "endOffset": 122612
+                    "endOffset": 122607
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9567,9 +9567,9 @@
                 "to": {
                     "startLine": 1614,
                     "startColumn": 4,
-                    "startOffset": 122617,
+                    "startOffset": 122612,
                     "endColumn": 103,
-                    "endOffset": 122716
+                    "endOffset": 122711
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9586,10 +9586,10 @@
                 "to": {
                     "startLine": 1615,
                     "startColumn": 4,
-                    "startOffset": 122721,
+                    "startOffset": 122716,
                     "endLine": 1616,
                     "endColumn": 12,
-                    "endOffset": 122824
+                    "endOffset": 122819
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9607,10 +9607,10 @@
                 "to": {
                     "startLine": 1617,
                     "startColumn": 4,
-                    "startOffset": 122829,
+                    "startOffset": 122824,
                     "endLine": 1618,
                     "endColumn": 12,
-                    "endOffset": 122924
+                    "endOffset": 122919
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9628,10 +9628,10 @@
                 "to": {
                     "startLine": 1619,
                     "startColumn": 4,
-                    "startOffset": 122929,
+                    "startOffset": 122924,
                     "endLine": 1620,
                     "endColumn": 12,
-                    "endOffset": 123042
+                    "endOffset": 123037
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9649,10 +9649,10 @@
                 "to": {
                     "startLine": 1621,
                     "startColumn": 4,
-                    "startOffset": 123047,
+                    "startOffset": 123042,
                     "endLine": 1622,
                     "endColumn": 12,
-                    "endOffset": 123146
+                    "endOffset": 123141
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9670,10 +9670,10 @@
                 "to": {
                     "startLine": 1623,
                     "startColumn": 4,
-                    "startOffset": 123151,
+                    "startOffset": 123146,
                     "endLine": 1624,
                     "endColumn": 12,
-                    "endOffset": 123250
+                    "endOffset": 123245
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9691,10 +9691,10 @@
                 "to": {
                     "startLine": 1625,
                     "startColumn": 4,
-                    "startOffset": 123255,
+                    "startOffset": 123250,
                     "endLine": 1626,
                     "endColumn": 12,
-                    "endOffset": 123376
+                    "endOffset": 123371
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9712,9 +9712,9 @@
                 "to": {
                     "startLine": 1627,
                     "startColumn": 4,
-                    "startOffset": 123381,
+                    "startOffset": 123376,
                     "endColumn": 87,
-                    "endOffset": 123464
+                    "endOffset": 123459
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9731,9 +9731,9 @@
                 "to": {
                     "startLine": 1628,
                     "startColumn": 4,
-                    "startOffset": 123469,
+                    "startOffset": 123464,
                     "endColumn": 107,
-                    "endOffset": 123572
+                    "endOffset": 123567
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9750,9 +9750,9 @@
                 "to": {
                     "startLine": 1629,
                     "startColumn": 4,
-                    "startOffset": 123577,
+                    "startOffset": 123572,
                     "endColumn": 99,
-                    "endOffset": 123672
+                    "endOffset": 123667
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9769,9 +9769,9 @@
                 "to": {
                     "startLine": 1630,
                     "startColumn": 4,
-                    "startOffset": 123677,
+                    "startOffset": 123672,
                     "endColumn": 89,
-                    "endOffset": 123762
+                    "endOffset": 123757
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9788,9 +9788,9 @@
                 "to": {
                     "startLine": 1631,
                     "startColumn": 4,
-                    "startOffset": 123767,
+                    "startOffset": 123762,
                     "endColumn": 109,
-                    "endOffset": 123872
+                    "endOffset": 123867
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9807,9 +9807,9 @@
                 "to": {
                     "startLine": 1632,
                     "startColumn": 4,
-                    "startOffset": 123877,
+                    "startOffset": 123872,
                     "endColumn": 83,
-                    "endOffset": 123956
+                    "endOffset": 123951
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9826,9 +9826,9 @@
                 "to": {
                     "startLine": 1633,
                     "startColumn": 4,
-                    "startOffset": 123961,
+                    "startOffset": 123956,
                     "endColumn": 83,
-                    "endOffset": 124040
+                    "endOffset": 124035
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9845,9 +9845,9 @@
                 "to": {
                     "startLine": 1634,
                     "startColumn": 4,
-                    "startOffset": 124045,
+                    "startOffset": 124040,
                     "endColumn": 53,
-                    "endOffset": 124094
+                    "endOffset": 124089
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9864,9 +9864,9 @@
                 "to": {
                     "startLine": 1635,
                     "startColumn": 4,
-                    "startOffset": 124099,
+                    "startOffset": 124094,
                     "endColumn": 63,
-                    "endOffset": 124158
+                    "endOffset": 124153
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9883,9 +9883,9 @@
                 "to": {
                     "startLine": 1636,
                     "startColumn": 4,
-                    "startOffset": 124163,
+                    "startOffset": 124158,
                     "endColumn": 105,
-                    "endOffset": 124264
+                    "endOffset": 124259
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9902,9 +9902,9 @@
                 "to": {
                     "startLine": 1637,
                     "startColumn": 4,
-                    "startOffset": 124269,
+                    "startOffset": 124264,
                     "endColumn": 109,
-                    "endOffset": 124374
+                    "endOffset": 124369
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9921,9 +9921,9 @@
                 "to": {
                     "startLine": 1638,
                     "startColumn": 4,
-                    "startOffset": 124379,
+                    "startOffset": 124374,
                     "endColumn": 83,
-                    "endOffset": 124458
+                    "endOffset": 124453
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",
@@ -9940,9 +9940,9 @@
                 "to": {
                     "startLine": 1639,
                     "startColumn": 4,
-                    "startOffset": 124463,
+                    "startOffset": 124458,
                     "endColumn": 119,
-                    "endOffset": 124578
+                    "endOffset": 124573
                 },
                 "from": {
                     "file": "C:\\Users\\Lydia\\Documents\\UvA\\project_mprog\\SaveTheNight\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values\\values.xml",

@@ -59,7 +59,7 @@ MERGED from [com.android.support:support-v4:23.3.0] C:\Users\Lydia\Documents\UvA
 	android:allowBackup
 		ADDED from C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\src\main\AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\src\main\AndroidManifest.xml:15:9-48
 	android:theme
 		ADDED from C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\src\main\AndroidManifest.xml:19:9-65
 activity#com.example.lydia.savethenight.MainActivity

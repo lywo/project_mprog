@@ -1614,15 +1614,12 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020048;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020049;
         public static final int abc_textfield_search_material=0x7f02004a;
-        public static final int brokenheart=0x7f02004b;
-        public static final int edited_heart=0x7f02004c;
-        public static final int final_phone_icon=0x7f02004d;
-        public static final int hart=0x7f02004e;
-        public static final int hart_icon_color=0x7f02004f;
-        public static final int notification_template_icon_bg=0x7f020053;
-        public static final int question_final=0x7f020050;
-        public static final int settings_final=0x7f020051;
-        public static final int sms_message_final=0x7f020052;
+        public static final int final_phone_icon=0x7f02004b;
+        public static final int hart=0x7f02004c;
+        public static final int notification_template_icon_bg=0x7f020050;
+        public static final int question_final=0x7f02004d;
+        public static final int settings_final=0x7f02004e;
+        public static final int sms_message_final=0x7f02004f;
     }
     public static final class id {
         public static final int action0=0x7f0d0069;
@@ -1803,12 +1800,13 @@ containing a value of this type.
     }
     public static final class mipmap {
         public static final int callingpicture=0x7f030000;
-        public static final int ic_launcher=0x7f030001;
-        public static final int incomingcallytop=0x7f030002;
-        public static final int newspaper2=0x7f030003;
-        public static final int phonegreen2=0x7f030004;
-        public static final int phoneicon=0x7f030005;
-        public static final int phonered=0x7f030006;
+        public static final int hart_icon_square=0x7f030001;
+        public static final int ic_launcher=0x7f030002;
+        public static final int incomingcallytop=0x7f030003;
+        public static final int newspaper2=0x7f030004;
+        public static final int phonegreen2=0x7f030005;
+        public static final int phoneicon=0x7f030006;
+        public static final int phonered=0x7f030007;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f060000;

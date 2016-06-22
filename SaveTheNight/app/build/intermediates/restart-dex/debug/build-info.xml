@@ -4,27 +4,27 @@
     api-level="23"
     density="hdpi"
     format="7"
-    timestamp="130883432581022"
+    timestamp="132939210690463"
     token="-2568530380899966564" >
 
     <task
         name="javac"
-        duration="5707" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="697" />
+        duration="0" />
     <task
         name="verifier"
-        duration="151" />
+        duration="0" />
 
     <artifact
         location="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="130883432581022" >
+    <build timestamp="132939210690463" >
         <artifact
             location="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
