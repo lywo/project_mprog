@@ -1,8 +1,0 @@
-CHANGED,C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\lydia\savethenight\MainActivity$2$override.class
-CHANGED,C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\lydia\savethenight\MainActivity$3$override.class
-CHANGED,C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\lydia\savethenight\MainActivity$1$override.class
-CHANGED,C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\lydia\savethenight\MainActivity$4$override.class
-CHANGED,C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\lydia\savethenight\MainActivity$override.class
-CHANGED,C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\lydia\savethenight\MainActivity$5$override.class
-CHANGED,C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\lydia\savethenight\MainActivity$6$override.class

@@ -1833,16 +1833,20 @@ containing a value of this type.
         public static final int app_name=0x7f060014;
         public static final int callisinit=0x7f060015;
         public static final int callisnotinit=0x7f060016;
-        public static final int nocontact=0x7f060017;
-        public static final int noic=0x7f060018;
-        public static final int nosmstext=0x7f060019;
-        public static final int permission_error=0x7f06001a;
-        public static final int select_contact=0x7f06001b;
-        public static final int settings_error=0x7f06001c;
-        public static final int smsfailed=0x7f06001d;
-        public static final int smspermission=0x7f06001e;
+        public static final int genericfailure=0x7f060017;
+        public static final int nocontact=0x7f060018;
+        public static final int noic=0x7f060019;
+        public static final int nosmstext=0x7f06001a;
+        public static final int nullPDU=0x7f06001b;
+        public static final int permission_error=0x7f06001c;
+        public static final int radio_off=0x7f06001d;
+        public static final int select_contact=0x7f06001e;
+        public static final int settings_error=0x7f06001f;
+        public static final int smsfailedcon=0x7f060020;
+        public static final int smsok=0x7f060021;
+        public static final int smspermission=0x7f060022;
         public static final int status_bar_notification_info_overflow=0x7f060013;
-        public static final int wifiauth=0x7f06001f;
+        public static final int wifiauth=0x7f060023;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f090086;
