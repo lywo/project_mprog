@@ -11,6 +11,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Handler;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -32,27 +33,39 @@ public class PhoneActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone);
         am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+        final Handler handler = new Handler();
 
         // Check phone settings ringtone volume to adapt ringtone to ringtone, vibration or silent
         switch (am.getRingerMode()) {
             case AudioManager.RINGER_MODE_SILENT:
                 break;
-            case AudioManager.RINGER_MODE_VIBRATE:
+            case AudioManager.RINGER_MODE_VIBRATE: // telephone has vibration for notifications on
                 v= (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
 
-                // vibrate for maximum 25 seconds
-                v.vibrate(25000);
+                // vibrate forever
+                long[] pattern = {0, 1000, 1000};
+                v.vibrate(pattern, 0);
                 break;
-            case AudioManager.RINGER_MODE_NORMAL:
+            case AudioManager.RINGER_MODE_NORMAL: // telephone has sound ringtone on
 
                 // play ringtone
                 Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
                 mp = MediaPlayer.create(getApplicationContext(), notification);
 
-                // set end time
+                // start
                 mp.start();
                 break;
         }
+
+        // if user does not stop the call, end after 25 seconds
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                // wait 25 seconds and end the activity, close the calling screen
+                stopRingtone();
+            }
+        }, 25000);
     }
 
     /*

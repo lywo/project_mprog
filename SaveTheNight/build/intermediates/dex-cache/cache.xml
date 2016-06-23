@@ -1,12 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="e2f67b540983637a0fcc2df12dd804d2b8adfeaa">
-        <dex dex="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0d752da2a36c54f696b13438a0991572cb6ac68e\classes.dex" />
-    </item>
-
-</items>
