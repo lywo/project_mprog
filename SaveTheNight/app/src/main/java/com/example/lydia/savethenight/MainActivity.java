@@ -156,10 +156,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }
-        else { // Permission to send sms is granted
-
-            // Check is contact selected and sms typed
+        else { // Permission to send sms is granted, execute checks
             final DBhelper settingsDBhelper = new DBhelper(this);
+
+            // There is no name and number (contact) saved in the database
             if (settingsDBhelper.getName().length() == 0 || settingsDBhelper.getNumber().length() == 0){
                 showDialogOK(getString(R.string.select_contact), getString(R.string.settings_error),
                         new DialogInterface.OnClickListener() {
@@ -175,6 +175,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }
+
+            // There is no sms message saved in the database
             else if (settingsDBhelper.getSMS().length() == 0 ){
                 showDialogOK(getString(R.string.nosmstext), getString(R.string.settings_error),
                         new DialogInterface.OnClickListener() {
@@ -190,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }
-            else{
+            else{ // All componends for sending sms message are present in the database
 
                 // Get sms message and phone number from database
                 String smsMessage = settingsDBhelper.getSMS();

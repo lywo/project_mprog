@@ -171,13 +171,13 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     /*
-    Check is everything is oki and start collect data from selected contact
+    Check if response code is correct and start to collect data from selected contact
      */
     public void onActivityResult(int requestCode, int resultCode, Intent intent)
     {
         if (requestCode == PICK_CONTACT)
         {
-            if (resultCode == RESULT_OK){ // user picked a contact
+            if (resultCode == RESULT_OK){ // User picked a contact
                 getContactInfo(intent);
             }
             else{

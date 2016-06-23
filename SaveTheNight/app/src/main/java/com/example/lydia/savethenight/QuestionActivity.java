@@ -70,7 +70,7 @@ public class QuestionActivity extends AppCompatActivity {
                 if (randomNum <= 100){ // Go to next question in list
                     randomNum ++;
                 }
-                else{ // start at the begin
+                else{ // Start at the beginning of the list
                     randomNum = 1;
                 }
 

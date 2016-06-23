@@ -42,27 +42,27 @@ public class PhoneActivity extends AppCompatActivity {
             case AudioManager.RINGER_MODE_VIBRATE: // telephone has vibration for notifications on
                 v= (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
 
-                // vibrate forever
+                // Initiate vibration forever
                 long[] pattern = {0, 1000, 1000};
                 v.vibrate(pattern, 0);
                 break;
-            case AudioManager.RINGER_MODE_NORMAL: // telephone has sound ringtone on
+            case AudioManager.RINGER_MODE_NORMAL: // Telephone has sound ringtone on
 
-                // play ringtone
+                // Play ringtone
                 Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
                 mp = MediaPlayer.create(getApplicationContext(), notification);
 
-                // start
+                // Start
                 mp.start();
                 break;
         }
 
-        // if user does not stop the call, end after 25 seconds
+        // If user does not stop the call, end after 25 seconds
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
 
-                // wait 25 seconds and end the activity, close the calling screen
+                // Wait 25 seconds and end the activity, close the calling screen
                 stopRingtone();
             }
         }, 25000);
