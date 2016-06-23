@@ -1,4 +1,4 @@
-# Report #
+# Report SaveTheNight #
  
 ![](./doc/screenshot-resize.png)
 
@@ -15,7 +15,7 @@ This app knows 4 features:
 4. Via the settings-icon in the top right of the app, a user can select a contact from the contact list and type an emergency sms previous to the date. By pressing the sms-icon on the main screen, the sms will automatically be send, so your hero can come to recue you. 
 
 ## Technical Description##
-####Overview Activities
+#### Overview Activities
 ![](./doc/activities-final-uml.png)
 
 #### Overview connections Objects & classes
