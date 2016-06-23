@@ -27,27 +27,27 @@ Er is een start scherm waarin keuze wordt gemaakt tussen  de hulp opties (icons)
 ## Design
 Start scherm
 
-![](./doc/Screen-1-resize.png)
+![](./doc/screenshot-resize.png)
 
 
 Settings scherm
 
-![](./doc/Settings-resize.png)
+![](./doc/finalsettingsscreenshot_resize.png)
 
 
 Nep incoming call scherm
 
-![](./doc/fake-call-resize.png)
+![](./doc/finalcallscreenshot_resize.png)
 
 
 Nieuws scherm
 
-![](./doc/news-resize.png)
+![](./doc/finalnewsscreenshot_resize.png)
 
 
 Questions scherm
 
-![](./doc/questions-resize.png)
+![](./doc/finalquestionscreenshot_resize.png)
 
 
 
