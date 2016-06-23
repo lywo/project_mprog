@@ -17,6 +17,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 /*
 Listen to Ringtone settings of user to depend volume
@@ -27,6 +28,7 @@ public class PhoneActivity extends AppCompatActivity {
     MediaPlayer mp;
     Vibrator v;
     AudioManager am;
+    int currentState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +37,15 @@ public class PhoneActivity extends AppCompatActivity {
         am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
         final Handler handler = new Handler();
 
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
+                + WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD|
+                + WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED|
+                + WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
+
+        currentState = am.getRingerMode();
+
         // Check phone settings ringtone volume to adapt ringtone to ringtone, vibration or silent
-        switch (am.getRingerMode()) {
+        switch (currentState) {
             case AudioManager.RINGER_MODE_SILENT:
                 break;
             case AudioManager.RINGER_MODE_VIBRATE: // telephone has vibration for notifications on
@@ -86,6 +95,7 @@ public class PhoneActivity extends AppCompatActivity {
     Check the Sound settings and stop if needed sounds/ vibration
      */
     protected void stopRingtone(){
+        am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
 
         // Set Boolean fake call initialized to false so a new fake call can be initialized in MainActivity
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -93,13 +103,15 @@ public class PhoneActivity extends AppCompatActivity {
         editor.putBoolean("init", false).apply();
 
         // Check ringTone volume settings from phone to adapt RingTone stop
-        switch (am.getRingerMode()) {
+        switch (currentState) {
             case AudioManager.RINGER_MODE_SILENT:
                 break;
             case AudioManager.RINGER_MODE_VIBRATE:
+                assert v != null;
                 v.cancel();
                 break;
             case AudioManager.RINGER_MODE_NORMAL:
+                assert mp != null;
                 mp.stop();
                 break;
         }

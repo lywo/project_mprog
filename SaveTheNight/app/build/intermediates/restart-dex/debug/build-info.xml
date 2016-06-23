@@ -4,32 +4,32 @@
     api-level="23"
     density="hdpi"
     format="7"
-    timestamp="212439497740029"
+    timestamp="215138645024451"
     token="-2568530380899966564" >
 
     <task
         name="javac"
-        duration="333" />
+        duration="2155" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="172" />
+        duration="78" />
     <task
         name="verifier"
-        duration="4" />
+        duration="9" />
 
     <artifact
         location="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
         type="DEX" />
 
-    <build timestamp="211676259185622" >
+    <build timestamp="214548030618193" >
         <artifact
             location="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="212439497740029" >
+    <build timestamp="215138645024451" >
         <artifact
             location="C:\Users\Lydia\Documents\UvA\project_mprog\SaveTheNight\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
             type="DEX" />
