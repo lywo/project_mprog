@@ -37,11 +37,13 @@ public class PhoneActivity extends AppCompatActivity {
         am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
         final Handler handler = new Handler();
 
+        // Activate the activity (app) when the screen is locked
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
                 + WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD|
                 + WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED|
                 + WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON);
 
+        // Load current ringtone settings
         currentState = am.getRingerMode();
 
         // Check phone settings ringtone volume to adapt ringtone to ringtone, vibration or silent
@@ -71,7 +73,7 @@ public class PhoneActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                // Wait 25 seconds and end the activity, close the calling screen
+                // End the activity, close the calling screen
                 stopRingtone();
             }
         }, 25000);
@@ -95,6 +97,7 @@ public class PhoneActivity extends AppCompatActivity {
     Check the Sound settings and stop if needed sounds/ vibration
      */
     protected void stopRingtone(){
+        // Load current ringtone settings
         am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
 
         // Set Boolean fake call initialized to false so a new fake call can be initialized in MainActivity
