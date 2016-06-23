@@ -54,10 +54,9 @@
 - clear adapter bij het verlaten van de activity. (finish()?)
 
 ### Day 8
--nieuwe structuur voor de vragen: geen object maar meer queries naar de database.
+- nieuwe structuur voor de vragen: geen object maar meer queries naar de database.
 - adapter voor de questions favourites ListView gemaakt. 
-- invullen van de random vragen via de oncreate en setText op het TextView: TODO maak een onClick, onSwipe voor de random vragen. 
-- mogelijkheid voor sms misschien wel aanwezig: toevoegen aan manifest en dan nummer en text ingeven uit de database. TODO: eerst database helemaal werkend krijgen, denk aan de settings activity. 
+- invullen van de random vragen via de oncreate en setText op het TextView: TODO maak een onClick, onSwipe voor de random vragen.  mogelijkheid voor sms misschien wel aanwezig: toevoegen aan manifest en dan nummer en text ingeven uit de database. TODO: eerst database helemaal werkend krijgen, denk aan de settings activity. 
 Misschien geen extra activiteit nodig voor  het verzenden. 
 - parsen werkt nog niet.
 
@@ -71,7 +70,7 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 ### Day 10 
 - presentation day
 - contact toegevoegd aan telefoon, was een probleem
-- mogelijk om naar contacten te gaan
+- mogelijk om naar contacten te gaan (opslaan nog niet)
 
 ### Day 11
 - contacten worden uitgelezen
@@ -141,4 +140,8 @@ Misschien geen extra activiteit nodig voor  het verzenden.
 - fixed pop-up when never asked checked 
 - update recieving response code sms
 
+### Day 19
+- fake call komt ook als het screen gelocked is. 
+- als tijdens de call het volume wordt aangepast van de beltoon, dan past de functie stopRingtone zich daaraan aan. De huidige situatie wordt nu gestopt. 
+- ingevoegd dat de activiteit van de fake call na 25 seconden altijd afgesloten wordt. Als het screen tussendoor gelocked wordt stopt nu ook de activiteit uiteindelijk. 
 
